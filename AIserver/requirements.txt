@@ -1,0 +1,9 @@
+pymongo
+langchain-google-genai
+groq
+python-dotenv
+flask
+flask-cors
+flask_jwt_extended
+google-auth
+pymongo

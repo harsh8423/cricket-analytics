@@ -1,0 +1,122 @@
+{
+  "match_summary": {
+    "venue_analysis": [
+      {
+        "toss_decision": "Bowling",
+        "winner": "Bowling Team"
+      },
+      {
+        "toss_decision": "Bowling",
+        "winner": "Bowling Team"
+      },
+      {
+        "toss_decision": "Bowling",
+        "winner": "Bowling Team"
+      },
+      {
+        "toss_decision": "Batting",
+        "winner": "Bowling Team"
+      },
+      {
+        "toss_decision": "Bowling",
+        "winner": "Batting Team"
+      },
+      {
+        "toss_decision": "Bowling",
+        "winner": "Bowling Team"
+      },
+      {
+        "toss_decision": "Bowling",
+        "winner": "Batting Team"
+      },
+      {
+        "toss_decision": "Bowling",
+        "winner": "Batting Team"
+      },
+      {
+        "toss_decision": "Bowling",
+        "winner": "Batting Team"
+      },
+      {
+        "toss_decision": "Batting",
+        "winner": "Batting Team"
+      }
+    ],
+    "venue_stats": [
+      {
+        "innings": "Overall",
+        "bowler_type": "pace",
+        "total_runs": 3392,
+        "total_balls": 2320,
+        "total_wickets": 104,
+        "runs_per_wicket": 32.62,
+        "balls_per_wicket": 22.31,
+        "economy_rate": 8.77,
+        "strike_rate": 146.21
+      },
+      {
+        "innings": "Overall",
+        "bowler_type": "spin",
+        "total_runs": 2041,
+        "total_balls": 1470,
+        "total_wickets": 42,
+        "runs_per_wicket": 48.6,
+        "balls_per_wicket": 35,
+        "economy_rate": 8.33,
+        "strike_rate": 138.84
+      },
+      {
+        "innings": "Inning1",
+        "bowler_type": "pace",
+        "total_runs": 1803,
+        "total_balls": 1241,
+        "total_wickets": 51,
+        "runs_per_wicket": 35.35,
+        "balls_per_wicket": 24.33,
+        "economy_rate": 8.72,
+        "strike_rate": 145.29
+      },
+      {
+        "innings": "Inning1",
+        "bowler_type": "spin",
+        "total_runs": 1013,
+        "total_balls": 740,
+        "total_wickets": 23,
+        "runs_per_wicket": 44.04,
+        "balls_per_wicket": 32.17,
+        "economy_rate": 8.21,
+        "strike_rate": 136.89
+      },
+      {
+        "innings": "Inning2",
+        "bowler_type": "pace",
+        "total_runs": 1589,
+        "total_balls": 1079,
+        "total_wickets": 53,
+        "runs_per_wicket": 29.98,
+        "balls_per_wicket": 20.36,
+        "economy_rate": 8.84,
+        "strike_rate": 147.27
+      },
+      {
+        "innings": "Inning2",
+        "bowler_type": "spin",
+        "total_runs": 1028,
+        "total_balls": 730,
+        "total_wickets": 19,
+        "runs_per_wicket": 54.11,
+        "balls_per_wicket": 38.42,
+        "economy_rate": 8.45,
+        "strike_rate": 140.82
+      }
+    ],
+    "head_to_head_analysis": [
+      "Chennai Super Kings won by 63 runs",
+      "Chennai Super Kings won by 5 wickets",
+      "Chennai Super Kings won by 15 runs",
+      "Gujarat Titans won by 5 wickets",
+      "Gujarat Titans won by 7 wickets",
+      "Gujarat Titans won by 3 wickets"
+    ]
+  }
+}

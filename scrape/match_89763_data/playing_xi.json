@@ -1,0 +1,94 @@
+{
+    "Unknown Team 1": [
+        {
+            "name": "Rohit Sharma\nBatter",
+            "player_id": "576"
+        },
+        {
+            "name": "Ishan Kishan (WK)\nWK-Batter",
+            "player_id": "10276"
+        },
+        {
+            "name": "Suryakumar Yadav\nBatter",
+            "player_id": "7915"
+        },
+        {
+            "name": "Tilak Varma\nBatter",
+            "player_id": "14504"
+        },
+        {
+            "name": "Hardik Pandya (C)\nBatting Allrounder",
+            "player_id": "9647"
+        },
+        {
+            "name": "Tim David\nBatter",
+            "player_id": "13169"
+        },
+        {
+            "name": "Mohammad Nabi\nBowling Allrounder",
+            "player_id": "3007"
+        },
+        {
+            "name": "Romario Shepherd\nBowler",
+            "player_id": "13646"
+        },
+        {
+            "name": "Piyush Chawla\nBowler",
+            "player_id": "466"
+        },
+        {
+            "name": "Gerald Coetzee\nBowler",
+            "player_id": "13320"
+        },
+        {
+            "name": "Jasprit Bumrah\nBowler",
+            "player_id": "9311"
+        }
+    ],
+    "Unknown Team 2": [
+        {
+            "name": "David Warner\nBatter",
+            "player_id": "1739"
+        },
+        {
+            "name": "Prithvi Shaw\nBatter",
+            "player_id": "12094"
+        },
+        {
+            "name": "Abishek Porel\nWK-Batter",
+            "player_id": "24326"
+        },
+        {
+            "name": "Rishabh Pant (C & WK)\nWK-Batter",
+            "player_id": "10744"
+        },
+        {
+            "name": "Tristan Stubbs\nWK-Batter",
+            "player_id": "19243"
+        },
+        {
+            "name": "Axar Patel\nBowling Allrounder",
+            "player_id": "8808"
+        },
+        {
+            "name": "Lalit Yadav\nBatting Allrounder",
+            "player_id": "13252"
+        },
+        {
+            "name": "Jhye Richardson\nBowler",
+            "player_id": "10280"
+        },
+        {
+            "name": "Anrich Nortje\nBowler",
+            "player_id": "11427"
+        },
+        {
+            "name": "Ishant Sharma\nBowler",
+            "player_id": "702"
+        },
+        {
+            "name": "Khaleel Ahmed\nBowler",
+            "player_id": "10952"
+        }
+    ]
+}
