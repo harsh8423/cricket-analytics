@@ -1,23 +1,45 @@
-
-
-
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { 
-  HomeIcon,
-  Users,
-  Swords,
-  Brain,
   ChevronDown,
   ChevronRight,
   MessageCircle,
   Menu as MenuIcon
 } from 'lucide-react';
+import {Lightbulb,Plus, X, MessageSquare, MessagesSquare, Star, Users, MapPin, GitCompare, Trophy, Swords, HomeIcon, Brain} from 'lucide-react';
+
+import { useLocation } from 'react-router-dom';
 
 // Sidebar Component
 export default function Sidebar({ collapsed, setCollapsed, activePage, setActivePage }){
-
-
+  const location = useLocation();
   const playerCategories = ['Squad','Batters', 'Bowlers', 'All Rounders', 'Wicket Keeper'];
+
+  // Set active page based on location or state
+  useEffect(() => {
+    // Extract the active page from the URL path
+    const path = location.pathname;
+    if (path.includes('/fantasy') || location.state?.editData) {
+      setActivePage('fantasy');
+    } else if (path.includes('/KeyInsights')) {
+      setActivePage('KeyInsights');
+    } else if (path.includes('/VenueStats')) {
+      setActivePage('VenueStats');
+    } else if (path.includes('/team1')) {
+      setActivePage('team1');
+    } else if (path.includes('/team2')) {
+      setActivePage('team2');
+    } else if (path.includes('/TeamH2H')) {
+      setActivePage('TeamH2H');
+    } else if (path.includes('/PlayerRatings')) {
+      setActivePage('PlayerRatings');
+    } else if (path.includes('/compare')) {
+      setActivePage('compare');
+    } else if (path.includes('/expertPrediction')) {
+      setActivePage('expertPrediction');
+    } else if (path.includes('/discussion')) {
+      setActivePage('discussion');
+    }
+  }, [location, setActivePage]);
 
   return (
     <div 
@@ -47,14 +69,14 @@ export default function Sidebar({ collapsed, setCollapsed, activePage, setActive
           onClick={() => setActivePage('fantasy')}
         />
         <SidebarItem
-          icon={<Brain />}
+          icon={<Lightbulb />}
           text="Quick Key Insights"
           collapsed={collapsed}
           active={activePage === 'KeyInsights'}
           onClick={() => setActivePage('KeyInsights')}
         />
         <SidebarItem
-          icon={<Brain />}
+          icon={<MapPin />}
           text="Venue/Pitch Report"
           collapsed={collapsed}
           active={activePage === 'VenueStats'}
@@ -80,25 +102,18 @@ export default function Sidebar({ collapsed, setCollapsed, activePage, setActive
           />
         </div>
         <SidebarItem
-          icon={<Brain />}
+          icon={<GitCompare />}
           text="Team H2H"
           collapsed={collapsed}
           active={activePage === 'TeamH2H'}
           onClick={() => setActivePage('TeamH2H')}
         />
         <SidebarItem
-          icon={<Brain />}
+          icon={<Star />}
           text="Player Ratings"
           collapsed={collapsed}
           active={activePage === 'PlayerRatings'}
           onClick={() => setActivePage('PlayerRatings')}
-        />
-        <SidebarItem
-          icon={<Brain />}
-          text="CheatSheet"
-          collapsed={collapsed}
-          active={activePage === 'CheatSheet'}
-          onClick={() => setActivePage('CheatSheet')}
         />
         {/* Compare */}
         <SidebarItem
@@ -108,16 +123,9 @@ export default function Sidebar({ collapsed, setCollapsed, activePage, setActive
           active={activePage === 'compare'}
           onClick={() => setActivePage('compare')}
         />
-        <SidebarItem
-          icon={<Brain />}
-          text="In-Depth Analysis"
-          collapsed={collapsed}
-          active={activePage === 'InDepthAnalysis'}
-          onClick={() => setActivePage('InDepthAnalysis')}
-        />
         {/* prediction */}
         <SidebarItem
-          icon={<MessageCircle />}
+          icon={<Trophy />}
           text="Expert Prediction"
           collapsed={collapsed}
           active={activePage === 'expertPrediction'}
@@ -126,7 +134,7 @@ export default function Sidebar({ collapsed, setCollapsed, activePage, setActive
 
         {/* Community and Discussion */}
         <SidebarItem
-          icon={<MessageCircle />}
+          icon={<MessagesSquare />}
           text="Discussion Forum"
           collapsed={collapsed}
           active={activePage === 'discussion'}

@@ -3,7 +3,33 @@ const express = require("express");
 const mongooseConnection = require("./models/MoongooseConnection");
 const app = express();
 const cors = require("cors");
+const jwt = require('jsonwebtoken');
+require('./models/User');
+require('./models/Discussion');
+const aiTeamRoutes = require('./routes/aiTeam');
 
+
+// JWT secret key
+const JWT_SECRET_KEY = process.env.JWT_SECRET_KEY || 'your-jwt-secret';
+
+// Middleware to verify JWT token
+const verifyToken = (req, res, next) => {
+  const authHeader = req.headers['authorization'];
+  const token = authHeader && authHeader.split(' ')[1];
+
+  if (!token) {
+    return res.status(401).json({ message: 'No token provided' });
+  }
+
+
+  try {
+    const decoded = jwt.verify(token, JWT_SECRET_KEY);
+    req.user = decoded;
+    next();
+  } catch (err) {
+    return res.status(403).json({ message: 'Invalid token' });
+  }
+};
 
 // Set up CORS middleware
 const allowedOrigins = [
@@ -16,6 +42,8 @@ app.use(
   cors({
     origin: allowedOrigins,
     methods: ["GET", "POST", "PUT", "DELETE"],
+    allowedHeaders: ["Content-Type", "Authorization"],
+    credentials: true
   })
 );
 
@@ -24,9 +52,19 @@ app.use(
 // Parse JSON requests
 app.use(express.json());
 
-// Define API routes
+// Protected routes
 app.use("/api", require("./routes/match"));
 
+// Auth verification endpoint
+app.get("/api/verify-token", verifyToken, (req, res) => {
+  res.json({ isValid: true, user: req.user });
+});
+
+// Add discussion routes
+app.use('/api/discussions', require('./routes/discussion'));
+app.use('/api/admin', require('./routes/admin'));
+app.use('/api/predictions', require('./routes/predictions'));
+app.use('/api/ai-teams', aiTeamRoutes);
 
 // Define a test route
 app.get("/", async (req, res) => {

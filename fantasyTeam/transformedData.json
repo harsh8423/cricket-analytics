@@ -219,6 +219,7 @@
           "match_id": 91506,
           "batting": {
             "runs": 16,
+            "stats_type": "recent",
             "balls": 19,
             "strike_rate": 84.21,
             "fantasy_points": 18,
@@ -229,6 +230,7 @@
             "runs": 16,
             "wickets": 0,
             "economy": 8,
+            "stats_type": "recent",
             "fantasy_points": 0
           }
         },
@@ -236,6 +238,7 @@
           "match_id": 91470,
           "batting": {
             "runs": 57,
+            "stats_type": "recent",
             "balls": 40,
             "strike_rate": 142.5,
             "fantasy_points": 74,
@@ -246,6 +249,7 @@
             "runs": 32,
             "wickets": 0,
             "economy": 10.7,
+            "stats_type": "recent",
             "fantasy_points": -2
           }
         },
@@ -253,6 +257,7 @@
           "match_id": 89752,
           "batting": {
             "runs": 31,
+            "stats_type": "recent",
             "balls": 23,
             "strike_rate": 134.78,
             "fantasy_points": 41,
@@ -263,6 +268,7 @@
             "runs": 30,
             "wickets": 0,
             "economy": 7.5,
+            "stats_type": "recent",
             "fantasy_points": 0
           }
         },
@@ -270,6 +276,7 @@
           "match_id": 89724,
           "batting": {
             "runs": 21,
+            "stats_type": "recent",
             "balls": 17,
             "strike_rate": 123.53,
             "fantasy_points": 23,
@@ -280,6 +287,7 @@
             "runs": 43,
             "wickets": 1,
             "economy": 10.8,
+            "stats_type": "recent",
             "fantasy_points": 23
           }
         },
@@ -287,6 +295,7 @@
           "match_id": 89689,
           "batting": {
             "runs": 7,
+            "stats_type": "recent",
             "balls": 3,
             "strike_rate": 233.33,
             "fantasy_points": 8,
@@ -297,6 +306,7 @@
             "runs": 15,
             "wickets": 0,
             "economy": 7.5,
+            "stats_type": "recent",
             "fantasy_points": 0
           }
         },
@@ -304,6 +314,7 @@
           "match_id": 89654,
           "batting": {
             "runs": 25,
+            "stats_type": "recent",
             "balls": 17,
             "strike_rate": 147.06,
             "fantasy_points": 29,
@@ -314,6 +325,7 @@
             "runs": 21,
             "wickets": 0,
             "economy": 5.2,
+            "stats_type": "recent",
             "fantasy_points": 4
           }
         },
@@ -321,6 +333,7 @@
           "match_id": 72622,
           "batting": {
             "runs": 15,
+            "stats_type": "venue",
             "balls": 6,
             "strike_rate": 250,
             "fantasy_points": 18,
@@ -331,6 +344,7 @@
             "runs": 38,
             "wickets": 1,
             "economy": 9.5,
+            "stats_type": "venue",
             "fantasy_points": 25
           }
         },
@@ -338,6 +352,7 @@
           "match_id": 69557,
           "batting": {
             "runs": 22,
+            "stats_type": "recent",
             "balls": 16,
             "strike_rate": 137.5,
             "fantasy_points": 26,
@@ -348,6 +363,7 @@
             "runs": 18,
             "wickets": 2,
             "economy": 4.5,
+            "stats_type": "recent",
             "fantasy_points": 56
           }
         },
@@ -355,6 +371,7 @@
           "match_id": 66169,
           "batting": {
             "runs": 1,
+            "stats_type": "venue",
             "balls": 2,
             "strike_rate": 50,
             "fantasy_points": 1,
@@ -365,6 +382,7 @@
             "runs": 28,
             "wickets": 1,
             "economy": 7,
+            "stats_type": "venue",
             "fantasy_points": 27
           }
         },
@@ -376,6 +394,7 @@
             "runs": 37,
             "wickets": 0,
             "economy": 9.2,
+            "stats_type": "recent",
             "fantasy_points": 0
           }
         },
@@ -387,6 +406,7 @@
             "runs": 18,
             "wickets": 3,
             "economy": 4.5,
+            "stats_type": "recent",
             "fantasy_points": 85
           }
         }
@@ -625,6 +645,7 @@
           "match_id": 91443,
           "batting": {
             "runs": 8,
+            "stats_type": "recent",
             "balls": 11,
             "strike_rate": 72.73,
             "fantasy_points": 9,
@@ -635,6 +656,7 @@
             "runs": 49,
             "wickets": 0,
             "economy": 12.2,
+            "stats_type": "recent",
             "fantasy_points": -6
           }
         },
@@ -642,6 +664,7 @@
           "match_id": 89731,
           "batting": {
             "runs": 16,
+            "stats_type": "recent",
             "balls": 16,
             "strike_rate": 100,
             "fantasy_points": 17,
@@ -652,6 +675,7 @@
             "runs": 27,
             "wickets": 0,
             "economy": 6.8,
+            "stats_type": "recent",
             "fantasy_points": 2
           }
         },
@@ -659,6 +683,7 @@
           "match_id": 89700,
           "batting": {
             "runs": 29,
+            "stats_type": "recent",
             "balls": 19,
             "strike_rate": 152.63,
             "fantasy_points": 39,
@@ -669,6 +694,7 @@
             "runs": 30,
             "wickets": 0,
             "economy": 10,
+            "stats_type": "recent",
             "fantasy_points": -2
           }
         },
@@ -676,6 +702,7 @@
           "match_id": 66502,
           "batting": {
             "runs": 1,
+            "stats_type": "recent",
             "balls": 1,
             "strike_rate": 100,
             "fantasy_points": 1,
@@ -686,6 +713,7 @@
             "runs": 35,
             "wickets": 2,
             "economy": 8.8,
+            "stats_type": "recent",
             "fantasy_points": 50
           }
         },
@@ -693,6 +721,7 @@
           "match_id": 47605,
           "batting": {
             "runs": 6,
+            "stats_type": "venue",
             "balls": 9,
             "strike_rate": 66.67,
             "fantasy_points": 6,
@@ -703,6 +732,7 @@
             "runs": 32,
             "wickets": 0,
             "economy": 10.7,
+            "stats_type": "venue",
             "fantasy_points": -2
           }
         },
@@ -710,6 +740,7 @@
           "match_id": 66274,
           "batting": {
             "runs": 10,
+            "stats_type": "venue",
             "balls": 3,
             "strike_rate": 333.33,
             "fantasy_points": 13,
@@ -720,6 +751,7 @@
             "runs": 37,
             "wickets": 0,
             "economy": 9.2,
+            "stats_type": "venue",
             "fantasy_points": 0
           }
         },
@@ -731,6 +763,7 @@
             "runs": 39,
             "wickets": 1,
             "economy": 9.8,
+            "stats_type": "recent",
             "fantasy_points": 25
           }
         },
@@ -742,6 +775,7 @@
             "runs": 31,
             "wickets": 0,
             "economy": 7.8,
+            "stats_type": "recent",
             "fantasy_points": 0
           }
         },
@@ -753,6 +787,7 @@
             "runs": 40,
             "wickets": 0,
             "economy": 10,
+            "stats_type": "recent",
             "fantasy_points": -2
           }
         },
@@ -764,6 +799,7 @@
             "runs": 28,
             "wickets": 0,
             "economy": 7,
+            "stats_type": "recent",
             "fantasy_points": 2
           }
         },
@@ -775,6 +811,7 @@
             "runs": 35,
             "wickets": 1,
             "economy": 8.8,
+            "stats_type": "recent",
             "fantasy_points": 25
           }
         },
@@ -786,6 +823,7 @@
             "runs": 33,
             "wickets": 0,
             "economy": 8.2,
+            "stats_type": "recent",
             "fantasy_points": 0
           }
         },
@@ -797,6 +835,7 @@
             "runs": 31,
             "wickets": 1,
             "economy": 7.8,
+            "stats_type": "venue",
             "fantasy_points": 25
           }
         }
@@ -1154,6 +1193,7 @@
           "match_id": 98708,
           "batting": {
             "runs": 0,
+            "stats_type": "recent",
             "balls": 2,
             "strike_rate": 0,
             "fantasy_points": 0,
@@ -1165,6 +1205,7 @@
           "match_id": 98652,
           "batting": {
             "runs": 3,
+            "stats_type": "recent",
             "balls": 6,
             "strike_rate": 50,
             "fantasy_points": 3,
@@ -1176,6 +1217,7 @@
           "match_id": 98526,
           "batting": {
             "runs": 42,
+            "stats_type": "recent",
             "balls": 22,
             "strike_rate": 190.91,
             "fantasy_points": 60,
@@ -1186,6 +1228,7 @@
             "runs": 18,
             "wickets": 0,
             "economy": 18,
+            "stats_type": "recent",
             "fantasy_points": 0
           }
         },
@@ -1193,6 +1236,7 @@
           "match_id": 98204,
           "batting": {
             "runs": 38,
+            "stats_type": "recent",
             "balls": 17,
             "strike_rate": 223.53,
             "fantasy_points": 57,
@@ -1203,6 +1247,7 @@
             "runs": 19,
             "wickets": 2,
             "economy": 9.5,
+            "stats_type": "recent",
             "fantasy_points": 50
           }
         },
@@ -1210,6 +1255,7 @@
           "match_id": 91393,
           "batting": {
             "runs": 16,
+            "stats_type": "recent",
             "balls": 10,
             "strike_rate": 160,
             "fantasy_points": 23,
@@ -1221,6 +1267,7 @@
           "match_id": 89770,
           "batting": {
             "runs": 17,
+            "stats_type": "recent",
             "balls": 17,
             "strike_rate": 100,
             "fantasy_points": 19,
@@ -1232,6 +1279,7 @@
           "match_id": 89749,
           "batting": {
             "runs": 8,
+            "stats_type": "recent",
             "balls": 10,
             "strike_rate": 80,
             "fantasy_points": 8,
@@ -1243,6 +1291,7 @@
           "match_id": 89717,
           "batting": {
             "runs": 14,
+            "stats_type": "recent",
             "balls": 11,
             "strike_rate": 127.27,
             "fantasy_points": 16,
@@ -1254,6 +1303,7 @@
           "match_id": 89689,
           "batting": {
             "runs": 12,
+            "stats_type": "recent",
             "balls": 12,
             "strike_rate": 100,
             "fantasy_points": 14,
@@ -1265,6 +1315,7 @@
           "match_id": 66169,
           "batting": {
             "runs": 27,
+            "stats_type": "venue",
             "balls": 21,
             "strike_rate": 128.57,
             "fantasy_points": 31,
@@ -1276,6 +1327,7 @@
           "match_id": 66232,
           "batting": {
             "runs": 63,
+            "stats_type": "venue",
             "balls": 24,
             "strike_rate": 262.5,
             "fantasy_points": 91,
@@ -1287,6 +1339,7 @@
           "match_id": 66320,
           "batting": {
             "runs": 6,
+            "stats_type": "venue",
             "balls": 9,
             "strike_rate": 66.67,
             "fantasy_points": 7,
@@ -1298,6 +1351,7 @@
           "match_id": 66470,
           "batting": {
             "runs": 19,
+            "stats_type": "venue",
             "balls": 16,
             "strike_rate": 118.75,
             "fantasy_points": 22,
@@ -1313,6 +1367,7 @@
             "runs": 14,
             "wickets": 1,
             "economy": 3.5,
+            "stats_type": "recent",
             "fantasy_points": 43
           }
         }
@@ -1569,6 +1624,7 @@
           "match_id": 98922,
           "batting": {
             "runs": 17,
+            "stats_type": "recent",
             "balls": 19,
             "strike_rate": 89.47,
             "fantasy_points": 19,
@@ -1579,6 +1635,7 @@
             "runs": 8,
             "wickets": 0,
             "economy": 8,
+            "stats_type": "recent",
             "fantasy_points": 0
           }
         },
@@ -1586,6 +1643,7 @@
           "match_id": 98879,
           "batting": {
             "runs": 23,
+            "stats_type": "recent",
             "balls": 19,
             "strike_rate": 121.05,
             "fantasy_points": 27,
@@ -1597,6 +1655,7 @@
           "match_id": 98690,
           "batting": {
             "runs": 26,
+            "stats_type": "recent",
             "balls": 20,
             "strike_rate": 130,
             "fantasy_points": 34,
@@ -1607,6 +1666,7 @@
             "runs": 14,
             "wickets": 1,
             "economy": 7,
+            "stats_type": "recent",
             "fantasy_points": 27
           }
         },
@@ -1614,6 +1674,7 @@
           "match_id": 98438,
           "batting": {
             "runs": 46,
+            "stats_type": "recent",
             "balls": 30,
             "strike_rate": 153.33,
             "fantasy_points": 63,
@@ -1624,6 +1685,7 @@
             "runs": 25,
             "wickets": 1,
             "economy": 8.3,
+            "stats_type": "recent",
             "fantasy_points": 25
           }
         },
@@ -1631,6 +1693,7 @@
           "match_id": 98330,
           "batting": {
             "runs": 65,
+            "stats_type": "recent",
             "balls": 33,
             "strike_rate": 196.97,
             "fantasy_points": 93,
@@ -1641,6 +1704,7 @@
             "runs": 24,
             "wickets": 1,
             "economy": 8,
+            "stats_type": "recent",
             "fantasy_points": 25
           }
         },
@@ -1648,6 +1712,7 @@
           "match_id": 98258,
           "batting": {
             "runs": 1,
+            "stats_type": "recent",
             "balls": 3,
             "strike_rate": 33.33,
             "fantasy_points": 1,
@@ -1659,6 +1724,7 @@
           "match_id": 91542,
           "batting": {
             "runs": 50,
+            "stats_type": "recent",
             "balls": 31,
             "strike_rate": 161.29,
             "fantasy_points": 69,
@@ -1670,6 +1736,7 @@
           "match_id": 91506,
           "batting": {
             "runs": 17,
+            "stats_type": "recent",
             "balls": 6,
             "strike_rate": 283.33,
             "fantasy_points": 21,
@@ -1681,6 +1748,7 @@
           "match_id": 66365,
           "batting": {
             "runs": 11,
+            "stats_type": "venue",
             "balls": 11,
             "strike_rate": 100,
             "fantasy_points": 11,
@@ -1696,6 +1764,7 @@
             "runs": 4,
             "wickets": 0,
             "economy": 4,
+            "stats_type": "recent",
             "fantasy_points": 0
           }
         }
@@ -2620,6 +2689,7 @@
           "match_id": 99014,
           "batting": {
             "runs": 15,
+            "stats_type": "recent",
             "balls": 8,
             "strike_rate": 187.5,
             "fantasy_points": 18,
@@ -2630,6 +2700,7 @@
             "runs": 19,
             "wickets": 2,
             "economy": 4.8,
+            "stats_type": "recent",
             "fantasy_points": 56
           }
         },
@@ -2637,6 +2708,7 @@
           "match_id": 98825,
           "batting": {
             "runs": 0,
+            "stats_type": "recent",
             "balls": 2,
             "strike_rate": 0,
             "fantasy_points": 0,
@@ -2647,6 +2719,7 @@
             "runs": 16,
             "wickets": 1,
             "economy": 8,
+            "stats_type": "recent",
             "fantasy_points": 25
           }
         },
@@ -2654,6 +2727,7 @@
           "match_id": 98708,
           "batting": {
             "runs": 19,
+            "stats_type": "recent",
             "balls": 17,
             "strike_rate": 111.76,
             "fantasy_points": 22,
@@ -2665,6 +2739,7 @@
           "match_id": 98652,
           "batting": {
             "runs": 33,
+            "stats_type": "recent",
             "balls": 33,
             "strike_rate": 100,
             "fantasy_points": 42,
@@ -2676,6 +2751,7 @@
           "match_id": 98526,
           "batting": {
             "runs": 39,
+            "stats_type": "recent",
             "balls": 25,
             "strike_rate": 156,
             "fantasy_points": 54,
@@ -2686,6 +2762,7 @@
             "runs": 21,
             "wickets": 0,
             "economy": 21,
+            "stats_type": "recent",
             "fantasy_points": 0
           }
         },
@@ -2693,6 +2770,7 @@
           "match_id": 98204,
           "batting": {
             "runs": 31,
+            "stats_type": "recent",
             "balls": 18,
             "strike_rate": 172.22,
             "fantasy_points": 47,
@@ -2703,6 +2781,7 @@
             "runs": 18,
             "wickets": 0,
             "economy": 18,
+            "stats_type": "recent",
             "fantasy_points": 0
           }
         },
@@ -2710,6 +2789,7 @@
           "match_id": 91551,
           "batting": {
             "runs": 58,
+            "stats_type": "venue",
             "balls": 30,
             "strike_rate": 193.33,
             "fantasy_points": 85,
@@ -2721,6 +2801,7 @@
           "match_id": 91515,
           "batting": {
             "runs": 8,
+            "stats_type": "recent",
             "balls": 5,
             "strike_rate": 160,
             "fantasy_points": 10,
@@ -2731,6 +2812,7 @@
             "runs": 8,
             "wickets": 0,
             "economy": 8,
+            "stats_type": "recent",
             "fantasy_points": 0
           }
         },
@@ -2738,6 +2820,7 @@
           "match_id": 91488,
           "batting": {
             "runs": 8,
+            "stats_type": "recent",
             "balls": 4,
             "strike_rate": 200,
             "fantasy_points": 10,
@@ -2748,6 +2831,7 @@
             "runs": 7,
             "wickets": 0,
             "economy": 7,
+            "stats_type": "recent",
             "fantasy_points": 0
           }
         },
@@ -2759,6 +2843,7 @@
             "runs": 16,
             "wickets": 1,
             "economy": 5.3,
+            "stats_type": "recent",
             "fantasy_points": 29
           }
         }
@@ -2776,6 +2861,7 @@
           "match_id": 91488,
           "batting": {
             "runs": 20,
+            "stats_type": "recent",
             "balls": 19,
             "strike_rate": 105.26,
             "fantasy_points": 22,
@@ -2786,6 +2872,7 @@
             "runs": 18,
             "wickets": 1,
             "economy": 9,
+            "stats_type": "recent",
             "fantasy_points": 25
           }
         },
@@ -2793,6 +2880,7 @@
           "match_id": 91461,
           "batting": {
             "runs": 6,
+            "stats_type": "recent",
             "balls": 7,
             "strike_rate": 85.71,
             "fantasy_points": 7,
@@ -2803,6 +2891,7 @@
             "runs": 41,
             "wickets": 2,
             "economy": 10.2,
+            "stats_type": "recent",
             "fantasy_points": 48
           }
         },
@@ -2810,6 +2899,7 @@
           "match_id": 91416,
           "batting": {
             "runs": 6,
+            "stats_type": "recent",
             "balls": 10,
             "strike_rate": 60,
             "fantasy_points": 4,
@@ -2820,6 +2910,7 @@
             "runs": 25,
             "wickets": 2,
             "economy": 6.2,
+            "stats_type": "recent",
             "fantasy_points": 52
           }
         },
@@ -2827,6 +2918,7 @@
           "match_id": 91389,
           "batting": {
             "runs": 29,
+            "stats_type": "recent",
             "balls": 22,
             "strike_rate": 131.82,
             "fantasy_points": 37,
@@ -2837,6 +2929,7 @@
             "runs": 41,
             "wickets": 2,
             "economy": 10.2,
+            "stats_type": "recent",
             "fantasy_points": 48
           }
         },
@@ -2844,6 +2937,7 @@
           "match_id": 89749,
           "batting": {
             "runs": 5,
+            "stats_type": "venue",
             "balls": 8,
             "strike_rate": 62.5,
             "fantasy_points": 5,
@@ -2854,6 +2948,7 @@
             "runs": 18,
             "wickets": 0,
             "economy": 9,
+            "stats_type": "venue",
             "fantasy_points": 0
           }
         },
@@ -2861,6 +2956,7 @@
           "match_id": 89710,
           "batting": {
             "runs": 0,
+            "stats_type": "recent",
             "balls": 1,
             "strike_rate": 0,
             "fantasy_points": 0,
@@ -2871,6 +2967,7 @@
             "runs": 28,
             "wickets": 3,
             "economy": 7,
+            "stats_type": "recent",
             "fantasy_points": 81
           }
         },
@@ -2878,6 +2975,7 @@
           "match_id": 89682,
           "batting": {
             "runs": 23,
+            "stats_type": "recent",
             "balls": 17,
             "strike_rate": 135.29,
             "fantasy_points": 28,
@@ -2888,6 +2986,7 @@
             "runs": 30,
             "wickets": 1,
             "economy": 10,
+            "stats_type": "recent",
             "fantasy_points": 23
           }
         },
@@ -2895,6 +2994,7 @@
           "match_id": 89661,
           "batting": {
             "runs": 63,
+            "stats_type": "recent",
             "balls": 47,
             "strike_rate": 134.04,
             "fantasy_points": 81,
@@ -2905,6 +3005,7 @@
             "runs": 10,
             "wickets": 0,
             "economy": 10,
+            "stats_type": "recent",
             "fantasy_points": 0
           }
         },
@@ -2912,6 +3013,7 @@
           "match_id": 66512,
           "batting": {
             "runs": 21,
+            "stats_type": "recent",
             "balls": 11,
             "strike_rate": 190.91,
             "fantasy_points": 31,
@@ -2922,6 +3024,7 @@
             "runs": 38,
             "wickets": 1,
             "economy": 12.7,
+            "stats_type": "recent",
             "fantasy_points": 19
           }
         },
@@ -2933,6 +3036,7 @@
             "runs": 60,
             "wickets": 1,
             "economy": 15,
+            "stats_type": "recent",
             "fantasy_points": 19
           }
         }
@@ -3177,6 +3281,7 @@
           "match_id": 66495,
           "batting": {
             "runs": 1,
+            "stats_type": "recent",
             "balls": 4,
             "strike_rate": 25,
             "fantasy_points": 1,
@@ -3188,6 +3293,7 @@
           "match_id": 66467,
           "batting": {
             "runs": 5,
+            "stats_type": "recent",
             "balls": 4,
             "strike_rate": 125,
             "fantasy_points": 6,
@@ -3198,6 +3304,7 @@
             "runs": 10,
             "wickets": 0,
             "economy": 10,
+            "stats_type": "recent",
             "fantasy_points": 0
           }
         },
@@ -3205,6 +3312,7 @@
           "match_id": 66414,
           "batting": {
             "runs": 0,
+            "stats_type": "recent",
             "balls": 1,
             "strike_rate": 0,
             "fantasy_points": 0,
@@ -3215,6 +3323,7 @@
             "runs": 10,
             "wickets": 1,
             "economy": 5,
+            "stats_type": "recent",
             "fantasy_points": 29
           }
         },
@@ -3222,6 +3331,7 @@
           "match_id": 66376,
           "batting": {
             "runs": 25,
+            "stats_type": "recent",
             "balls": 7,
             "strike_rate": 357.14,
             "fantasy_points": 32,
@@ -3233,6 +3343,7 @@
           "match_id": 66183,
           "batting": {
             "runs": 8,
+            "stats_type": "recent",
             "balls": 6,
             "strike_rate": 133.33,
             "fantasy_points": 10,
@@ -3254,6 +3365,7 @@
           "match_id": 91515,
           "batting": {
             "runs": 21,
+            "stats_type": "recent",
             "balls": 11,
             "strike_rate": 190.91,
             "fantasy_points": 32,
@@ -3264,6 +3376,7 @@
             "runs": 35,
             "wickets": 0,
             "economy": 8.8,
+            "stats_type": "recent",
             "fantasy_points": 0
           }
         },
@@ -3271,6 +3384,7 @@
           "match_id": 91488,
           "batting": {
             "runs": 3,
+            "stats_type": "recent",
             "balls": 3,
             "strike_rate": 100,
             "fantasy_points": 3,
@@ -3281,6 +3395,7 @@
             "runs": 15,
             "wickets": 1,
             "economy": 3.8,
+            "stats_type": "recent",
             "fantasy_points": 31
           }
         },
@@ -3288,6 +3403,7 @@
           "match_id": 91452,
           "batting": {
             "runs": 31,
+            "stats_type": "recent",
             "balls": 24,
             "strike_rate": 129.17,
             "fantasy_points": 39,
@@ -3298,6 +3414,7 @@
             "runs": 12,
             "wickets": 1,
             "economy": 6,
+            "stats_type": "recent",
             "fantasy_points": 27
           }
         },
@@ -3305,6 +3422,7 @@
           "match_id": 91393,
           "batting": {
             "runs": 24,
+            "stats_type": "recent",
             "balls": 11,
             "strike_rate": 218.18,
             "fantasy_points": 34,
@@ -3315,6 +3433,7 @@
             "runs": 18,
             "wickets": 1,
             "economy": 4.5,
+            "stats_type": "recent",
             "fantasy_points": 31
           }
         },
@@ -3322,6 +3441,7 @@
           "match_id": 89770,
           "batting": {
             "runs": 0,
+            "stats_type": "recent",
             "balls": 3,
             "strike_rate": 0,
             "fantasy_points": 0,
@@ -3332,6 +3452,7 @@
             "runs": 28,
             "wickets": 1,
             "economy": 7,
+            "stats_type": "recent",
             "fantasy_points": 27
           }
         },
@@ -3339,6 +3460,7 @@
           "match_id": 89689,
           "batting": {
             "runs": 1,
+            "stats_type": "recent",
             "balls": 2,
             "strike_rate": 50,
             "fantasy_points": 1,
@@ -3349,6 +3471,7 @@
             "runs": 49,
             "wickets": 2,
             "economy": 12.2,
+            "stats_type": "recent",
             "fantasy_points": 44
           }
         },
@@ -3356,6 +3479,7 @@
           "match_id": 89675,
           "batting": {
             "runs": 4,
+            "stats_type": "recent",
             "balls": 3,
             "strike_rate": 133.33,
             "fantasy_points": 4,
@@ -3366,6 +3490,7 @@
             "runs": 23,
             "wickets": 0,
             "economy": 5.8,
+            "stats_type": "recent",
             "fantasy_points": 4
           }
         },
@@ -3373,6 +3498,7 @@
           "match_id": 66169,
           "batting": {
             "runs": 10,
+            "stats_type": "venue",
             "balls": 3,
             "strike_rate": 333.33,
             "fantasy_points": 13,
@@ -3383,6 +3509,7 @@
             "runs": 26,
             "wickets": 2,
             "economy": 6.5,
+            "stats_type": "venue",
             "fantasy_points": 52
           }
         },
@@ -3390,6 +3517,7 @@
           "match_id": 66274,
           "batting": {
             "runs": 1,
+            "stats_type": "venue",
             "balls": 1,
             "strike_rate": 100,
             "fantasy_points": 1,
@@ -3400,6 +3528,7 @@
             "runs": 46,
             "wickets": 2,
             "economy": 11.5,
+            "stats_type": "venue",
             "fantasy_points": 46
           }
         },
@@ -3407,6 +3536,7 @@
           "match_id": 66320,
           "batting": {
             "runs": 3,
+            "stats_type": "venue",
             "balls": 2,
             "strike_rate": 150,
             "fantasy_points": 3,
@@ -3417,6 +3547,7 @@
             "runs": 28,
             "wickets": 1,
             "economy": 7,
+            "stats_type": "venue",
             "fantasy_points": 27
           }
         },
@@ -3428,6 +3559,7 @@
             "runs": 51,
             "wickets": 0,
             "economy": 12.8,
+            "stats_type": "recent",
             "fantasy_points": -6
           }
         },
@@ -3439,6 +3571,7 @@
             "runs": 40,
             "wickets": 1,
             "economy": 10,
+            "stats_type": "recent",
             "fantasy_points": 23
           }
         },
@@ -3450,6 +3583,7 @@
             "runs": 33,
             "wickets": 1,
             "economy": 8.2,
+            "stats_type": "recent",
             "fantasy_points": 25
           }
         },
@@ -3461,6 +3595,7 @@
             "runs": 18,
             "wickets": 1,
             "economy": 4.5,
+            "stats_type": "venue",
             "fantasy_points": 31
           }
         },
@@ -3472,6 +3607,7 @@
             "runs": 37,
             "wickets": 3,
             "economy": 9.2,
+            "stats_type": "venue",
             "fantasy_points": 79
           }
         }
@@ -3721,6 +3857,7 @@
           "match_id": 66449,
           "batting": {
             "runs": 24,
+            "stats_type": "recent",
             "balls": 15,
             "strike_rate": 160,
             "fantasy_points": 31,
@@ -3731,6 +3868,7 @@
             "runs": 28,
             "wickets": 3,
             "economy": 7,
+            "stats_type": "recent",
             "fantasy_points": 81
           }
         },
@@ -3738,6 +3876,7 @@
           "match_id": 66351,
           "batting": {
             "runs": 9,
+            "stats_type": "recent",
             "balls": 6,
             "strike_rate": 150,
             "fantasy_points": 10,
@@ -3748,6 +3887,7 @@
             "runs": 16,
             "wickets": 0,
             "economy": 6,
+            "stats_type": "recent",
             "fantasy_points": 2
           }
         },
@@ -3755,6 +3895,7 @@
           "match_id": 66285,
           "batting": {
             "runs": 10,
+            "stats_type": "recent",
             "balls": 6,
             "strike_rate": 166.67,
             "fantasy_points": 12,
@@ -3765,6 +3906,7 @@
             "runs": 33,
             "wickets": 0,
             "economy": 8.2,
+            "stats_type": "recent",
             "fantasy_points": 0
           }
         },
@@ -3772,6 +3914,7 @@
           "match_id": 66215,
           "batting": {
             "runs": 16,
+            "stats_type": "recent",
             "balls": 28,
             "strike_rate": 57.14,
             "fantasy_points": 12,
@@ -3782,6 +3925,7 @@
             "runs": 11,
             "wickets": 0,
             "economy": 11,
+            "stats_type": "recent",
             "fantasy_points": 0
           }
         },
@@ -3789,6 +3933,7 @@
           "match_id": 66183,
           "batting": {
             "runs": 1,
+            "stats_type": "recent",
             "balls": 5,
             "strike_rate": 20,
             "fantasy_points": 1,
@@ -3799,6 +3944,7 @@
             "runs": 32,
             "wickets": 0,
             "economy": 10.7,
+            "stats_type": "recent",
             "fantasy_points": -2
           }
         },
@@ -3806,6 +3952,7 @@
           "match_id": 46231,
           "batting": {
             "runs": 25,
+            "stats_type": "recent",
             "balls": 19,
             "strike_rate": 131.58,
             "fantasy_points": 32,
@@ -3816,6 +3963,7 @@
             "runs": 19,
             "wickets": 1,
             "economy": 9.5,
+            "stats_type": "recent",
             "fantasy_points": 25
           }
         },
@@ -3823,6 +3971,7 @@
           "match_id": 46206,
           "batting": {
             "runs": 9,
+            "stats_type": "recent",
             "balls": 7,
             "strike_rate": 128.57,
             "fantasy_points": 9,
@@ -3833,6 +3982,7 @@
             "runs": 36,
             "wickets": 1,
             "economy": 9,
+            "stats_type": "recent",
             "fantasy_points": 25
           }
         },
@@ -3840,6 +3990,7 @@
           "match_id": 46186,
           "batting": {
             "runs": 4,
+            "stats_type": "recent",
             "balls": 9,
             "strike_rate": 44.44,
             "fantasy_points": 4,
@@ -3850,6 +4001,7 @@
             "runs": 40,
             "wickets": 0,
             "economy": 10,
+            "stats_type": "recent",
             "fantasy_points": -2
           }
         },
@@ -3857,6 +4009,7 @@
           "match_id": 46111,
           "batting": {
             "runs": 2,
+            "stats_type": "recent",
             "balls": 2,
             "strike_rate": 100,
             "fantasy_points": 2,
@@ -3872,6 +4025,7 @@
             "runs": 6,
             "wickets": 0,
             "economy": 6,
+            "stats_type": "recent",
             "fantasy_points": 0
           }
         }
@@ -4113,6 +4267,7 @@
           "match_id": 98922,
           "batting": {
             "runs": 45,
+            "stats_type": "recent",
             "balls": 37,
             "strike_rate": 121.62,
             "fantasy_points": 55,
@@ -4124,6 +4279,7 @@
           "match_id": 98879,
           "batting": {
             "runs": 15,
+            "stats_type": "recent",
             "balls": 11,
             "strike_rate": 136.36,
             "fantasy_points": 19,
@@ -4135,6 +4291,7 @@
           "match_id": 98690,
           "batting": {
             "runs": 3,
+            "stats_type": "recent",
             "balls": 8,
             "strike_rate": 37.5,
             "fantasy_points": 3,
@@ -4146,6 +4303,7 @@
           "match_id": 98438,
           "batting": {
             "runs": 9,
+            "stats_type": "recent",
             "balls": 6,
             "strike_rate": 150,
             "fantasy_points": 11,
@@ -4157,6 +4315,7 @@
           "match_id": 98330,
           "batting": {
             "runs": 23,
+            "stats_type": "recent",
             "balls": 9,
             "strike_rate": 255.56,
             "fantasy_points": 29,
@@ -4168,6 +4327,7 @@
           "match_id": 98258,
           "batting": {
             "runs": 51,
+            "stats_type": "recent",
             "balls": 32,
             "strike_rate": 159.38,
             "fantasy_points": 73,
@@ -4178,6 +4338,7 @@
             "runs": 21,
             "wickets": 1,
             "economy": 10.5,
+            "stats_type": "recent",
             "fantasy_points": 23
           }
         },
@@ -4185,6 +4346,7 @@
           "match_id": 91524,
           "batting": {
             "runs": 7,
+            "stats_type": "recent",
             "balls": 4,
             "strike_rate": 175,
             "fantasy_points": 8,
@@ -4196,6 +4358,7 @@
           "match_id": 91479,
           "batting": {
             "runs": 4,
+            "stats_type": "recent",
             "balls": 3,
             "strike_rate": 133.33,
             "fantasy_points": 5,
@@ -4207,6 +4370,7 @@
           "match_id": 91434,
           "batting": {
             "runs": 19,
+            "stats_type": "recent",
             "balls": 11,
             "strike_rate": 172.73,
             "fantasy_points": 29,
@@ -4217,6 +4381,7 @@
             "runs": 18,
             "wickets": 0,
             "economy": 18,
+            "stats_type": "recent",
             "fantasy_points": 0
           }
         },
@@ -4224,6 +4389,7 @@
           "match_id": 47598,
           "batting": {
             "runs": 8,
+            "stats_type": "venue",
             "balls": 10,
             "strike_rate": 80,
             "fantasy_points": 8,
@@ -4239,6 +4405,7 @@
             "runs": 8,
             "wickets": 1,
             "economy": 3.7,
+            "stats_type": "recent",
             "fantasy_points": 31
           }
         }
@@ -4256,6 +4423,7 @@
           "match_id": 91470,
           "batting": {
             "runs": 0,
+            "stats_type": "recent",
             "balls": 1,
             "strike_rate": 0,
             "fantasy_points": 0,
@@ -4267,6 +4435,7 @@
           "match_id": 91425,
           "batting": {
             "runs": 21,
+            "stats_type": "recent",
             "balls": 16,
             "strike_rate": 131.25,
             "fantasy_points": 27,
@@ -4278,6 +4447,7 @@
           "match_id": 91380,
           "batting": {
             "runs": 15,
+            "stats_type": "recent",
             "balls": 8,
             "strike_rate": 187.5,
             "fantasy_points": 18,
@@ -4288,6 +4458,7 @@
             "runs": 4,
             "wickets": 0,
             "economy": 4,
+            "stats_type": "recent",
             "fantasy_points": 0
           }
         },
@@ -4295,6 +4466,7 @@
           "match_id": 89752,
           "batting": {
             "runs": 12,
+            "stats_type": "recent",
             "balls": 9,
             "strike_rate": 133.33,
             "fantasy_points": 14,
@@ -4305,6 +4477,7 @@
             "runs": 3,
             "wickets": 0,
             "economy": 3,
+            "stats_type": "recent",
             "fantasy_points": 0
           }
         },
@@ -4312,6 +4485,7 @@
           "match_id": 89724,
           "batting": {
             "runs": 2,
+            "stats_type": "recent",
             "balls": 12,
             "strike_rate": 16.67,
             "fantasy_points": -4,
@@ -4323,6 +4497,7 @@
           "match_id": 89689,
           "batting": {
             "runs": 46,
+            "stats_type": "recent",
             "balls": 20,
             "strike_rate": 230,
             "fantasy_points": 68,
@@ -4334,6 +4509,7 @@
           "match_id": 89654,
           "batting": {
             "runs": 37,
+            "stats_type": "recent",
             "balls": 15,
             "strike_rate": 246.67,
             "fantasy_points": 56,
@@ -4355,6 +4531,7 @@
           "match_id": 99106,
           "batting": {
             "runs": 9,
+            "stats_type": "recent",
             "balls": 6,
             "strike_rate": 150,
             "fantasy_points": 11,
@@ -4365,6 +4542,7 @@
             "runs": 27,
             "wickets": 1,
             "economy": 6.8,
+            "stats_type": "recent",
             "fantasy_points": 27
           }
         },
@@ -4372,6 +4550,7 @@
           "match_id": 99102,
           "batting": {
             "runs": 0,
+            "stats_type": "recent",
             "balls": 1,
             "strike_rate": 0,
             "fantasy_points": 0,
@@ -4382,6 +4561,7 @@
             "runs": 34,
             "wickets": 1,
             "economy": 8.5,
+            "stats_type": "recent",
             "fantasy_points": 25
           }
         },
@@ -4389,6 +4569,7 @@
           "match_id": 99093,
           "batting": {
             "runs": 37,
+            "stats_type": "recent",
             "balls": 22,
             "strike_rate": 168.18,
             "fantasy_points": 50,
@@ -4399,6 +4580,7 @@
             "runs": 33,
             "wickets": 0,
             "economy": 8.2,
+            "stats_type": "recent",
             "fantasy_points": 0
           }
         },
@@ -4406,6 +4588,7 @@
           "match_id": 99043,
           "batting": {
             "runs": 34,
+            "stats_type": "recent",
             "balls": 18,
             "strike_rate": 188.89,
             "fantasy_points": 51,
@@ -4416,6 +4599,7 @@
             "runs": 62,
             "wickets": 0,
             "economy": 15.5,
+            "stats_type": "recent",
             "fantasy_points": -6
           }
         },
@@ -4423,6 +4607,7 @@
           "match_id": 98863,
           "batting": {
             "runs": 71,
+            "stats_type": "recent",
             "balls": 36,
             "strike_rate": 197.22,
             "fantasy_points": 101,
@@ -4433,6 +4618,7 @@
             "runs": 21,
             "wickets": 1,
             "economy": 7,
+            "stats_type": "recent",
             "fantasy_points": 27
           }
         },
@@ -4440,6 +4626,7 @@
           "match_id": 91506,
           "batting": {
             "runs": 66,
+            "stats_type": "recent",
             "balls": 27,
             "strike_rate": 244.44,
             "fantasy_points": 97,
@@ -4451,6 +4638,7 @@
           "match_id": 91470,
           "batting": {
             "runs": 3,
+            "stats_type": "recent",
             "balls": 8,
             "strike_rate": 37.5,
             "fantasy_points": 3,
@@ -4462,6 +4650,7 @@
           "match_id": 91425,
           "batting": {
             "runs": 66,
+            "stats_type": "recent",
             "balls": 38,
             "strike_rate": 173.68,
             "fantasy_points": 94,
@@ -4473,6 +4662,7 @@
           "match_id": 89752,
           "batting": {
             "runs": 45,
+            "stats_type": "recent",
             "balls": 24,
             "strike_rate": 187.5,
             "fantasy_points": 65,
@@ -4484,6 +4674,7 @@
           "match_id": 89689,
           "batting": {
             "runs": 51,
+            "stats_type": "recent",
             "balls": 23,
             "strike_rate": 221.74,
             "fantasy_points": 77,
@@ -4495,6 +4686,7 @@
           "match_id": 66169,
           "batting": {
             "runs": 19,
+            "stats_type": "venue",
             "balls": 18,
             "strike_rate": 105.56,
             "fantasy_points": 21,
@@ -4516,6 +4708,7 @@
           "match_id": 98825,
           "batting": {
             "runs": 2,
+            "stats_type": "recent",
             "balls": 4,
             "strike_rate": 50,
             "fantasy_points": 2,
@@ -4526,6 +4719,7 @@
             "runs": 44,
             "wickets": 1,
             "economy": 11,
+            "stats_type": "recent",
             "fantasy_points": 21
           }
         },
@@ -4533,6 +4727,7 @@
           "match_id": 98708,
           "batting": {
             "runs": 2,
+            "stats_type": "recent",
             "balls": 9,
             "strike_rate": 22.22,
             "fantasy_points": 2,
@@ -4543,6 +4738,7 @@
             "runs": 24,
             "wickets": 0,
             "economy": 8,
+            "stats_type": "recent",
             "fantasy_points": 0
           }
         },
@@ -4550,6 +4746,7 @@
           "match_id": 98652,
           "batting": {
             "runs": 21,
+            "stats_type": "recent",
             "balls": 20,
             "strike_rate": 105,
             "fantasy_points": 24,
@@ -4560,6 +4757,7 @@
             "runs": 38,
             "wickets": 1,
             "economy": 9.5,
+            "stats_type": "recent",
             "fantasy_points": 25
           }
         },
@@ -4567,6 +4765,7 @@
           "match_id": 98402,
           "batting": {
             "runs": 7,
+            "stats_type": "recent",
             "balls": 3,
             "strike_rate": 233.33,
             "fantasy_points": 9,
@@ -4577,6 +4776,7 @@
             "runs": 2,
             "wickets": 2,
             "economy": 1,
+            "stats_type": "recent",
             "fantasy_points": 56
           }
         },
@@ -4584,6 +4784,7 @@
           "match_id": 91515,
           "batting": {
             "runs": 13,
+            "stats_type": "recent",
             "balls": 6,
             "strike_rate": 216.67,
             "fantasy_points": 17,
@@ -4594,6 +4795,7 @@
             "runs": 22,
             "wickets": 0,
             "economy": 22,
+            "stats_type": "recent",
             "fantasy_points": 0
           }
         },
@@ -4605,6 +4807,7 @@
             "runs": 23,
             "wickets": 1,
             "economy": 5.8,
+            "stats_type": "recent",
             "fantasy_points": 29
           }
         },
@@ -4616,6 +4819,7 @@
             "runs": 23,
             "wickets": 2,
             "economy": 5.8,
+            "stats_type": "recent",
             "fantasy_points": 54
           }
         },
@@ -4627,6 +4831,7 @@
             "runs": 34,
             "wickets": 2,
             "economy": 8.5,
+            "stats_type": "recent",
             "fantasy_points": 50
           }
         },
@@ -4638,6 +4843,7 @@
             "runs": 30,
             "wickets": 1,
             "economy": 10,
+            "stats_type": "venue",
             "fantasy_points": 23
           }
         },
@@ -4649,6 +4855,7 @@
             "runs": 33,
             "wickets": 4,
             "economy": 8.2,
+            "stats_type": "recent",
             "fantasy_points": 108
           }
         },
@@ -4660,6 +4867,7 @@
             "runs": 20,
             "wickets": 2,
             "economy": 10,
+            "stats_type": "venue",
             "fantasy_points": 48
           }
         },
@@ -4671,6 +4879,7 @@
             "runs": 24,
             "wickets": 1,
             "economy": 6,
+            "stats_type": "venue",
             "fantasy_points": 27
           }
         }
@@ -6094,6 +6303,7 @@
           "match_id": 45946,
           "batting": {
             "runs": 5,
+            "stats_type": "recent",
             "balls": 10,
             "strike_rate": 50,
             "fantasy_points": 1,
@@ -6105,6 +6315,7 @@
           "match_id": 45911,
           "batting": {
             "runs": 28,
+            "stats_type": "recent",
             "balls": 40,
             "strike_rate": 70,
             "fantasy_points": 31,
@@ -6493,6 +6704,7 @@
           "match_id": 98726,
           "batting": {
             "runs": 1,
+            "stats_type": "recent",
             "balls": 1,
             "strike_rate": 100,
             "fantasy_points": 1,
@@ -6503,6 +6715,7 @@
             "runs": 37,
             "wickets": 0,
             "economy": 9.2,
+            "stats_type": "recent",
             "fantasy_points": 0
           }
         },
@@ -6510,6 +6723,7 @@
           "match_id": 98665,
           "batting": {
             "runs": 8,
+            "stats_type": "recent",
             "balls": 5,
             "strike_rate": 160,
             "fantasy_points": 9,
@@ -6520,6 +6734,7 @@
             "runs": 16,
             "wickets": 1,
             "economy": 5.3,
+            "stats_type": "recent",
             "fantasy_points": 29
           }
         },
@@ -6527,6 +6742,7 @@
           "match_id": 98539,
           "batting": {
             "runs": 17,
+            "stats_type": "recent",
             "balls": 11,
             "strike_rate": 154.55,
             "fantasy_points": 25,
@@ -6537,6 +6753,7 @@
             "runs": 30,
             "wickets": 1,
             "economy": 9,
+            "stats_type": "recent",
             "fantasy_points": 25
           }
         },
@@ -6548,6 +6765,7 @@
             "runs": 15,
             "wickets": 2,
             "economy": 6,
+            "stats_type": "recent",
             "fantasy_points": 52
           }
         },
@@ -6559,6 +6777,7 @@
             "runs": 26,
             "wickets": 3,
             "economy": 6.5,
+            "stats_type": "recent",
             "fantasy_points": 93
           }
         },
@@ -6570,6 +6789,7 @@
             "runs": 8,
             "wickets": 1,
             "economy": 4,
+            "stats_type": "recent",
             "fantasy_points": 43
           }
         },
@@ -6581,6 +6801,7 @@
             "runs": 15,
             "wickets": 1,
             "economy": 5,
+            "stats_type": "recent",
             "fantasy_points": 29
           }
         }
@@ -7345,6 +7566,7 @@
           "match_id": 98508,
           "batting": {
             "runs": 6,
+            "stats_type": "recent",
             "balls": 3,
             "strike_rate": 200,
             "fantasy_points": 8,
@@ -7355,6 +7577,7 @@
             "runs": 23,
             "wickets": 3,
             "economy": 7.7,
+            "stats_type": "recent",
             "fantasy_points": 79
           }
         },
@@ -7362,6 +7585,7 @@
           "match_id": 98384,
           "batting": {
             "runs": 9,
+            "stats_type": "recent",
             "balls": 4,
             "strike_rate": 225,
             "fantasy_points": 10,
@@ -7372,6 +7596,7 @@
             "runs": 5,
             "wickets": 3,
             "economy": 1.9,
+            "stats_type": "recent",
             "fantasy_points": 85
           }
         },
@@ -7379,6 +7604,7 @@
           "match_id": 98186,
           "batting": {
             "runs": 22,
+            "stats_type": "recent",
             "balls": 7,
             "strike_rate": 314.29,
             "fantasy_points": 28,
@@ -7389,6 +7615,7 @@
             "runs": 5,
             "wickets": 1,
             "economy": 2.5,
+            "stats_type": "recent",
             "fantasy_points": 31
           }
         },
@@ -7396,6 +7623,7 @@
           "match_id": 91407,
           "batting": {
             "runs": 20,
+            "stats_type": "recent",
             "balls": 16,
             "strike_rate": 125,
             "fantasy_points": 22,
@@ -7406,6 +7634,7 @@
             "runs": 34,
             "wickets": 0,
             "economy": 10.7,
+            "stats_type": "recent",
             "fantasy_points": -2
           }
         },
@@ -7413,6 +7642,7 @@
           "match_id": 66355,
           "batting": {
             "runs": 1,
+            "stats_type": "recent",
             "balls": 2,
             "strike_rate": 50,
             "fantasy_points": 1,
@@ -7423,6 +7653,7 @@
             "runs": 28,
             "wickets": 0,
             "economy": 16.8,
+            "stats_type": "recent",
             "fantasy_points": 0
           }
         },
@@ -7430,6 +7661,7 @@
           "match_id": 66225,
           "batting": {
             "runs": 2,
+            "stats_type": "recent",
             "balls": 4,
             "strike_rate": 50,
             "fantasy_points": 2,
@@ -7440,6 +7672,7 @@
             "runs": 35,
             "wickets": 0,
             "economy": 16.2,
+            "stats_type": "recent",
             "fantasy_points": -6
           }
         },
@@ -7447,6 +7680,7 @@
           "match_id": 66190,
           "batting": {
             "runs": 15,
+            "stats_type": "recent",
             "balls": 9,
             "strike_rate": 166.67,
             "fantasy_points": 17,
@@ -7457,6 +7691,7 @@
             "runs": 28,
             "wickets": 1,
             "economy": 12,
+            "stats_type": "recent",
             "fantasy_points": 19
           }
         },
@@ -7468,6 +7703,7 @@
             "runs": 48,
             "wickets": 1,
             "economy": 12,
+            "stats_type": "recent",
             "fantasy_points": 19
           }
         },
@@ -7479,6 +7715,7 @@
             "runs": 39,
             "wickets": 3,
             "economy": 13,
+            "stats_type": "recent",
             "fantasy_points": 73
           }
         },
@@ -7490,6 +7727,7 @@
             "runs": 12,
             "wickets": 0,
             "economy": 12,
+            "stats_type": "recent",
             "fantasy_points": 0
           }
         }
@@ -7758,6 +7996,7 @@
           "match_id": 99025,
           "batting": {
             "runs": 7,
+            "stats_type": "recent",
             "balls": 11,
             "strike_rate": 63.64,
             "fantasy_points": 9,
@@ -7768,6 +8007,7 @@
             "runs": 29,
             "wickets": 0,
             "economy": 7.2,
+            "stats_type": "recent",
             "fantasy_points": 0
           }
         },
@@ -7775,6 +8015,7 @@
           "match_id": 98836,
           "batting": {
             "runs": 27,
+            "stats_type": "recent",
             "balls": 28,
             "strike_rate": 96.43,
             "fantasy_points": 29,
@@ -7785,6 +8026,7 @@
             "runs": 20,
             "wickets": 0,
             "economy": 6.7,
+            "stats_type": "recent",
             "fantasy_points": 2
           }
         },
@@ -7792,6 +8034,7 @@
           "match_id": 98726,
           "batting": {
             "runs": 57,
+            "stats_type": "recent",
             "balls": 36,
             "strike_rate": 158.33,
             "fantasy_points": 79,
@@ -7803,6 +8046,7 @@
           "match_id": 98665,
           "batting": {
             "runs": 7,
+            "stats_type": "recent",
             "balls": 6,
             "strike_rate": 116.67,
             "fantasy_points": 8,
@@ -7813,6 +8057,7 @@
             "runs": 30,
             "wickets": 2,
             "economy": 7.5,
+            "stats_type": "recent",
             "fantasy_points": 50
           }
         },
@@ -7820,6 +8065,7 @@
           "match_id": 98539,
           "batting": {
             "runs": 2,
+            "stats_type": "recent",
             "balls": 8,
             "strike_rate": 25,
             "fantasy_points": 2,
@@ -7830,6 +8076,7 @@
             "runs": 8,
             "wickets": 0,
             "economy": 8,
+            "stats_type": "recent",
             "fantasy_points": 0
           }
         },
@@ -7837,6 +8084,7 @@
           "match_id": 98420,
           "batting": {
             "runs": 100,
+            "stats_type": "recent",
             "balls": 48,
             "strike_rate": 208.33,
             "fantasy_points": 141,
@@ -7847,6 +8095,7 @@
             "runs": 10,
             "wickets": 0,
             "economy": 5,
+            "stats_type": "recent",
             "fantasy_points": 4
           }
         },
@@ -7858,6 +8107,7 @@
             "runs": 21,
             "wickets": 1,
             "economy": 5.2,
+            "stats_type": "recent",
             "fantasy_points": 29
           }
         }
@@ -7875,6 +8125,7 @@
           "match_id": 98618,
           "batting": {
             "runs": 1,
+            "stats_type": "recent",
             "balls": 2,
             "strike_rate": 50,
             "fantasy_points": 1,
@@ -7885,6 +8136,7 @@
             "runs": 23,
             "wickets": 0,
             "economy": 11.5,
+            "stats_type": "recent",
             "fantasy_points": -4
           }
         },
@@ -7892,6 +8144,7 @@
           "match_id": 98564,
           "batting": {
             "runs": 11,
+            "stats_type": "recent",
             "balls": 9,
             "strike_rate": 122.22,
             "fantasy_points": 13,
@@ -7902,6 +8155,7 @@
             "runs": 29,
             "wickets": 0,
             "economy": 14.5,
+            "stats_type": "recent",
             "fantasy_points": -6
           }
         },
@@ -7909,6 +8163,7 @@
           "match_id": 98368,
           "batting": {
             "runs": 13,
+            "stats_type": "recent",
             "balls": 5,
             "strike_rate": 260,
             "fantasy_points": 16,
@@ -7919,6 +8174,7 @@
             "runs": 20,
             "wickets": 0,
             "economy": 10,
+            "stats_type": "recent",
             "fantasy_points": -2
           }
         },
@@ -7926,6 +8182,7 @@
           "match_id": 98238,
           "batting": {
             "runs": 0,
+            "stats_type": "recent",
             "balls": 1,
             "strike_rate": 0,
             "fantasy_points": 0,
@@ -7936,6 +8193,7 @@
             "runs": 18,
             "wickets": 0,
             "economy": 6,
+            "stats_type": "recent",
             "fantasy_points": 2
           }
         }

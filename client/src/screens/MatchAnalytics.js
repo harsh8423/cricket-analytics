@@ -11,10 +11,8 @@ import ChatAssistant from "./ChatAssistant";
 import CommunityDiscussion from "../dashboards/CommunityDiscussion";
 import ExpertPredictions from "../dashboards/ExpertPredictions";
 import TeamH2H from '../dashboards/TeamH2H';
-import InDepthAnalysis from '../dashboards/InDepthAnalysis';
 import PlayerRatings from '../dashboards/PlayerRatings';
 import KeyInsights from '../dashboards/KeyInsights';
-import CheatSheet from '../dashboards/CheatSheet';
 import VenueStats from '../dashboards/VenueStats';
 
 
@@ -65,11 +63,9 @@ const MatchAnalytics = () => {
         {activePage === "chat" && <ChatAssistant />}
         {activePage === "KeyInsights" && <KeyInsights />}
         {activePage === "PlayerRatings" && <PlayerRatings />}
-        {activePage === "CheatSheet" && <CheatSheet />}
         {activePage === "VenueStats" && <VenueStats />}
         {activePage === "TeamH2H" && <TeamH2H />}
-        {activePage === "InDepthAnalysis" && <InDepthAnalysis />}
-        <ChatAssistant/>
+        {activePage != "fantasy" && <ChatAssistant/>}
       </div>
     </div>
   );

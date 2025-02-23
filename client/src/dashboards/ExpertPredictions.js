@@ -1,48 +1,90 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Search, ArrowUp, MessageCircle, Filter } from 'lucide-react';
-
-const predictions = [
-  {
-    id: 1,
-    content: "Based on recent form and pitch conditions at MCG, India has a 70% chance of winning. Expecting Virat Kohli to score big given his excellent record against Australia.",
-    predictor: "Michael Clarke",
-    correctness: 80,
-    status: "live",
-    upvotes: 245,
-    timestamp: "2h ago"
-  },
-  {
-    id: 2,
-    content: "The toss will be crucial. Team batting first has advantage in day-night matches at Lords. England's bowling attack looks stronger in these conditions.",
-    predictor: "Nasser Hussain",
-    correctness: 26,
-    status: "completed",
-    upvotes: 189,
-    timestamp: "5h ago"
-  },
-  {
-    id: 3,
-    content: "South Africa's pace attack will be the key factor. Expecting a low-scoring match with bowlers dominating throughout.",
-    predictor: "Shaun Pollock",
-    correctness: 65,
-    status: "upcoming",
-    upvotes: 156,
-    timestamp: "1h ago"
-  },
-  {
-    id: 4,
-    content: "New Zealand's recent record at Eden Park suggests they have the upper hand. Kane Williamson's form will be crucial for their batting performance.",
-    predictor: "Ian Smith",
-    correctness: 45,
-    status: "completed",
-    upvotes: 123,
-    timestamp: "3h ago"
-  }
-];
+import { useAuth } from '../contexts/AuthContext';
+import AuthModal from '../components/AuthModal';
 
 const ExpertPredictions = () => {
   const [activeFilter, setActiveFilter] = useState('all');
-  
+  const [predictions, setPredictions] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+  const [searchQuery, setSearchQuery] = useState('');
+  const [showAuthModal, setShowAuthModal] = useState(false);
+  const { isAuthenticated, token, user } = useAuth();
+
+  // Fetch predictions
+  useEffect(() => {
+    const fetchPredictions = async () => {
+      try {
+        setLoading(true);
+        const response = await fetch('http://localhost:8000/api/predictions/1'); // Using default matchId 1
+        if (!response.ok) throw new Error('Failed to fetch predictions');
+        const data = await response.json();
+        setPredictions(data);
+      } catch (error) {
+        console.error('Error fetching predictions:', error);
+        setError('Failed to load predictions');
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchPredictions();
+  }, []);
+
+  // Handle upvote
+  const handleUpvote = async (predictionId) => {
+    if (!isAuthenticated) {
+      setShowAuthModal(true);
+      return;
+    }
+
+    try {
+      const response = await fetch(`http://localhost:8000/api/predictions/${predictionId}/upvote`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${token}`
+        }
+      });
+
+      if (!response.ok) throw new Error('Failed to upvote');
+      
+      const updatedPrediction = await response.json();
+      
+      // Update predictions state
+      setPredictions(predictions.map(pred => 
+        pred._id === predictionId ? updatedPrediction : pred
+      ));
+    } catch (error) {
+      console.error('Error upvoting:', error);
+    }
+  };
+
+  // Filter predictions
+  const filteredPredictions = predictions.filter(prediction => {
+    const matchesSearch = prediction.content.toLowerCase().includes(searchQuery.toLowerCase()) ||
+                         prediction.predictor.toLowerCase().includes(searchQuery.toLowerCase());
+    const matchesFilter = activeFilter === 'all' || prediction.status === activeFilter;
+    return matchesSearch && matchesFilter;
+  });
+
+  if (loading) {
+    return (
+      <div className="min-h-screen flex items-center justify-center">
+        <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-indigo-600"></div>
+      </div>
+    );
+  }
+
+  if (error) {
+    return (
+      <div className="min-h-screen flex items-center justify-center text-red-600">
+        {error}
+      </div>
+    );
+  }
+
   return (
     <div className="min-h-screen p-4 sm:p-6">
       {/* Header */}
@@ -63,6 +105,8 @@ const ExpertPredictions = () => {
             <input
               type="text"
               placeholder="Search predictions..."
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
               className="w-full pl-10 pr-4 py-2.5 bg-white border border-gray-200 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent outline-none transition-all duration-200 text-sm sm:text-base"
             />
             <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-4 h-4 sm:w-5 sm:h-5" />
@@ -90,9 +134,9 @@ const ExpertPredictions = () => {
 
       {/* Predictions Grid */}
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 px-2">
-        {predictions.map((prediction) => (
+        {filteredPredictions.map((prediction) => (
           <div 
-            key={prediction.id}
+            key={prediction._id}
             className="bg-white rounded-xl sm:rounded-2xl hover:shadow-xl transition-all duration-300 border border-gray-100 overflow-hidden hover:border-indigo-100"
           >
             {/* Header with Predictor Info and Status */}
@@ -103,7 +147,9 @@ const ExpertPredictions = () => {
                 </div>
                 <div>
                   <div className="font-semibold text-gray-800 text-sm sm:text-base">{prediction.predictor}</div>
-                  <div className="text-xs sm:text-sm text-gray-500">{prediction.timestamp}</div>
+                  <div className="text-xs sm:text-sm text-gray-500">
+                    {new Date(prediction.timestamp).toLocaleString()}
+                  </div>
                 </div>
               </div>
               <div 
@@ -148,9 +194,25 @@ const ExpertPredictions = () => {
 
               {/* Actions */}
               <div className="flex items-center justify-between">
-                <button className="group flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-1.5 sm:py-2 bg-gray-50 hover:bg-gray-100 rounded-lg sm:rounded-xl transition-all duration-200">
-                  <ArrowUp className="w-4 h-4 sm:w-5 sm:h-5 text-gray-600 group-hover:text-indigo-600 transition-colors" />
-                  <span className="font-medium text-gray-700 group-hover:text-indigo-600 transition-colors text-sm sm:text-base">
+                <button 
+                  onClick={() => handleUpvote(prediction._id)}
+                  disabled={prediction.votedUsers?.includes(user?._id)}
+                  className={`group flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-1.5 sm:py-2 rounded-lg sm:rounded-xl transition-all duration-200
+                    ${prediction.votedUsers?.includes(user?._id)
+                      ? 'bg-indigo-50 text-indigo-600 cursor-not-allowed'
+                      : 'bg-gray-50 hover:bg-gray-100'
+                    }`}
+                >
+                  <ArrowUp className={`w-4 h-4 sm:w-5 sm:h-5 ${
+                    prediction.votedUsers?.includes(user?._id)
+                      ? 'text-indigo-600'
+                      : 'text-gray-600 group-hover:text-indigo-600'
+                  } transition-colors`} />
+                  <span className={`font-medium ${
+                    prediction.votedUsers?.includes(user?._id)
+                      ? 'text-indigo-600'
+                      : 'text-gray-700 group-hover:text-indigo-600'
+                  } transition-colors text-sm sm:text-base`}>
                     Upvote • {prediction.upvotes}
                   </span>
                 </button>
@@ -165,6 +227,12 @@ const ExpertPredictions = () => {
           </div>
         ))}
       </div>
+
+      <AuthModal
+        isOpen={showAuthModal}
+        onClose={() => setShowAuthModal(false)}
+        onSuccess={() => setShowAuthModal(false)}
+      />
     </div>
   );
 };

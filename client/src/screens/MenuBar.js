@@ -2,13 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate} from 'react-router-dom';
 import { useParams } from "react-router-dom";
 
-import { 
-    Lightbulb, Star, FileText,
-    Users, MapPin, GitCompare, Trophy, BarChart2,
-    Swords, HomeIcon,
-    Brain,
-  } from 'lucide-react';
-  import { Plus, X, MessageSquare, MessagesSquare } from 'lucide-react';
+import {Lightbulb,Plus, X, MessageSquare, MessagesSquare, Star, Users, MapPin, GitCompare, Trophy, Swords, HomeIcon, Brain} from 'lucide-react';
   
   import AIFantasyTeam from "../dashboards/AIFantasyTeam";
   import Compare from "../dashboards/Compare";
@@ -17,9 +11,7 @@ import {
   import CommunityDiscussion from "../dashboards/CommunityDiscussion";
   import ExpertPredictions from "../dashboards/ExpertPredictions";
 import TeamH2H from '../dashboards/TeamH2H';
-import InDepthAnalysis from '../dashboards/InDepthAnalysis';
 import VenueStats from '../dashboards/VenueStats';
-import CheatSheet from '../dashboards/CheatSheet';
 import PlayerRatings from '../dashboards/PlayerRatings';
 import KeyInsights from '../dashboards/KeyInsights';
 import Navbar from '../components/Navbar';
@@ -172,54 +164,63 @@ const FloatingActionButton = ({ onActionSelect }) => {
       borderLeftWidth: '4px'
     } : {};
   
+    const colorSchemes = {
+      red: {
+        bg: 'bg-red-50/50',
+        iconColor: 'text-red-400',
+      },
+      yellow: {
+        bg: 'bg-amber-50/50',
+        iconColor: 'text-amber-400',
+      },
+      green: {
+        bg: 'bg-emerald-50/50',
+        iconColor: 'text-emerald-400',
+      },
+      blue: {
+        bg: 'bg-blue-50/50',
+        iconColor: 'text-blue-400',
+      },
+    };
+  
+    // Get color scheme based on borderColor prop
+    const getColorScheme = () => {
+      if (gradient) {
+        return {
+          bg: 'bg-red-50/50',
+          iconColor: 'text-red-400',
+        };
+      }
+      return colorSchemes[borderColor] || colorSchemes.blue;
+    };
+  
+    const { bg, iconColor } = getColorScheme();
+  
     return (
       <button
         onClick={onClick}
-        style={borderStyle}
-        className={`group w-full p-4 rounded-xl transition-all duration-300 hover:scale-[1.02]
+        className={`group w-full p-4 rounded-2xl transition-all duration-300
           relative overflow-hidden flex items-stretch
-          ${gradient 
-            ? 'bg-gradient-to-br from-indigo-500 to-indigo-700 text-white' 
-            : 'border-t border-r border-b border-gray-100 bg-white hover:bg-gray-50'}
+          ${bg} hover:bg-opacity-75
           ${className}`}
       >
-        {/* Background pattern */}
-        <div className="absolute inset-0 opacity-5">
-          <div className="absolute right-0 top-0 h-16 w-16 transform translate-x-6 -translate-y-6 
-            rotate-45 bg-gradient-to-r from-white to-transparent">
-          </div>
-        </div>
-        
         <div className="relative flex flex-row items-center gap-4 w-full">
           {/* Icon container */}
-          <div className={`w-12 h-12 rounded-lg p-2 flex-shrink-0
-            ${gradient 
-              ? 'bg-white/10 text-white' 
-              : 'bg-indigo-50/50 text-indigo-600 group-hover:bg-indigo-50'} 
-            transition-colors duration-300`}>
+          <div className={`w-10 h-10 flex-shrink-0 ${iconColor}`}>
             {icon}
           </div>
   
           {/* Text content */}
           <div className="flex flex-col flex-1 text-left">
-            <span className={`text-base font-medium 
-              ${gradient ? 'text-white' : 'text-gray-700'}`}>
+            <span className="text-base font-semibold text-gray-900">
               {title}
             </span>
             {subtitle && (
-              <span className={`text-xs mt-0.5 line-clamp-2
-                ${gradient ? 'text-white/80' : 'text-gray-500'}`}>
+              <span className="text-sm mt-0.5 text-gray-600">
                 {subtitle}
               </span>
             )}
           </div>
-        </div>
-        
-        {/* Hover effect */}
-        <div className={`absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300
-          ${gradient 
-            ? 'bg-gradient-to-b from-white/5 to-transparent' 
-            : 'bg-gradient-to-b from-indigo-50/5 to-transparent'}`}>
         </div>
       </button>
     );
@@ -318,12 +319,8 @@ const FloatingActionButton = ({ onActionSelect }) => {
           return <KeyInsights />;
         case 'PlayerRatings':
           return <PlayerRatings />;
-        case 'CheatSheet':
-          return <CheatSheet />;
         case 'VenueStats':
           return <VenueStats />;
-        case 'InDepthAnalysis':
-          return <InDepthAnalysis />;
         case 'TeamH2H':
           return <TeamH2H/>;
         
@@ -361,7 +358,7 @@ const FloatingActionButton = ({ onActionSelect }) => {
               {/* Main Features Section */}
           <div className="space-y-6">
             {/* Row 1 */}
-            <div className="grid md:grid-cols-3 gap-2">
+            <div className="grid md:grid-cols-2 gap-2">
               <MenuCard
                 title="Quick Key Insights"
                 subtitle= "Match-winning factors and key statistics at a glance"
@@ -374,13 +371,6 @@ const FloatingActionButton = ({ onActionSelect }) => {
                 subtitle= "Performance-based player ratings and form analysis"
                 icon={<Star className="w-full h-full" />}
                 onClick={() => handleNavigation('PlayerRatings')}
-                borderColor="yellow"
-              />
-              <MenuCard
-                title="CheatSheet"
-                subtitle= "Essential match facts and player stats for quick reference"
-                icon={<FileText className="w-full h-full" />}
-                onClick={() => handleNavigation('CheatSheet')}
                 borderColor="yellow"
               />
             </div>
@@ -411,7 +401,7 @@ const FloatingActionButton = ({ onActionSelect }) => {
             </div>
   
             {/* Row 3 */}
-            <div className="grid md:grid-cols-3 gap-2">
+            <div className="grid md:grid-cols-2 gap-2">
               <MenuCard
                 title="Team H2H"
                 subtitle= "Head-to-head records and historical performance"
@@ -424,13 +414,6 @@ const FloatingActionButton = ({ onActionSelect }) => {
                 subtitle= "Side-by-side comparison of players"
                 icon={<Swords className="w-full h-full" />}
                 onClick={() => handleNavigation('compare')}
-                borderColor="blue"
-              />
-              <MenuCard
-                title="In-Depth Analysis"
-                subtitle= "Comprehensive match and player statistics including phase-wise and opponent analysis"
-                icon={<BarChart2 className="w-full h-full" />}
-                onClick={() => handleNavigation('InDepthAnalysis')}
                 borderColor="blue"
               />
             </div>
@@ -480,7 +463,8 @@ const FloatingActionButton = ({ onActionSelect }) => {
                 setMobileContent(getMobileComponent(page));
               }} 
             />
-            <FloatingActionButton onActionSelect={handleFabAction} />
+            ///////////////////////////////////////////////////////////////
+            {/* <FloatingActionButton onActionSelect={handleFabAction} /> */}
           </>
         )}
       </div>

@@ -1,0 +1,73 @@
+{
+  "teams": [
+    {
+      "team": [
+        {
+          "name": "Devon Conway",
+          "role": "WK-Batsman",
+          "reason": "High form (63.50) and venue (33.00) scores, with a strong strike rate against both spin and pace",
+          "is_captain": true
+        },
+        {
+          "name": "Shubman Gill",
+          "role": "Batsman",
+          "reason": "High form (40.60) and venue (74.40) scores, with a strong strike rate against both spin and pace",
+          "is_vice_captain": true
+        },
+        {
+          "name": "Ruturaj Gaikwad",
+          "role": "Batsman",
+          "reason": "High form (55.00) and venue (81.50) scores, with a strong strike rate against both spin and pace"
+        },
+        {
+          "name": "Sai Sudharsan",
+          "role": "Batsman",
+          "reason": "High form (57.30) and venue (67.80) scores, with a strong strike rate against spin"
+        },
+        {
+          "name": "Ravindra Jadeja",
+          "role": "Bowling Allrounder",
+          "reason": "High form (42.78) and venue (35.50) scores, with a strong bowling average"
+        },
+        {
+          "name": "Sam Curran",
+          "role": "Bowling Allrounder",
+          "reason": "High form (58.33) and venue (5.00) scores, with a strong bowling average"
+        },
+        {
+          "name": "Kagiso Rabada",
+          "role": "Bowler",
+          "reason": "High form (29.00) and venue (46.00) scores, with a strong bowling average"
+        },
+        {
+          "name": "Shreyas Gopal",
+          "role": "Bowler",
+          "reason": "High form (46.10) and venue (0.00) scores, with a strong bowling average"
+        },
+        {
+          "name": "Mukesh Choudhary",
+          "role": "Bowler",
+          "reason": "High form (52.80) and venue (0.00) scores, with a strong bowling average"
+        },
+        {
+          "name": "Rashid Khan",
+          "role": "Bowling Allrounder",
+          "reason": "High form (31.90) and venue (50.40) scores, with a strong bowling average"
+        },
+        {
+          "name": "Jos Buttler",
+          "role": "WK-Batsman",
+          "reason": "High form (26.50) and venue (66.00) scores, with a strong strike rate against both spin and pace"
+        }
+      ]
+    }
+  ],
+  "strategies": {
+    "pace_spin_ratio": "3 pacers 2 spinners",
+    "batting_order": "Powerplay specialists",
+    "venue_adjustments": [
+      "Pace bowlers might have an advantage in the first innings",
+      "Spinners might be more effective in the second innings"
+    ]
+  }
+}

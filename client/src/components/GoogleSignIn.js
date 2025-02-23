@@ -43,6 +43,8 @@ const GoogleSignIn = ({ onSuccess }) => {
 
   const handleCredentialResponse = async (response) => {
     try {
+      console.log('Google response:', response); // Debug log
+
       const result = await fetch('http://localhost:5000/api/auth/google', {
         method: 'POST',
         headers: {
@@ -54,11 +56,20 @@ const GoogleSignIn = ({ onSuccess }) => {
       });
 
       const data = await result.json();
+      console.log('Server response:', data); // Debug log
       
       if (data.token) {
+        // Store token in localStorage first
         localStorage.setItem('token', data.token);
-        await login(data.token);
+        console.log('Token stored in localStorage:', localStorage.getItem('token')); // Debug log
+
+        // Then call login with user data and token
+        await login(data.user, data.token);
+        console.log('Login completed'); // Debug log
+        
         onSuccess?.();
+      } else {
+        console.error('No token received from server');
       }
     } catch (error) {
       console.error('Error during Google sign-in:', error);

@@ -14,6 +14,13 @@ module.exports = {
           '0%': { transform: 'translateY(10px)', opacity: '0' },
           '100%': { transform: 'translateY(0)', opacity: '1' },
         },
+        
+      },
+      backgroundImage: {
+        'stadium-pattern': "url('/image.png')",
+      },
+      fontFamily: {
+        cricket: ['"Montserrat"', 'sans-serif'],
       },
       animation: {
         'fade-in': 'fade-in 0.2s ease-out',

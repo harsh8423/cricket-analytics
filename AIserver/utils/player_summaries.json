@@ -1,0 +1,223 @@
+{
+  "265": {
+    "name": "MS Dhoni",
+    "role": "WK-Batsman",
+    "summary": "For MS Dhoni (WK-Batsman):\n1. Form: Recent (15.75) | Venue (8.50)\n2. Batting: 6 | 230.43\n3. opponent analysis data:\n   - Spin: SR diff (-72.69), Runs% (0.171), Wkts% diff (-0.0407)\n   - Pace: N/A\n   - Left Arm: SR diff (7.42), Runs% (0.329), Wkts% diff (-0.0131)\n   - Right Arm: N/A\n4. batting analysis data: \n   - Batting at 6, Dhoni averages a strike rate of 230.43."
+  },
+  "587": {
+    "name": "Ravindra Jadeja",
+    "role": "Bowling Allrounder",
+    "summary": "1. Form: Recent (42.78) | Venue (35.50)\n2. Batting: Position(s) [7] | SR N/A\n3. Bowling: Avg wickets 0.73 | Usual overs 4\n4. vs Spin/Pace: N/A | Runs% N/A"
+  },
+  "702": {
+    "name": "Ishant Sharma",
+    "role": "Bowler",
+    "summary": "1. Form: Recent (35.10) | Venue (55.00)\n2. Bowling: Usual overs (3, 4) | Balls/Wicket (12.88)\n3. opponent analysis data: N/A"
+  },
+  "1593": {
+    "name": "Ravichandran Ashwin",
+    "role": "Bowling Allrounder",
+    "summary": "1. Form: Recent (16.00) | Venue (14.00)\n2. Batting: Position(s) [6, 5] | SR N/A\n3. Bowling: Avg wickets 0.38 | Usual overs 4\n4. vs Pace: N/A | vs Spin: N/A"
+  },
+  "2258": {
+    "name": "Jos Buttler",
+    "role": "WK-Batsman",
+    "summary": "For Jos Buttler (WK-Batsman):\n1. Form: Recent (26.50) | Venue (66.00)\n2. Batting: 2 | 136.33\n3. \n   - vs Spin: 136.33 (SR) > 127.14 (avg SR)\n   - vs Pace: 136.33 (SR) > 129.17 (avg SR)\n4. Head-to-Head Analysis:\n   - vs Ravindra Jadeja: 1 wickets\n   - vs Nathan Ellis: 1 wickets\n   - vs Khaleel Ahmed: 0 wickets"
+  },
+  "8204": {
+    "name": "Vijay Shankar",
+    "role": "Batting Allrounder",
+    "summary": "1. Form: Recent (29.30) | Venue (37.75)\n2. Batting: Avg runs (18.93) | Position(s) (5)\n3. Bowling: Avg wickets (0.21) | Usual overs (1, 2)"
+  },
+  "9012": {
+    "name": "Rahul Tripathi",
+    "role": "Batsman",
+    "summary": "1. Form: Recent (20.50) | Venue (1.00)\n2. Batting: Position(s) [3] | SR (133.86)\n3. opponent analysis data:\n   - vs Ishant Sharma: 1 wickets\n   - vs Prasidh Krishna: 1 wickets\n4. batting analysis data with concise short summary:\n   - Spin vs Pace: SR diff (-4.75), Runs% vs Spin (0.449)\n   - Left vs Right Arm: SR diff (-22.49), Runs% vs Left (0.253)"
+  },
+  "9427": {
+    "name": "Deepak Hooda",
+    "role": "Batting Allrounder",
+    "summary": "1. Form: Recent (44.89) | Venue (11.00)\n2. Batting: Position(s) [3] | SR N/A\n3. Bowling: Avg wickets 0.30 | Usual overs [1, 3]\n4. vs Spin/Pace: N/A | Runs% N/A"
+  },
+  "9585": {
+    "name": "Kagiso Rabada",
+    "role": "Bowler",
+    "summary": "1. Form: Recent (29.00) | Venue (46.00)\n2. Bowling: Usual overs (4) | Balls/Wicket (18.43)\n3. opponent analysis data: N/A \n4. bowling analysis data: \n- Economy Rate: N/A \n- Strike Rate: N/A"
+  },
+  "9746": {
+    "name": "Shreyas Gopal",
+    "role": "Bowler",
+    "summary": "1. Form: Recent (46.10) | Venue (0.00)\n2. Bowling: Usual overs (4) | Balls/Wicket (12.00)\n3. opponent analysis data: N/A"
+  },
+  "9838": {
+    "name": "Devon Conway",
+    "role": "WK-Batsman",
+    "summary": "For Devon Conway (WK-Batsman):\n1. Form: Recent (63.50) | Venue (33.00)\n2. Batting: 2 | 138.21\n3. vs Spin: SR diff (4.25), Runs% (40.9)\n4. vs Pace: SR diff (33.43), Runs% (34.9)\n5. vs Left/Right Arm: SR diff (33.43), Runs% (34.9) / Runs% (34.9)"
+  },
+  "10226": {
+    "name": "Shahrukh Khan",
+    "role": "Batting Allrounder",
+    "summary": "1. Form: Recent (34.78) | Venue (85.00)\n2. Batting: Avg runs (21.10) | Position(s) (4)\n3. Bowling: Avg wickets (0.40) | Usual overs (1)\n4. vs Spin/Pace: N/A | Runs% (N/A)"
+  },
+  "10420": {
+    "name": "Sam Curran",
+    "role": "Bowling Allrounder",
+    "summary": "1. Form: Recent (58.33) | Venue (5.00)\n2. Batting: Position(s) 4 | N/A\n3. Bowling: Avg wickets 1.30 | Usual overs 4\n4. vs Pace: N/A | vs Spin: N/A"
+  },
+  "10551": {
+    "name": "Prasidh Krishna",
+    "role": "Bowler",
+    "summary": "1. Form: Recent (28.70) | Venue (53.00)\n2. Bowling: Usual overs (4) | Balls/Wicket (18.60)\n3. opponent analysis data: N/A\n4. bowling analysis data:\n   - Economy Rate: N/A\n   - Strike Rate: N/A\n   - Average Runs per Over: N/A\n   - Wickets per Match: N/A"
+  },
+  "10693": {
+    "name": "Glenn Phillips",
+    "role": "Batting Allrounder",
+    "summary": "1. Form: Recent (15.60) | Venue (0.00)\n2. Batting: Avg runs (7.80) | Position(s) (6)\n3. Bowling: Avg wickets (0.20) | Usual overs (1, 2)\n4. vs Spin/Pace: N/A"
+  },
+  "10738": {
+    "name": "Rashid Khan",
+    "role": "Bowling Allrounder",
+    "summary": "1. Form: Recent (31.90) | Venue (50.40)\n2. Batting: Avg runs (6.53) | Position(s) (8)\n3. Bowling: Avg wickets (1.13) | Usual overs (4)"
+  },
+  "10808": {
+    "name": "Mohammed Siraj",
+    "role": "Bowler",
+    "summary": "1. Form: Recent (18.80) | Venue (9.50)\n2. Bowling: Usual overs (4) | Balls/Wicket (29.33)\n3. opponent analysis data: N/A"
+  },
+  "10945": {
+    "name": "Washington Sundar",
+    "role": "Bowling Allrounder",
+    "summary": "1. Form: Recent (24.20) | Venue (0.00)\n2. Batting: Avg runs (10.00) | Position(s) (7, 6)\n3. Bowling: Avg wickets (0.50) | Usual overs (4)"
+  },
+  "10952": {
+    "name": "Khaleel Ahmed",
+    "role": "Bowler",
+    "summary": "1. Form: Recent (31.40) | Venue (43.00)\n2. Bowling: 4 overs | 18.92 balls/wicket\n3. opponent analysis data: N/A"
+  },
+  "10954": {
+    "name": "Mahipal Lomror",
+    "role": "Batting Allrounder",
+    "summary": "1. Form: Recent (28.60) | Venue (8.00)\n2. Batting: Avg runs (16.73) | Position(s) (5)\n3. Bowling: Avg wickets (0.18) | Usual overs (2, 1)\n4. vs Pace/Spin: N/A"
+  },
+  "11177": {
+    "name": "Rachin Ravindra",
+    "role": "Batting Allrounder",
+    "summary": "1. Form: Recent (25.57) | Venue (0.00)\n2. Batting: Position(s) [2] | SR N/A\n3. Bowling: Avg wickets 0.00 | Usual overs [1]\n4. vs Spin/Pace: N/A | Runs% N/A"
+  },
+  "11195": {
+    "name": "Shivam Dube",
+    "role": "Batting Allrounder",
+    "summary": "1. Form: Recent (62.20) | Venue (21.00)\n2. Batting: Avg runs (36.45) | Position(s) (5)\n3. Bowling: Avg wickets (0.27) | Usual overs (4)\n4. vs Pace: N/A | vs Spin: N/A"
+  },
+  "11595": {
+    "name": "Ravisrinivasan Sai Kishore",
+    "role": "Bowling Allrounder",
+    "summary": "1. Form: Recent (44.11) | Venue (32.67)\n2. Batting: Avg runs (3.75) | Position(s) [8, 7]\n3. Bowling: Avg wickets (1.42) | Usual overs (4)\n4. Batting Position Consistency: 2 positions"
+  },
+  "11808": {
+    "name": "Shubman Gill",
+    "role": "Batsman",
+    "summary": "1. Form: \n   - Recent (Fantasy pts): 40.60\n   - Venue (Fantasy pts): 74.40\n\n2. Batting: \n   - Position(s): 2\n   - SR: 143.60\n\n3. opponent analysis data:\n   - vs Ravindra Jadeja: 0 wickets\n   - vs Sam Curran: 1 wickets\n   - vs Ravichandran Ashwin: 1 wickets\n   - vs Khaleel Ahmed: 1 wickets\n\n4. batting analysis data:\n   - SR diff (Spin/Pace): 5.16\n   - Runs% (Spin): 42.30%\n   - SR diff (Left/Right): -10.78\n   - Runs% (Left): 34.80%"
+  },
+  "11813": {
+    "name": "Ruturaj Gaikwad",
+    "role": "Batsman",
+    "summary": "1. Form: Recent (55.00) | Venue (81.50)\n2. Batting: Position(s) [2] | SR (161.96)\n3. opponent analysis data:\n   - vs Rashid Khan: 0 wickets\n   - vs Ravisrinivasan Sai Kishore: 0 wickets\n   - vs Kagiso Rabada: 1 wicket\n   - vs Mohammed Siraj: 1 wicket\n4. batting analysis data:\n   - SR diff vs Spin/Pace: 5.83\n   - Runs% vs Spin: 31.0%\n   - SR diff vs Left/Right Arm: -9.50\n   - Runs% vs Left Arm: 32.1%"
+  },
+  "12092": {
+    "name": "Kamlesh Nagarkoti",
+    "role": "Bowler",
+    "summary": "1. Form: Recent (34.50) | Venue (0.00)\n2. Bowling: Usual overs (4) | Balls/Wicket (17.40)\n3. opponent analysis data: N/A\n4. bowling analysis data:\n- Economy Rate: N/A\n- Strike Rate: N/A\n- Wickets per Match: N/A"
+  },
+  "12643": {
+    "name": "Kulwant Khejroliya",
+    "role": "Bowler",
+    "summary": "1. Form: Recent (22.00) | Venue (0.00)\n2. Bowling: Usual overs (3) | Balls/Wicket (14.00)"
+  },
+  "13135": {
+    "name": "Anuj Rawat",
+    "role": "WK-Batsman",
+    "summary": "For Anuj Rawat (WK-Batsman):\n1. Form: Recent (26.80) | Venue (0.00)\n2. Batting: Position(s) 5 | SR (129.88)\n3. opponent analysis data:\n   - Spin: SR diff (-45.50), Runs% (20.00), Wkts% diff (-0.36)\n   - Pace: N/A\n   - Left Arm: SR diff (-12.95), Runs% (24.20), Wkts% diff (-0.21)\n4. batting analysis data: \n   - Batting at position 5, Anuj Rawat has a high strike rate of 129.88, indicating aggressive batting."
+  },
+  "13184": {
+    "name": "Mukesh Choudhary",
+    "role": "Bowler",
+    "summary": "1. Form: Recent (52.80) | Venue (0.00)\n2. Bowling: Usual overs (4) | Balls/Wicket (10.80)\n3. opponent analysis data: N/A\n4. Bowling analysis data:\n   - Economy Rate: N/A\n   - Average Runs per Over: N/A\n   - Strike Rate: N/A"
+  },
+  "13320": {
+    "name": "Gerald Coetzee",
+    "role": "Bowler",
+    "summary": "1. Form: Recent (36.75) | Venue (52.00)\n2. Bowling: Usual overs (4) | Balls/Wicket (13.93)\n3. opponent analysis data: N/A"
+  },
+  "13748": {
+    "name": "Sherfane Rutherford",
+    "role": "Batting Allrounder",
+    "summary": "For Sherfane Rutherford (Batting Allrounder):\n\n1. Form: Recent (16.00) | Venue (0.00)\n2. Batting: Position(s) [5] | SR N/A\n3. Bowling: Avg wickets 0.00 | Usual overs N/A\n4. vs Spin/Pace: N/A | Runs% N/A"
+  },
+  "13866": {
+    "name": "Sai Sudharsan",
+    "role": "Batsman",
+    "summary": "For Batsmen:\n1. Form: Recent (57.30) | Venue (67.80)\n2. Batting: 3 | 150.22\n3. opponent analysis data:\n   - vs Ravindra Jadeja: 0 wickets\n   - vs Sam Curran: 1 wickets\n   - vs Matheesha Pathirana: 1 wickets\n4. batting analysis data with concise short summary:\n   - SR diff vs spin: 5.68\n   - Runs% vs spin: 40.4%\n   - SR diff vs left arm: -13.79\n   - Runs% vs left arm: 30.7%"
+  },
+  "14596": {
+    "name": "Manav Suthar",
+    "role": "Bowler",
+    "summary": "1. Form: Recent (25.43) | Venue (0.00)\n2. Bowling: Usual overs (2, 4) | Balls/Wicket (19.67)\n3. opponent analysis data: N/A\n4. bowling analysis data: \n- Economy rate: N/A\n- Strike rate: N/A\n- Average: N/A"
+  },
+  "14598": {
+    "name": "Anshul Kamboj",
+    "role": "Bowling Allrounder",
+    "summary": "1. Form: Recent (43.71) | Venue (0.00)\n2. Batting: Avg runs (3.71) | Position(s) (9)\n3. Bowling: Avg wickets (1.29) | Usual overs (4, 3)\n4. vs Pace: N/A | vs Spin: N/A"
+  },
+  "15452": {
+    "name": "Noor Ahmad",
+    "role": "Bowler",
+    "summary": "1. Form: Recent (20.20) | Venue (20.80)\n2. Bowling: Usual overs (4) | Balls/Wicket (27.33)\n3. opponent analysis data: N/A"
+  },
+  "15480": {
+    "name": "Nathan Ellis",
+    "role": "Bowler",
+    "summary": "1. Form: Recent (32.71) | Venue (0.00)\n2. Bowling: Usual overs (4) | Balls/Wicket (16.00)"
+  },
+  "15779": {
+    "name": "Kumar Kushagra",
+    "role": "WK-Batsman",
+    "summary": "For Kumar Kushagra (WK-Batsman):\n1. Form: Recent (26.00) | Venue (0.00)\n2. Batting: 4 | 148.00\n3. \n   - Spin: 0.00 | 0.000 | -1.0000\n   - Pace: N/A | N/A | N/A\n   - Left: 0.00 | 0.000 | -1.0000\n   - Right: N/A | N/A | N/A\n4. batting analysis data: \n   - Average: N/A\n   - Strike Rate: 148.00\n   - Consise short summary: N/A"
+  },
+  "16458": {
+    "name": "Matheesha Pathirana",
+    "role": "Bowler",
+    "summary": "1. Form: Recent (40.80) | Venue (46.00)\n2. Bowling: Usual overs (4) | Balls/Wicket (14.67)\n3. opponent analysis data: N/A\n4. bowling analysis data:\n   - Economy Rate: N/A\n   - Average Runs per Over: N/A\n   - Strike Rate: N/A"
+  },
+  "18637": {
+    "name": "Arshad Khan",
+    "role": "Bowling Allrounder",
+    "summary": "1. Form: Recent (38.60) | Venue (0.00)\n2. Batting: Avg runs (7.50) | Position(s) (7)\n3. Bowling: Avg wickets (1.20) | Usual overs (3)"
+  },
+  "19807": {
+    "name": "Gurjapneet Singh",
+    "role": "Bowler",
+    "summary": "1. Form: Recent (45.00) | Venue (0.00)\n2. Bowling: Usual overs (4) | Balls/wicket (11.33)\n3. opponent analysis data: N/A\n4. bowling analysis data:\n   - Economy Rate: N/A\n   - Strike Rate: N/A\n   - Average Runs per Over: N/A\n   - Wickets per Match: N/A"
+  },
+  "22141": {
+    "name": "Gurnoor Brar",
+    "role": "Bowler",
+    "summary": "1. Form: Recent (-4.00) | Venue (0.00)\n2. Bowling: 3 overs | Balls/Wicket: 0.00\n3. opponent analysis data: N/A"
+  },
+  "22571": {
+    "name": "Shaik Rasheed",
+    "role": "Batsman",
+    "summary": "1. Form: \n   - Recent: 9.50\n   - Venue: 0.00\n\n2. Batting: \n   - Position(s): 3\n   - SR: 90.32\n\n3. opponent analysis data:\n   - Spin: SR diff: 0.00, Runs%: 0.000\n   - Pace: SR diff: 0.00, Runs%: 0.000\n   - Left Arm: SR diff: 0.00, Runs%: 0.000\n   - Right Arm: SR diff: 0.00, Runs%: 0.000"
+  },
+  "22576": {
+    "name": "Nishant Sindhu",
+    "role": "Batting Allrounder",
+    "summary": "1. Form: Recent (50.43) | Venue (0.00)\n2. Batting: Avg runs (28.57) | Position(s) (4)\n3. Bowling: Avg wickets (0.43) | Usual overs (4)\n4. vs Spin/Pace: N/A | Runs% (N/A)"
+  },
+  "32835": {
+    "name": "Ramakrishna Ghosh",
+    "role": "Batting Allrounder",
+    "summary": "1. Form: Recent (5.00) | Venue (0.00)\n2. Batting: Avg runs (6.25) | Position(s) (9)\n3. Bowling: Avg wickets (0.00) | Usual overs (2)\n4. vs Spin/Pace: N/A | Runs% (N/A)"
+  },
+  "venue_analysis": "**Venue Analysis**\n\nThe provided venue statistics reveal some interesting patterns and trends that could impact match outcomes.\n\n1. **Bowling Split**: The overall bowling split at this venue is slightly biased towards pace bowlers (57%), with spinners accounting for 43% of the total overs bowled. However, this bias is more pronounced in the first innings (54% pace vs 46% spin) and less pronounced in the second innings (60% pace vs 40% spin). This suggests that pace bowlers might have an advantage in the first innings, while spinners might be more effective in the second innings.\n\n2. **First Innings Scores**: The average first innings score at this venue is 184.4, indicating that teams batting first have a significant advantage. This could be due to the fact that pace bowlers are more effective in the first innings, making it challenging for the opposing team to chase down a large total.\n\n3. **Second Innings Scores**: The average second innings score is lower (168.0) compared to the first innings, suggesting that teams batting second might face some challenges. This could be due to the fact that spinners are more effective in the second innings, making it harder for the opposing team to score quickly.\n\n4. **Wickets**: The average number of wickets taken in both first and second innings is 6.0, indicating that the pitch is not particularly conducive to high-scoring matches. This could be due to the fact that both pace and spin bowlers are effective at this venue.\n\n5. **Chasing Success Rate**: The chasing success rate at this venue is relatively low (40.0%), indicating that teams batting second face significant challenges. This could be due to the fact that the pitch is not particularly conducive to high-scoring matches, making it harder for the opposing team to chase down a large total.\n\n**Match Outcome Implications**\n\nBased on these patterns and trends, here are some implications for match outcomes:\n\n* Teams batting first might have an advantage due to the fact that pace bowlers are more effective in the first innings.\n* Teams batting second might face significant challenges due to the fact that spinners are more effective in the second innings and the chasing success rate is relatively low.\n* The pitch is not particularly conducive to high-scoring matches, making it harder for teams to chase down large totals.\n* Teams that can adapt to the conditions and use their bowlers effectively might have an advantage over their opponents.\n\nOverall, these patterns and trends suggest that teams batting first might have an advantage at this venue, while teams batting second might face significant challenges. However, the outcome of the match ultimately depends on various factors, including the teams' strengths, weaknesses, and strategies."
+}

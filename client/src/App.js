@@ -9,6 +9,10 @@ import Admin from './admin/Admin';
 import AddMatch from './admin/AddMatch';
 import AddPrediction from './admin/AddPrediction';
 import { AuthProvider } from './contexts/AuthContext';
+import SavedTeams from './pages/SavedTeams';
+import DiscussionDetail from './pages/DiscussionDetail';
+import UnauthorizedPage from './pages/UnauthorizedPage';
+import { AdminRoute } from './components/ProtectedRoute';
 
 function App() {
     return (
@@ -17,11 +21,29 @@ function App() {
                 <Router>
                     <Routes>
                         <Route path="/" element={<HomePage />} />
-                        <Route path="/admin" element={<Admin />} />
-                        <Route path="/admin/add-match" element={<AddMatch />} />
-                        <Route path="/admin/add-prediction" element={<AddPrediction />} />
+                        <Route
+                            path="/admin/*"
+                            element={
+                                <AdminRoute>
+                                    <Admin />
+                                </AdminRoute>
+                            }
+                        />
+                        <Route path="/admin/add-match" element={
+                            <AdminRoute>
+                                <AddMatch />
+                            </AdminRoute>
+                        } />
+                        <Route path="/admin/add-prediction" element={
+                            <AdminRoute>
+                                <AddPrediction />
+                            </AdminRoute>
+                        } />
                         <Route path="/menubar/:teamname/:matchId" element={<MenuBar />} />
                         <Route path="/Dashboard/:teamname/:activePage" element={<MatchAnalytics />} />
+                        <Route path="/saved-teams/:teamname" element={<SavedTeams />} />
+                        <Route path="/discussions/:id" element={<DiscussionDetail />} />
+                        <Route path="/unauthorized" element={<UnauthorizedPage />} />
                     </Routes>
                 </Router>
             </TimeProvider>

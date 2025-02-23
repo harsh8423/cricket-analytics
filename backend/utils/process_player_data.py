@@ -90,6 +90,7 @@ def categorize_players_by_role(player_data):
                         if match_id:
                             combined_matches[match_id]['batting'] = {
                                 'runs': match.get('runs', 0),
+                                'stats_type': match.get('stats_type'),
                                 'balls': match.get('balls', 0),
                                 'strike_rate': match.get('strike_rate', 0),
                                 'fantasy_points': match.get('fantasy_points', 0),
@@ -108,6 +109,7 @@ def categorize_players_by_role(player_data):
                                 'runs': match.get('runs', 0),
                                 'wickets': match.get('wickets', 0),
                                 'economy': match.get('economy', 0),
+                                'stats_type': match.get('stats_type'),
                                 'fantasy_points': match.get('fantasy_points', 0)
                             }
             
