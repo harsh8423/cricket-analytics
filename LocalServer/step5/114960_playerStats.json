@@ -1,0 +1,755 @@
+{
+  "1413": {
+    "player_id": "1413",
+    "name": "Virat Kohli",
+    "role": "Batsman",
+    "team_name": "Royal Challengers Bengaluru",
+    "batting_style": "Right Handed Bat",
+    "bowling_style": "Right-arm medium",
+    "recent_form": 66.0,
+    "venue_form": 24.666666666666668,
+    "batting_positions": [
+      1
+    ],
+    "avg_sr": 145.36082474226802,
+    "opponent_analysis": {
+      "Moeen Ali": 1,
+      "Sunil Narine": 1,
+      "Andre Russell": 1,
+      "Mayank Markande": 1,
+      "Harshit Rana": 1
+    },
+    "batting_analysis": {
+      "spin_vs_pace": {
+        "strike_rate_diff": -23.75,
+        "runs_proportion": 0.376,
+        "wicket_rate_diff": -0.0091
+      },
+      "left_vs_right": {
+        "strike_rate_diff": -5.93,
+        "runs_proportion": 0.409,
+        "wicket_rate_diff": -0.0018
+      }
+    }
+  },
+  "1447": {
+    "player_id": "1447",
+    "name": "Ajinkya Rahane",
+    "role": "Batsman",
+    "team_name": "Kolkata Knight Riders",
+    "batting_style": "Right Handed Bat",
+    "bowling_style": "Right-arm medium",
+    "recent_form": 69.55555555555556,
+    "venue_form": 101.0,
+    "batting_positions": [
+      2
+    ],
+    "avg_sr": 170.66246056782336,
+    "opponent_analysis": {
+      "Krunal Pandya": 1
+    },
+    "batting_analysis": {
+      "spin_vs_pace": {
+        "strike_rate_diff": -28.33,
+        "runs_proportion": 0.365,
+        "wicket_rate_diff": 0.0166
+      },
+      "left_vs_right": {
+        "strike_rate_diff": -16.44,
+        "runs_proportion": 0.359,
+        "wicket_rate_diff": 0.002
+      }
+    }
+  },
+  "1726": {
+    "player_id": "1726",
+    "name": "Bhuvneshwar Kumar",
+    "role": "Bowler",
+    "team_name": "Royal Challengers Bengaluru",
+    "batting_style": "Right Handed Bat",
+    "bowling_style": "Right-arm fast-medium",
+    "recent_form": 32.3,
+    "venue_form": 15.5,
+    "usual_overs": [
+      4
+    ],
+    "balls_per_wicket": 19.083333333333332,
+    "opponent_analysis": {}
+  },
+  "1836": {
+    "player_id": "1836",
+    "name": "Manish Pandey",
+    "role": "Batsman",
+    "team_name": "Kolkata Knight Riders",
+    "batting_style": "Right Handed Bat",
+    "bowling_style": "Right-arm medium",
+    "recent_form": 25.77777777777778,
+    "venue_form": 0,
+    "batting_positions": [
+      1
+    ],
+    "avg_sr": 138.0952380952381,
+    "opponent_analysis": {
+      "Romario Shepherd": 1
+    },
+    "batting_analysis": {
+      "spin_vs_pace": {
+        "strike_rate_diff": 6.01,
+        "runs_proportion": 0.546,
+        "wicket_rate_diff": -0.0239
+      },
+      "left_vs_right": {
+        "strike_rate_diff": 10.42,
+        "runs_proportion": 0.285,
+        "wicket_rate_diff": 0.0177
+      }
+    }
+  },
+  "2276": {
+    "player_id": "2276",
+    "name": "Sunil Narine",
+    "role": "Bowling Allrounder",
+    "team_name": "Kolkata Knight Riders",
+    "batting_style": "Left Handed Bat",
+    "bowling_style": "Right-arm offbreak",
+    "recent_form": 0,
+    "venue_form": 0,
+    "batting_positions": [],
+    "usual_overs": [],
+    "avg_runs": 0,
+    "avg_wickets": 0
+  },
+  "6258": {
+    "player_id": "6258",
+    "name": "Josh Hazlewood",
+    "role": "Bowler",
+    "team_name": "Royal Challengers Bengaluru",
+    "batting_style": "Left Handed Bat",
+    "bowling_style": "Right-arm fast-medium",
+    "recent_form": 33.7,
+    "venue_form": 77.0,
+    "usual_overs": [
+      4
+    ],
+    "balls_per_wicket": 15.1875,
+    "opponent_analysis": {}
+  },
+  "6692": {
+    "player_id": "6692",
+    "name": "Moeen Ali",
+    "role": "Batting Allrounder",
+    "team_name": "Kolkata Knight Riders",
+    "batting_style": "Left Handed Bat",
+    "bowling_style": "Right-arm offbreak",
+    "recent_form": 0,
+    "venue_form": 0,
+    "batting_positions": [],
+    "usual_overs": [],
+    "avg_runs": 0,
+    "avg_wickets": 0
+  },
+  "7736": {
+    "player_id": "7736",
+    "name": "Andre Russell",
+    "role": "Bowling Allrounder",
+    "team_name": "Kolkata Knight Riders",
+    "batting_style": "Right Handed Bat",
+    "bowling_style": "Right-arm fast",
+    "recent_form": 0,
+    "venue_form": 0,
+    "batting_positions": [],
+    "usual_overs": [],
+    "avg_runs": 0,
+    "avg_wickets": 0
+  },
+  "8520": {
+    "player_id": "8520",
+    "name": "Quinton de Kock",
+    "role": "WK-Batsman",
+    "team_name": "Kolkata Knight Riders",
+    "batting_style": "Left Handed Bat",
+    "bowling_style": "",
+    "recent_form": 34.3,
+    "venue_form": 17.333333333333332,
+    "batting_positions": [
+      1
+    ],
+    "avg_sr": 128.33333333333334,
+    "opponent_analysis": {
+      "Josh Hazlewood": 1,
+      "Yash Dayal": 1
+    },
+    "batting_analysis": {
+      "spin_vs_pace": {
+        "strike_rate_diff": -0.72,
+        "runs_proportion": 0.294,
+        "wicket_rate_diff": 0.0039
+      },
+      "left_vs_right": {
+        "strike_rate_diff": -12.63,
+        "runs_proportion": 0.278,
+        "wicket_rate_diff": 0.0036
+      }
+    }
+  },
+  "10045": {
+    "player_id": "10045",
+    "name": "Liam Livingstone",
+    "role": "Batting Allrounder",
+    "team_name": "Royal Challengers Bengaluru",
+    "batting_style": "Right Handed Bat",
+    "bowling_style": "Right-arm legbreak",
+    "recent_form": 0,
+    "venue_form": 0,
+    "batting_positions": [],
+    "usual_overs": [],
+    "avg_runs": 0,
+    "avg_wickets": 0
+  },
+  "10214": {
+    "player_id": "10214",
+    "name": "Jitesh Sharma",
+    "role": "WK-Batsman",
+    "team_name": "Royal Challengers Bengaluru",
+    "batting_style": "Right Handed Bat",
+    "bowling_style": "",
+    "recent_form": 26.333333333333332,
+    "venue_form": 25.0,
+    "batting_positions": [
+      7
+    ],
+    "avg_sr": 168.29268292682926
+  },
+  "10238": {
+    "player_id": "10238",
+    "name": "Swapnil Singh",
+    "role": "Bowling Allrounder",
+    "team_name": "Royal Challengers Bengaluru",
+    "batting_style": "Right Handed Bat",
+    "bowling_style": "Left-arm orthodox",
+    "recent_form": 0,
+    "venue_form": 0,
+    "batting_positions": [],
+    "usual_overs": [],
+    "avg_runs": 0,
+    "avg_wickets": 0
+  },
+  "10479": {
+    "player_id": "10479",
+    "name": "Philip Salt",
+    "role": "WK-Batsman",
+    "team_name": "Royal Challengers Bengaluru",
+    "batting_style": "Right Handed Bat",
+    "bowling_style": "Right-arm offbreak",
+    "recent_form": 53.4,
+    "venue_form": 77.0,
+    "batting_positions": [
+      1
+    ],
+    "avg_sr": 176.06382978723406,
+    "opponent_analysis": {
+      "Anukul Roy": 1,
+      "Mayank Markande": 2,
+      "Anrich Nortje": 1
+    },
+    "batting_analysis": {
+      "spin_vs_pace": {
+        "strike_rate_diff": -11.77,
+        "runs_proportion": 0.287,
+        "wicket_rate_diff": 0.0068
+      },
+      "left_vs_right": {
+        "strike_rate_diff": -10.37,
+        "runs_proportion": 0.388,
+        "wicket_rate_diff": -0.0385
+      }
+    }
+  },
+  "10636": {
+    "player_id": "10636",
+    "name": "Rajat Patidar",
+    "role": "Batsman",
+    "team_name": "Royal Challengers Bengaluru",
+    "batting_style": "Right Handed Bat",
+    "bowling_style": "Right-arm offbreak",
+    "recent_form": 66.88888888888889,
+    "venue_form": 119.5,
+    "batting_positions": [
+      4
+    ],
+    "avg_sr": 192.83387622149837,
+    "opponent_analysis": {
+      "Andre Russell": 2
+    },
+    "batting_analysis": {
+      "spin_vs_pace": {
+        "strike_rate_diff": 43.94,
+        "runs_proportion": 0.543,
+        "wicket_rate_diff": -0.0195
+      },
+      "left_vs_right": {
+        "strike_rate_diff": -50.09,
+        "runs_proportion": 0.213,
+        "wicket_rate_diff": 0.0174
+      }
+    }
+  },
+  "10896": {
+    "player_id": "10896",
+    "name": "Rinku Singh",
+    "role": "Batsman",
+    "team_name": "Kolkata Knight Riders",
+    "batting_style": "Left Handed Bat",
+    "bowling_style": "Right-arm offbreak",
+    "recent_form": 41.44444444444444,
+    "venue_form": 53.8,
+    "batting_positions": [
+      5
+    ],
+    "avg_sr": 153.05466237942122,
+    "batting_analysis": {
+      "spin_vs_pace": {
+        "strike_rate_diff": -48.11,
+        "runs_proportion": 0.259,
+        "wicket_rate_diff": -0.0025
+      },
+      "left_vs_right": {
+        "strike_rate_diff": 8.04,
+        "runs_proportion": 0.259,
+        "wicket_rate_diff": 0.0412
+      }
+    }
+  },
+  "10917": {
+    "player_id": "10917",
+    "name": "Venkatesh Iyer",
+    "role": "Batting Allrounder",
+    "team_name": "Kolkata Knight Riders",
+    "batting_style": "Left Handed Bat",
+    "bowling_style": "Right-arm medium",
+    "recent_form": 0,
+    "venue_form": 0,
+    "batting_positions": [],
+    "usual_overs": [],
+    "avg_runs": 0,
+    "avg_wickets": 0
+  },
+  "11311": {
+    "player_id": "11311",
+    "name": "Krunal Pandya",
+    "role": "Batting Allrounder",
+    "team_name": "Royal Challengers Bengaluru",
+    "batting_style": "Left Handed Bat",
+    "bowling_style": "Left-arm orthodox",
+    "recent_form": 0,
+    "venue_form": 0,
+    "batting_positions": [],
+    "usual_overs": [],
+    "avg_runs": 0,
+    "avg_wickets": 0
+  },
+  "11427": {
+    "player_id": "11427",
+    "name": "Anrich Nortje",
+    "role": "Bowler",
+    "team_name": "Kolkata Knight Riders",
+    "batting_style": "Right Handed Bat",
+    "bowling_style": "Right-arm fast",
+    "recent_form": 27.0,
+    "venue_form": 0,
+    "usual_overs": [
+      4
+    ],
+    "balls_per_wicket": 19,
+    "opponent_analysis": {}
+  },
+  "11445": {
+    "player_id": "11445",
+    "name": "Rovman Powell",
+    "role": "Batsman",
+    "team_name": "Kolkata Knight Riders",
+    "batting_style": "Right Handed Bat",
+    "bowling_style": "Right-arm fast-medium",
+    "recent_form": 16.857142857142858,
+    "venue_form": 39.0,
+    "batting_positions": [
+      6
+    ],
+    "avg_sr": 143.75,
+    "batting_analysis": {
+      "spin_vs_pace": {
+        "strike_rate_diff": -44.05,
+        "runs_proportion": 0.386,
+        "wicket_rate_diff": -0.0007
+      },
+      "left_vs_right": {
+        "strike_rate_diff": 34.5,
+        "runs_proportion": 0.172,
+        "wicket_rate_diff": 0.0569
+      }
+    }
+  },
+  "12337": {
+    "player_id": "12337",
+    "name": "Ramandeep Singh ",
+    "role": "Batting Allrounder",
+    "team_name": "Kolkata Knight Riders",
+    "batting_style": "Right Handed Bat",
+    "bowling_style": "Right-arm medium",
+    "recent_form": 0,
+    "venue_form": 0,
+    "batting_positions": [],
+    "usual_overs": [],
+    "avg_runs": 0,
+    "avg_wickets": 0
+  },
+  "12344": {
+    "player_id": "12344",
+    "name": "Anukul Roy",
+    "role": "Batting Allrounder",
+    "team_name": "Kolkata Knight Riders",
+    "batting_style": "Left Handed Bat",
+    "bowling_style": "Left-arm orthodox",
+    "recent_form": 0,
+    "venue_form": 0,
+    "batting_positions": [],
+    "usual_overs": [],
+    "avg_runs": 0,
+    "avg_wickets": 0
+  },
+  "12627": {
+    "player_id": "12627",
+    "name": "Mayank Markande",
+    "role": "Bowler",
+    "team_name": "Kolkata Knight Riders",
+    "batting_style": "Right Handed Bat",
+    "bowling_style": "Right-arm legbreak",
+    "recent_form": 14.9,
+    "venue_form": 51.0,
+    "usual_overs": [
+      3,
+      2
+    ],
+    "balls_per_wicket": 19.636363636363637,
+    "opponent_analysis": {}
+  },
+  "12926": {
+    "player_id": "12926",
+    "name": "Varun Chakaravarthy",
+    "role": "Bowler",
+    "team_name": "Kolkata Knight Riders",
+    "batting_style": "Right Handed Bat",
+    "bowling_style": "Right-arm legbreak",
+    "recent_form": 30.2,
+    "venue_form": 47.4,
+    "usual_overs": [
+      4
+    ],
+    "balls_per_wicket": 15.619047619047619,
+    "opponent_analysis": {}
+  },
+  "13088": {
+    "player_id": "13088",
+    "name": "Devdutt Padikkal",
+    "role": "Batsman",
+    "team_name": "Royal Challengers Bengaluru",
+    "batting_style": "Left Handed Bat",
+    "bowling_style": "Right-arm offbreak",
+    "recent_form": 22.4,
+    "venue_form": 36.0,
+    "batting_positions": [
+      3
+    ],
+    "avg_sr": 134.93150684931507,
+    "opponent_analysis": {
+      "Moeen Ali": 1,
+      "Sunil Narine": 1,
+      "Anrich Nortje": 1,
+      "Umran Malik": 1
+    },
+    "batting_analysis": {
+      "spin_vs_pace": {
+        "strike_rate_diff": 3.55,
+        "runs_proportion": 0.349,
+        "wicket_rate_diff": 0.0164
+      },
+      "left_vs_right": {
+        "strike_rate_diff": 12.32,
+        "runs_proportion": 0.296,
+        "wicket_rate_diff": 0.0074
+      }
+    }
+  },
+  "13143": {
+    "player_id": "13143",
+    "name": "Spencer Johnson",
+    "role": "Bowler",
+    "team_name": "Kolkata Knight Riders",
+    "batting_style": "Left Handed Bat",
+    "bowling_style": "Left-arm fast",
+    "recent_form": 18.0,
+    "venue_form": 0,
+    "usual_overs": [
+      4
+    ],
+    "balls_per_wicket": 24,
+    "opponent_analysis": {}
+  },
+  "13169": {
+    "player_id": "13169",
+    "name": "Tim David",
+    "role": "Batsman",
+    "team_name": "Royal Challengers Bengaluru",
+    "batting_style": "Right Handed Bat",
+    "bowling_style": "Right-arm offbreak",
+    "recent_form": 27.77777777777778,
+    "venue_form": 0,
+    "batting_positions": [
+      6
+    ],
+    "avg_sr": 161.4035087719298,
+    "batting_analysis": {
+      "spin_vs_pace": {
+        "strike_rate_diff": -77.12,
+        "runs_proportion": 0.13,
+        "wicket_rate_diff": 0.0085
+      },
+      "left_vs_right": {
+        "strike_rate_diff": 22.15,
+        "runs_proportion": 0.309,
+        "wicket_rate_diff": -0.0051
+      }
+    }
+  },
+  "13213": {
+    "player_id": "13213",
+    "name": "Rahmanullah Gurbaz",
+    "role": "WK-Batsman",
+    "team_name": "Kolkata Knight Riders",
+    "batting_style": "Right Handed Bat",
+    "bowling_style": "",
+    "recent_form": 26.7,
+    "venue_form": 25.6,
+    "batting_positions": [
+      2
+    ],
+    "avg_sr": 127.08333333333333,
+    "opponent_analysis": {
+      "Bhuvneshwar Kumar": 1
+    },
+    "batting_analysis": {
+      "spin_vs_pace": {
+        "strike_rate_diff": 22.75,
+        "runs_proportion": 0.314,
+        "wicket_rate_diff": 0.0131
+      },
+      "left_vs_right": {
+        "strike_rate_diff": -16.49,
+        "runs_proportion": 0.327,
+        "wicket_rate_diff": -0.0046
+      }
+    }
+  },
+  "13646": {
+    "player_id": "13646",
+    "name": "Romario Shepherd",
+    "role": "Bowling Allrounder",
+    "team_name": "Royal Challengers Bengaluru",
+    "batting_style": "Right Handed Bat",
+    "bowling_style": "Right-arm fast-medium",
+    "recent_form": 0,
+    "venue_form": 0,
+    "batting_positions": [],
+    "usual_overs": [],
+    "avg_runs": 0,
+    "avg_wickets": 0
+  },
+  "13962": {
+    "player_id": "13962",
+    "name": "Manoj Bhandage",
+    "role": "Batting Allrounder",
+    "team_name": "Royal Challengers Bengaluru",
+    "batting_style": "Left Handed Bat",
+    "bowling_style": "Right-arm fast-medium",
+    "recent_form": 0,
+    "venue_form": 0,
+    "batting_positions": [],
+    "usual_overs": [],
+    "avg_runs": 0,
+    "avg_wickets": 0
+  },
+  "14172": {
+    "player_id": "14172",
+    "name": "Yash Dayal",
+    "role": "Bowler",
+    "team_name": "Royal Challengers Bengaluru",
+    "batting_style": "Right Handed Bat",
+    "bowling_style": "Left-arm fast-medium",
+    "recent_form": 18.6,
+    "venue_form": 32.5,
+    "usual_overs": [
+      4
+    ],
+    "balls_per_wicket": 25.636363636363637,
+    "opponent_analysis": {}
+  },
+  "14274": {
+    "player_id": "14274",
+    "name": "Rasikh Dar Salam",
+    "role": "Bowler",
+    "team_name": "Royal Challengers Bengaluru",
+    "batting_style": "Right Handed Bat",
+    "bowling_style": "Right-arm fast-medium",
+    "recent_form": 28.3,
+    "venue_form": 0,
+    "usual_overs": [
+      4
+    ],
+    "balls_per_wicket": 18,
+    "opponent_analysis": {}
+  },
+  "15861": {
+    "player_id": "15861",
+    "name": "Vaibhav Arora",
+    "role": "Bowler",
+    "team_name": "Kolkata Knight Riders",
+    "batting_style": "Right Handed Bat",
+    "bowling_style": "Right-arm fast-medium",
+    "recent_form": 27.7,
+    "venue_form": 23.0,
+    "usual_overs": [
+      4
+    ],
+    "balls_per_wicket": 18.428571428571427,
+    "opponent_analysis": {}
+  },
+  "18509": {
+    "player_id": "18509",
+    "name": "Nuwan Thushara",
+    "role": "Bowler",
+    "team_name": "Royal Challengers Bengaluru",
+    "batting_style": "Right Handed Bat",
+    "bowling_style": "Right-arm fast-medium",
+    "recent_form": -6.0,
+    "venue_form": 0,
+    "usual_overs": [
+      4
+    ],
+    "balls_per_wicket": 0,
+    "opponent_analysis": {}
+  },
+  "19027": {
+    "player_id": "19027",
+    "name": "Umran Malik",
+    "role": "Bowler",
+    "team_name": "Kolkata Knight Riders",
+    "batting_style": "Right Handed Bat",
+    "bowling_style": "Right-arm fast",
+    "recent_form": 21.1,
+    "venue_form": 19.0,
+    "usual_overs": [
+      3,
+      2
+    ],
+    "balls_per_wicket": 16.3,
+    "opponent_analysis": {}
+  },
+  "22566": {
+    "player_id": "22566",
+    "name": "Angkrish Raghuvanshi",
+    "role": "Batsman",
+    "team_name": "Kolkata Knight Riders",
+    "batting_style": "Right Handed Bat",
+    "bowling_style": "Right-arm offbreak",
+    "recent_form": 30.555555555555557,
+    "venue_form": 18.333333333333332,
+    "batting_positions": [
+      3
+    ],
+    "avg_sr": 147.5609756097561,
+    "opponent_analysis": {},
+    "batting_analysis": {
+      "spin_vs_pace": {
+        "strike_rate_diff": -25.55,
+        "runs_proportion": 0.228,
+        "wicket_rate_diff": -0.0019
+      },
+      "left_vs_right": {
+        "strike_rate_diff": -13.5,
+        "runs_proportion": 0.307,
+        "wicket_rate_diff": 0.0433
+      }
+    }
+  },
+  "24729": {
+    "player_id": "24729",
+    "name": "Harshit Rana",
+    "role": "Bowler",
+    "team_name": "Kolkata Knight Riders",
+    "batting_style": "Right Handed Bat",
+    "bowling_style": "Right-arm fast-medium",
+    "recent_form": 30.11111111111111,
+    "venue_form": 34.6,
+    "usual_overs": [
+      4
+    ],
+    "balls_per_wicket": 15.666666666666666,
+    "opponent_analysis": {}
+  },
+  "36487": {
+    "player_id": "36487",
+    "name": "Suyash Sharma",
+    "role": "Bowler",
+    "team_name": "Royal Challengers Bengaluru",
+    "batting_style": "Right Handed Bat",
+    "bowling_style": "Right-arm legbreak",
+    "recent_form": 17.7,
+    "venue_form": 16.0,
+    "usual_overs": [
+      4
+    ],
+    "balls_per_wicket": 33.111111111111114,
+    "opponent_analysis": {}
+  },
+  "36524": {
+    "player_id": "36524",
+    "name": "Mohit Rathee",
+    "role": "Bowling Allrounder",
+    "team_name": "Royal Challengers Bengaluru",
+    "batting_style": "Right Handed Bat",
+    "bowling_style": "Right-arm legbreak",
+    "recent_form": 0,
+    "venue_form": 0,
+    "batting_positions": [],
+    "usual_overs": [],
+    "avg_runs": 0,
+    "avg_wickets": 0
+  },
+  "52418": {
+    "player_id": "52418",
+    "name": "Swastik Chikara",
+    "role": "Batsman",
+    "team_name": "Royal Challengers Bengaluru",
+    "batting_style": "Right Handed Bat",
+    "bowling_style": "Right-arm offbreak",
+    "recent_form": 4.25,
+    "venue_form": 0,
+    "batting_positions": [
+      2
+    ],
+    "avg_sr": 57.692307692307686,
+    "opponent_analysis": {},
+    "batting_analysis": {
+      "spin_vs_pace": {
+        "strike_rate_diff": 0,
+        "runs_proportion": 0,
+        "wicket_rate_diff": 0
+      },
+      "left_vs_right": {
+        "strike_rate_diff": 0,
+        "runs_proportion": 0,
+        "wicket_rate_diff": 0
+      }
+    }
+  }
+}

@@ -158,7 +158,7 @@ export default function DiscussionDetail() {
 
   const fetchDiscussion = async () => {
     try {
-      const response = await axiosInstance.get(`http://localhost:8000/api/discussions/${id}`);
+      const response = await axiosInstance.get(`http://localhost:8000/api/discussions/detail/${id}`);
       setDiscussion(response.data);
     } catch (error) {
       console.error('Error fetching discussion:', error);
@@ -237,7 +237,7 @@ export default function DiscussionDetail() {
   }
 
   // Get only top-level replies
-  const topLevelReplies = discussion.replies.filter(reply => !reply.parentReply);
+  const topLevelReplies = discussion?.replies?.filter(reply => !reply.parentReply);
 
   return (
     <div className="max-w-3xl mx-auto px-4 py-6">
@@ -252,41 +252,44 @@ export default function DiscussionDetail() {
       <div className="bg-white rounded-xl shadow-sm p-6 mb-6">
         <div className="flex items-center gap-3 mb-4">
           <img 
-            src={discussion.author.picture} 
+            src={discussion?.author?.picture} 
             alt="" 
             className="w-10 h-10 rounded-full ring-2 ring-gray-100"
           />
           <div>
-            <div className="font-medium text-gray-900">{discussion.author.name}</div>
+            <div className="font-medium text-gray-900">{discussion?.author?.name}</div>
             <div className="text-sm text-gray-500">
-              {formatDistanceToNow(new Date(discussion.createdAt), { addSuffix: true })}
+              {discussion?.createdAt ? 
+                formatDistanceToNow(new Date(discussion.createdAt), { addSuffix: true }) 
+                : 'Date not available'
+              }
             </div>
           </div>
         </div>
 
-        <h1 className="text-2xl font-bold text-gray-900 mb-4">{discussion.title}</h1>
+        <h1 className="text-2xl font-bold text-gray-900 mb-4">{discussion?.title}</h1>
         
         <div className="prose prose-sm max-w-none mb-6">
-          {discussion.content}
+          {discussion?.content}
         </div>
 
         <div className="flex items-center gap-6 text-gray-500">
           <button 
             onClick={() => handleLike('discussion', null)}
             className={`flex items-center gap-2 ${
-              discussion.likes.includes(user?._id) ? 'text-red-500' : 'hover:text-red-500'
+              discussion?.likes?.includes(user?._id) ? 'text-red-500' : 'hover:text-red-500'
             }`}
           >
             <Heart 
               className="w-5 h-5" 
-              fill={discussion.likes.includes(user?._id) ? "currentColor" : "none"}
+              fill={discussion?.likes?.includes(user?._id) ? "currentColor" : "none"}
             />
-            <span>{discussion.likes.length}</span>
+            <span>{discussion?.likes?.length}</span>
           </button>
 
           <div className="flex items-center gap-2">
             <MessageSquare className="w-5 h-5" />
-            <span>{discussion.replies.length}</span>
+            <span>{discussion?.replies?.length}</span>
           </div>
 
           <button className="flex items-center gap-2 hover:text-blue-500">
@@ -329,7 +332,7 @@ export default function DiscussionDetail() {
 
       {/* Replies */}
       <div className="space-y-4">
-        {topLevelReplies.map(reply => (
+        {topLevelReplies?.map(reply => (
           <ReplyCard
             key={reply._id}
             reply={reply}
@@ -337,7 +340,7 @@ export default function DiscussionDetail() {
             onLike={(replyId) => handleLike('reply', replyId)}
             currentUser={user}
             depth={0}
-            allReplies={discussion.replies}
+            allReplies={discussion?.replies}
           />
         ))}
       </div>

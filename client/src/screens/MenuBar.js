@@ -242,7 +242,7 @@ const FloatingActionButton = ({ onActionSelect }) => {
       return () => window.removeEventListener('resize', checkScreenSize);
     }, []);
 
-    const { teamname } = useParams();
+    const { teamname, match_id } = useParams();
 
     const [team1_name, setteam1_name] = useState(null)
     const [team2_name, setteam2_name] = useState(null)
@@ -273,7 +273,7 @@ const FloatingActionButton = ({ onActionSelect }) => {
         // Update mobile content based on page
         setMobileContent(getMobileComponent(page));
       } else {
-        navigate(`/dashboard/${team1_name}vs${team2_name}/${page}`, { state: { activePage: page } });
+        navigate(`/dashboard/${match_id}/${team1_name}vs${team2_name}/${page}`, { state: { activePage: page } });
       }
     };
   

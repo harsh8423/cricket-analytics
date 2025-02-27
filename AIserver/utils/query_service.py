@@ -37,7 +37,7 @@ def search_similar_players(query: str, limit: int = 2) -> List[Dict]:
             "$vectorSearch": {
                 "index": "vector_index",
                 "limit": limit,
-                "numCandidates":10,
+                "numCandidates":50,
                 "path": "embedding",
                 "queryVector": query_embedding
             }

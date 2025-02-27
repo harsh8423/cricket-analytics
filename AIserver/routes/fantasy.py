@@ -10,15 +10,16 @@ def generate_team():
     current_user_id = get_jwt_identity()
     data = request.json
     query = data.get('query')
+    match_id = data.get('match_id')
     existing_team = data.get('existing_team')
     is_editing = data.get('is_editing', False)
     total_teams = data.get('total_teams', 1)
     
     # If editing a specific team in multiple teams, only generate one team
     if is_editing and existing_team:
-        result = handle_team_query(query, existing_team)
+        result = handle_team_query(query, match_id, existing_team)
     else:
         # For new teams, generate the requested number of teams
-        result = handle_team_query(query, None)
+        result = handle_team_query(query, match_id, None)
     
     return jsonify(result) 

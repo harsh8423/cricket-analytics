@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const expertPredictionSchema = new mongoose.Schema({
   matchId: {
-    type: String,
+    type: Number,
     required: true
   },
   content: {

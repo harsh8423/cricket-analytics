@@ -3,6 +3,7 @@ import { useNavigate, Link } from 'react-router-dom';
 import { ChevronRight, ChevronLeft, User, Menu } from 'lucide-react';
 import TopNews from '../components/TopNews';
 import axios from 'axios';
+import Navbar from '../components/Navbar';
 
 const bannerData = [
   {
@@ -67,35 +68,13 @@ const HomePage = () => {
 
   const handleMatchAction = (action) => {
     console.log(`Navigating to dashboard with action: ${action}`);
-    navigate(`/menubar/${action.team1_name}vs${action.team2_name}/${action.id}`);
+    navigate(`/menubar/${action.id}/${action.team1_name}vs${action.team2_name}`);
   };
 
   return (
     <div className="min-h-screen bg-white">
       {/* Responsive Navbar */}
-      <nav className="bg-white shadow-md">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-16">
-            <div className="flex items-center">
-              <Menu className="h-6 w-6 mr-2" />
-              <span className="font-bold text-lg sm:text-xl text-indigo-600">Cricket Analytics</span>
-            </div>
-            <div className="hidden md:flex space-x-8">
-              <a href="#" className="text-gray-700 hover:text-indigo-600">Home</a>
-              <a href="#" className="text-gray-700 hover:text-indigo-600">Features</a>
-              <a href="#" className="text-gray-700 hover:text-indigo-600">About</a>
-            </div>
-            <div className="flex items-center space-x-2 sm:space-x-4">
-              <button className="px-2 sm:px-4 py-2 text-sm rounded-md text-gray-700 hover:text-indigo-600">
-                Sign In
-              </button>
-              <button className="px-2 sm:px-4 py-2 text-sm bg-indigo-600 text-white rounded-md hover:bg-indigo-700">
-                Sign Up
-              </button>
-            </div>
-          </div>
-        </div>
-      </nav>
+      <Navbar/>
 
       {/* Responsive Banner Slider */}
       <div className="relative overflow-hidden bg-white mx-4 sm:mx-8 lg:mx-40 my-4">

@@ -36,14 +36,15 @@ router.post('/', verifyToken, async (req, res) => {
 });
 
 // Get all discussions (no auth required)
-router.get('/', async (req, res) => {
+router.get('/:match_id', async (req, res) => {
   try {
     const { tag } = req.query;
-    let query = {};
+    const { match_id } = req.params;
+    let query = {'match_id': match_id};
     
     // If tag is a reference type, filter by it
     if (['prediction', 'stats', 'question', 'ai_team'].includes(tag)) {
-      query = { 'reference.type': tag };
+      query = { 'reference.type': tag, 'match_id': match_id };
     }
 
     const discussions = await Discussion.find(query)
@@ -59,7 +60,7 @@ router.get('/', async (req, res) => {
 });
 
 // Get single discussion with replies
-router.get('/:id', async (req, res) => {
+router.get('/detail/:id', async (req, res) => {
   try {
     const discussion = await Discussion.findById(req.params.id)
       .populate('author', 'name picture')

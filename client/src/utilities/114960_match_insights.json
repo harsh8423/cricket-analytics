@@ -1,0 +1,827 @@
+{
+  "match_insights": {
+    "top_performers": {
+      "batsmen": [
+        {
+          "name": "Virat Kohli",
+          "runs": 500,
+          "strike_rate": 147.49,
+          "fantasy_points": 660
+        },
+        {
+          "name": "Ajinkya Rahane",
+          "runs": 470,
+          "strike_rate": 163.19,
+          "fantasy_points": 626
+        },
+        {
+          "name": "Rajat Patidar",
+          "runs": 428,
+          "strike_rate": 186.09,
+          "fantasy_points": 602
+        },
+        {
+          "name": "Philip Salt",
+          "runs": 386,
+          "strike_rate": 171.56,
+          "fantasy_points": 534
+        },
+        {
+          "name": "Sunil Narine",
+          "runs": 358,
+          "strike_rate": 182.65,
+          "fantasy_points": 503
+        },
+        {
+          "name": "Rinku Singh",
+          "runs": 282,
+          "strike_rate": 151.61,
+          "fantasy_points": 373
+        },
+        {
+          "name": "Quinton de Kock",
+          "runs": 264,
+          "strike_rate": 132.0,
+          "fantasy_points": 343
+        },
+        {
+          "name": "Liam Livingstone",
+          "runs": 241,
+          "strike_rate": 154.49,
+          "fantasy_points": 326
+        },
+        {
+          "name": "Andre Russell",
+          "runs": 220,
+          "strike_rate": 177.42,
+          "fantasy_points": 315
+        },
+        {
+          "name": "Venkatesh Iyer",
+          "runs": 227,
+          "strike_rate": 163.31,
+          "fantasy_points": 305
+        },
+        {
+          "name": "Angkrish Raghuvanshi",
+          "runs": 202,
+          "strike_rate": 148.53,
+          "fantasy_points": 275
+        },
+        {
+          "name": "Rahmanullah Gurbaz",
+          "runs": 205,
+          "strike_rate": 133.12,
+          "fantasy_points": 267
+        },
+        {
+          "name": "Tim David",
+          "runs": 184,
+          "strike_rate": 161.4,
+          "fantasy_points": 250
+        },
+        {
+          "name": "Jitesh Sharma",
+          "runs": 186,
+          "strike_rate": 177.14,
+          "fantasy_points": 237
+        },
+        {
+          "name": "Manish Pandey",
+          "runs": 174,
+          "strike_rate": 138.1,
+          "fantasy_points": 232
+        },
+        {
+          "name": "Devdutt Padikkal",
+          "runs": 169,
+          "strike_rate": 134.13,
+          "fantasy_points": 224
+        },
+        {
+          "name": "Anukul Roy",
+          "runs": 147,
+          "strike_rate": 156.38,
+          "fantasy_points": 196
+        },
+        {
+          "name": "Krunal Pandya",
+          "runs": 151,
+          "strike_rate": 121.77,
+          "fantasy_points": 186
+        },
+        {
+          "name": "Mohit Rathee",
+          "runs": 101,
+          "strike_rate": 140.28,
+          "fantasy_points": 137
+        },
+        {
+          "name": "Swapnil Singh",
+          "runs": 104,
+          "strike_rate": 138.67,
+          "fantasy_points": 132
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "Sunil Narine",
+          "wickets": 13,
+          "economy": 7.05,
+          "fantasy_points": 339
+        },
+        {
+          "name": "Josh Hazlewood",
+          "wickets": 13,
+          "economy": 8.73,
+          "fantasy_points": 337
+        },
+        {
+          "name": "Bhuvneshwar Kumar",
+          "wickets": 11,
+          "economy": 6.31,
+          "fantasy_points": 323
+        },
+        {
+          "name": "Varun Chakaravarthy",
+          "wickets": 12,
+          "economy": 8.67,
+          "fantasy_points": 302
+        },
+        {
+          "name": "Rasikh Dar Salam",
+          "wickets": 11,
+          "economy": 8.12,
+          "fantasy_points": 283
+        },
+        {
+          "name": "Vaibhav Arora",
+          "wickets": 11,
+          "economy": 7.76,
+          "fantasy_points": 277
+        },
+        {
+          "name": "Harshit Rana",
+          "wickets": 11,
+          "economy": 9.72,
+          "fantasy_points": 271
+        },
+        {
+          "name": "Anrich Nortje",
+          "wickets": 12,
+          "economy": 11.84,
+          "fantasy_points": 270
+        },
+        {
+          "name": "Anukul Roy",
+          "wickets": 8,
+          "economy": 7.12,
+          "fantasy_points": 252
+        },
+        {
+          "name": "Andre Russell",
+          "wickets": 10,
+          "economy": 10.99,
+          "fantasy_points": 242
+        },
+        {
+          "name": "Umran Malik",
+          "wickets": 9,
+          "economy": 10.52,
+          "fantasy_points": 211
+        },
+        {
+          "name": "Krunal Pandya",
+          "wickets": 6,
+          "economy": 6.88,
+          "fantasy_points": 190
+        },
+        {
+          "name": "Yash Dayal",
+          "wickets": 8,
+          "economy": 10.18,
+          "fantasy_points": 186
+        },
+        {
+          "name": "Manoj Bhandage",
+          "wickets": 7,
+          "economy": 7.55,
+          "fantasy_points": 185
+        },
+        {
+          "name": "Venkatesh Iyer",
+          "wickets": 7,
+          "economy": 8.84,
+          "fantasy_points": 179
+        },
+        {
+          "name": "Suyash Sharma",
+          "wickets": 7,
+          "economy": 8.02,
+          "fantasy_points": 177
+        },
+        {
+          "name": "Mayank Markande",
+          "wickets": 7,
+          "economy": 10.07,
+          "fantasy_points": 149
+        },
+        {
+          "name": "Ramandeep Singh ",
+          "wickets": 5,
+          "economy": 8.65,
+          "fantasy_points": 127
+        },
+        {
+          "name": "Swapnil Singh",
+          "wickets": 5,
+          "economy": 9.04,
+          "fantasy_points": 119
+        },
+        {
+          "name": "Mohit Rathee",
+          "wickets": 4,
+          "economy": 8.12,
+          "fantasy_points": 112
+        },
+        {
+          "name": "Liam Livingstone",
+          "wickets": 4,
+          "economy": 7.5,
+          "fantasy_points": 108
+        },
+        {
+          "name": "Spencer Johnson",
+          "wickets": 4,
+          "economy": 9.44,
+          "fantasy_points": 90
+        },
+        {
+          "name": "Romario Shepherd",
+          "wickets": 4,
+          "economy": 11.95,
+          "fantasy_points": 80
+        },
+        {
+          "name": "Moeen Ali",
+          "wickets": 3,
+          "economy": 7.82,
+          "fantasy_points": 79
+        }
+      ],
+      "all_rounders": [
+        {
+          "name": "Sunil Narine",
+          "runs": 358,
+          "wickets": 13,
+          "fantasy_points": 842
+        },
+        {
+          "name": "Andre Russell",
+          "runs": 220,
+          "wickets": 10,
+          "fantasy_points": 557
+        },
+        {
+          "name": "Venkatesh Iyer",
+          "runs": 227,
+          "wickets": 7,
+          "fantasy_points": 484
+        },
+        {
+          "name": "Anukul Roy",
+          "runs": 147,
+          "wickets": 8,
+          "fantasy_points": 448
+        },
+        {
+          "name": "Liam Livingstone",
+          "runs": 241,
+          "wickets": 4,
+          "fantasy_points": 434
+        },
+        {
+          "name": "Bhuvneshwar Kumar",
+          "runs": 51,
+          "wickets": 11,
+          "fantasy_points": 389
+        },
+        {
+          "name": "Krunal Pandya",
+          "runs": 151,
+          "wickets": 6,
+          "fantasy_points": 376
+        },
+        {
+          "name": "Ramandeep Singh ",
+          "runs": 94,
+          "wickets": 5,
+          "fantasy_points": 253
+        },
+        {
+          "name": "Swapnil Singh",
+          "runs": 104,
+          "wickets": 5,
+          "fantasy_points": 251
+        },
+        {
+          "name": "Mohit Rathee",
+          "runs": 101,
+          "wickets": 4,
+          "fantasy_points": 249
+        },
+        {
+          "name": "Romario Shepherd",
+          "runs": 99,
+          "wickets": 4,
+          "fantasy_points": 220
+        },
+        {
+          "name": "Moeen Ali",
+          "runs": 70,
+          "wickets": 3,
+          "fantasy_points": 171
+        }
+      ],
+      "form_players": [
+        {
+          "name": "Sunil Narine",
+          "fantasy_points": 842,
+          "role": "Bowling Allrounder"
+        },
+        {
+          "name": "Virat Kohli",
+          "fantasy_points": 660,
+          "role": "Batsman"
+        },
+        {
+          "name": "Ajinkya Rahane",
+          "fantasy_points": 626,
+          "role": "Batsman"
+        },
+        {
+          "name": "Rajat Patidar",
+          "fantasy_points": 602,
+          "role": "Batsman"
+        },
+        {
+          "name": "Andre Russell",
+          "fantasy_points": 557,
+          "role": "Bowling Allrounder"
+        },
+        {
+          "name": "Philip Salt",
+          "fantasy_points": 534,
+          "role": "WK-Batsman"
+        },
+        {
+          "name": "Venkatesh Iyer",
+          "fantasy_points": 484,
+          "role": "Batting Allrounder"
+        },
+        {
+          "name": "Anukul Roy",
+          "fantasy_points": 448,
+          "role": "Batting Allrounder"
+        },
+        {
+          "name": "Liam Livingstone",
+          "fantasy_points": 434,
+          "role": "Batting Allrounder"
+        },
+        {
+          "name": "Bhuvneshwar Kumar",
+          "fantasy_points": 389,
+          "role": "Bowler"
+        },
+        {
+          "name": "Krunal Pandya",
+          "fantasy_points": 376,
+          "role": "Batting Allrounder"
+        },
+        {
+          "name": "Rinku Singh",
+          "fantasy_points": 373,
+          "role": "Batsman"
+        },
+        {
+          "name": "Varun Chakaravarthy",
+          "fantasy_points": 355,
+          "role": "Bowler"
+        },
+        {
+          "name": "Josh Hazlewood",
+          "fantasy_points": 347,
+          "role": "Bowler"
+        },
+        {
+          "name": "Quinton de Kock",
+          "fantasy_points": 343,
+          "role": "WK-Batsman"
+        },
+        {
+          "name": "Rasikh Dar Salam",
+          "fantasy_points": 302,
+          "role": "Bowler"
+        },
+        {
+          "name": "Vaibhav Arora",
+          "fantasy_points": 293,
+          "role": "Bowler"
+        },
+        {
+          "name": "Anrich Nortje",
+          "fantasy_points": 276,
+          "role": "Bowler"
+        },
+        {
+          "name": "Angkrish Raghuvanshi",
+          "fantasy_points": 275,
+          "role": "Batsman"
+        },
+        {
+          "name": "Harshit Rana",
+          "fantasy_points": 271,
+          "role": "Bowler"
+        },
+        {
+          "name": "Rahmanullah Gurbaz",
+          "fantasy_points": 267,
+          "role": "WK-Batsman"
+        },
+        {
+          "name": "Ramandeep Singh ",
+          "fantasy_points": 253,
+          "role": "Batting Allrounder"
+        },
+        {
+          "name": "Swapnil Singh",
+          "fantasy_points": 251,
+          "role": "Bowling Allrounder"
+        },
+        {
+          "name": "Tim David",
+          "fantasy_points": 250,
+          "role": "Batsman"
+        },
+        {
+          "name": "Mohit Rathee",
+          "fantasy_points": 249,
+          "role": "Bowling Allrounder"
+        },
+        {
+          "name": "Jitesh Sharma",
+          "fantasy_points": 237,
+          "role": "WK-Batsman"
+        },
+        {
+          "name": "Umran Malik",
+          "fantasy_points": 235,
+          "role": "Bowler"
+        },
+        {
+          "name": "Manish Pandey",
+          "fantasy_points": 232,
+          "role": "Batsman"
+        },
+        {
+          "name": "Manoj Bhandage",
+          "fantasy_points": 229,
+          "role": "Batting Allrounder"
+        },
+        {
+          "name": "Devdutt Padikkal",
+          "fantasy_points": 224,
+          "role": "Batsman"
+        },
+        {
+          "name": "Romario Shepherd",
+          "fantasy_points": 220,
+          "role": "Bowling Allrounder"
+        },
+        {
+          "name": "Yash Dayal",
+          "fantasy_points": 186,
+          "role": "Bowler"
+        },
+        {
+          "name": "Suyash Sharma",
+          "fantasy_points": 183,
+          "role": "Bowler"
+        },
+        {
+          "name": "Moeen Ali",
+          "fantasy_points": 171,
+          "role": "Batting Allrounder"
+        },
+        {
+          "name": "Mayank Markande",
+          "fantasy_points": 151,
+          "role": "Bowler"
+        },
+        {
+          "name": "Rovman Powell",
+          "fantasy_points": 143,
+          "role": "Batsman"
+        }
+      ]
+    },
+    "venue_analysis": {
+      "pitch_behavior": {
+        "pace_bowling": {
+          "innings": "Overall",
+          "bowler_type": "pace",
+          "total_runs": 3223,
+          "total_balls": 1950,
+          "total_wickets": 81,
+          "runs_per_wicket": 39.79,
+          "balls_per_wicket": 24.07,
+          "economy_rate": 9.92,
+          "strike_rate": 165.28
+        },
+        "spin_bowling": {
+          "innings": "Overall",
+          "bowler_type": "spin",
+          "total_runs": 2168,
+          "total_balls": 1480,
+          "total_wickets": 53,
+          "runs_per_wicket": 40.91,
+          "balls_per_wicket": 27.92,
+          "economy_rate": 8.79,
+          "strike_rate": 146.49
+        }
+      },
+      "toss_analysis": {
+        "batting_first_wins": 4,
+        "bowling_first_wins": 6,
+        "preferred_choice": "Bowling"
+      },
+      "scoring_patterns": {
+        "first_innings": {},
+        "second_innings": {}
+      }
+    },
+    "phase_specialists": {
+      "powerplay": {
+        "batsmen": [
+          {
+            "name": "Sunil Narine",
+            "strike_rate": 176.69,
+            "runs": 235
+          },
+          {
+            "name": "Philip Salt",
+            "strike_rate": 165.79,
+            "runs": 315
+          },
+          {
+            "name": "Angkrish Raghuvanshi",
+            "strike_rate": 164.86,
+            "runs": 61
+          },
+          {
+            "name": "Moeen Ali",
+            "strike_rate": 155.81,
+            "runs": 134
+          },
+          {
+            "name": "Liam Livingstone",
+            "strike_rate": 153.85,
+            "runs": 100
+          }
+        ],
+        "bowlers": [
+          {
+            "name": "Bhuvneshwar Kumar",
+            "economy": 6.97,
+            "wickets": 11
+          },
+          {
+            "name": "Josh Hazlewood",
+            "economy": 7.12,
+            "wickets": 7
+          }
+        ]
+      },
+      "middle": {
+        "batsmen": [
+          {
+            "name": "Philip Salt",
+            "strike_rate": 179.53,
+            "runs": 228
+          },
+          {
+            "name": "Angkrish Raghuvanshi",
+            "strike_rate": 178.38,
+            "runs": 66
+          },
+          {
+            "name": "Rajat Patidar",
+            "strike_rate": 170.8,
+            "runs": 427
+          },
+          {
+            "name": "Sunil Narine",
+            "strike_rate": 165.81,
+            "runs": 194
+          },
+          {
+            "name": "Liam Livingstone",
+            "strike_rate": 151.42,
+            "runs": 533
+          },
+          {
+            "name": "Andre Russell",
+            "strike_rate": 150.52,
+            "runs": 435
+          }
+        ],
+        "bowlers": [
+          {
+            "name": "Sunil Narine",
+            "economy": 6.46,
+            "wickets": 19
+          },
+          {
+            "name": "Krunal Pandya",
+            "economy": 6.48,
+            "wickets": 13
+          },
+          {
+            "name": "Josh Hazlewood",
+            "economy": 6.72,
+            "wickets": 4
+          },
+          {
+            "name": "Anukul Roy",
+            "economy": 7.11,
+            "wickets": 3
+          },
+          {
+            "name": "Moeen Ali",
+            "economy": 7.68,
+            "wickets": 10
+          }
+        ]
+      },
+      "death": {
+        "batsmen": [
+          {
+            "name": "Quinton de Kock",
+            "strike_rate": 261.9,
+            "runs": 55
+          },
+          {
+            "name": "Rovman Powell",
+            "strike_rate": 240.98,
+            "runs": 147
+          },
+          {
+            "name": "Romario Shepherd",
+            "strike_rate": 232.56,
+            "runs": 100
+          },
+          {
+            "name": "Ramandeep Singh ",
+            "strike_rate": 231.03,
+            "runs": 67
+          },
+          {
+            "name": "Liam Livingstone",
+            "strike_rate": 217,
+            "runs": 217
+          },
+          {
+            "name": "Tim David",
+            "strike_rate": 192.63,
+            "runs": 418
+          },
+          {
+            "name": "Rinku Singh",
+            "strike_rate": 191.32,
+            "runs": 419
+          },
+          {
+            "name": "Jitesh Sharma",
+            "strike_rate": 182.02,
+            "runs": 162
+          },
+          {
+            "name": "Andre Russell",
+            "strike_rate": 175.66,
+            "runs": 332
+          },
+          {
+            "name": "Moeen Ali",
+            "strike_rate": 170.59,
+            "runs": 87
+          },
+          {
+            "name": "Virat Kohli",
+            "strike_rate": 169.01,
+            "runs": 120
+          },
+          {
+            "name": "Devdutt Padikkal",
+            "strike_rate": 154.55,
+            "runs": 68
+          }
+        ],
+        "bowlers": [
+          {
+            "name": "Krunal Pandya",
+            "economy": 6.48,
+            "wickets": 3
+          },
+          {
+            "name": "Sunil Narine",
+            "economy": 7.78,
+            "wickets": 3
+          }
+        ]
+      }
+    },
+    "captain_recommendations": {
+      "captain_picks": [
+        {
+          "name": "Sunil Narine",
+          "role": "Bowling Allrounder",
+          "score": 437.4,
+          "form_rating": "Excellent",
+          "batting_points": 503,
+          "bowling_points": 339
+        },
+        {
+          "name": "Virat Kohli",
+          "role": "Batsman",
+          "score": 396.0,
+          "form_rating": "Excellent",
+          "batting_points": 660,
+          "bowling_points": 0
+        },
+        {
+          "name": "Ajinkya Rahane",
+          "role": "Batsman",
+          "score": 375.59999999999997,
+          "form_rating": "Excellent",
+          "batting_points": 626,
+          "bowling_points": 0
+        }
+      ],
+      "differential_picks": [
+        {
+          "name": "Rajat Patidar",
+          "role": "Batsman",
+          "score": 361.2,
+          "form_rating": "Excellent",
+          "batting_points": 602,
+          "bowling_points": 0
+        },
+        {
+          "name": "Philip Salt",
+          "role": "WK-Batsman",
+          "score": 320.4,
+          "form_rating": "Excellent",
+          "batting_points": 534,
+          "bowling_points": 0
+        },
+        {
+          "name": "Andre Russell",
+          "role": "Bowling Allrounder",
+          "score": 285.8,
+          "form_rating": "Excellent",
+          "batting_points": 315,
+          "bowling_points": 242
+        },
+        {
+          "name": "Venkatesh Iyer",
+          "role": "Batting Allrounder",
+          "score": 254.60000000000002,
+          "form_rating": "Excellent",
+          "batting_points": 305,
+          "bowling_points": 179
+        },
+        {
+          "name": "Liam Livingstone",
+          "role": "Batting Allrounder",
+          "score": 238.8,
+          "form_rating": "Excellent",
+          "batting_points": 326,
+          "bowling_points": 108
+        }
+      ]
+    },
+    "head_to_head": [
+      "Kolkata Knight Riders won by 1 runs",
+      "Kolkata Knight Riders won by 7 wickets"
+    ],
+    "generated_at": "2025-02-26 23:46:08"
+  },
+  "fantasy_tips": [
+    "Pick players batting in top 4 for this high-scoring venue",
+    "Prefer Bowling first specialists based on toss analysis",
+    "Include at least 2 all-rounders in your team",
+    "Pick death over specialists for maximum points",
+    "Consider pitch behavior while selecting spinner vs pacer ratio"
+  ]
+}

@@ -13,7 +13,7 @@ const AddMatch = () => {
       country: "",
     },
     matchStartTimestamp: "",
-    status: "Upcoming"
+    state: "Upcoming"
   });
 
   const handleInputChange = (e) => {
@@ -46,7 +46,7 @@ const AddMatch = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:5000/api/matches", formData);
+      await axios.post("http://localhost:8000/api/matches", formData);
       alert("Match added successfully!");
     } catch (err) {
       console.error("Error adding match:", err);

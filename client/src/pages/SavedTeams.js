@@ -15,15 +15,15 @@ export default function SavedTeams() {
   const { isAuthenticated, token } = useAuth();
   const navigate = useNavigate();
 
-  const { teamname } = useParams();
+  const { teamname, match_id } = useParams();
 
   const [team1_name, setteam1_name] = useState(null)
   const [team2_name, setteam2_name] = useState(null)
-
+  
   useEffect(() => {
     const extractTeams = (teamInfo) => {
       if (!teamInfo) return { team1: "", team2: "" };
-
+      
       const teams = teamInfo.split("vs");
       const team1 = teams[0]?.replace(/%20/g, " ").trim();
       const team2 = teams[1]?.replace(/%20/g, " ").trim();
@@ -33,9 +33,9 @@ export default function SavedTeams() {
       console.log("team1_name",team1_name, "team2_name", team2_name);
     };
     extractTeams(teamname);
+    
+  }, [teamname])
   
-}, [teamname])
-
   useEffect(() => {
     if (isAuthenticated) {
       fetchTeams();
@@ -43,10 +43,11 @@ export default function SavedTeams() {
       setShowAuthModal(true);
     }
   }, [isAuthenticated]);
-
+  
   const fetchTeams = async () => {
+    console.log("match_id", match_id);
     try {
-      const response = await axios.get('http://localhost:8000/api/ai-teams/user-teams', {
+      const response = await axios.get(`http://localhost:8000/api/ai-teams/user-teams/${match_id}`, {
         headers: {
           Authorization: `Bearer ${token}`
         }

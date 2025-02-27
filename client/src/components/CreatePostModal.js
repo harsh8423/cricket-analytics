@@ -1,11 +1,33 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { X } from 'lucide-react';
+import { useParams } from 'react-router-dom';
 
-const CreatePostModal = ({ isOpen, onClose, match, onSubmit }) => {
+const CreatePostModal = ({ isOpen, onClose, onSubmit }) => {
   const [title, setTitle] = useState('');
   const [content, setContent] = useState('');
   const [referenceType, setReferenceType] = useState('prediction');
   const [referenceContent, setReferenceContent] = useState('');
+
+  const { teamname, match_id } = useParams();
+
+  const [team1_name, setteam1_name] = useState(null)
+  const [team2_name, setteam2_name] = useState(null)
+  
+  useEffect(() => {
+    const extractTeams = (teamInfo) => {
+      if (!teamInfo) return { team1: "", team2: "" };
+      
+      const teams = teamInfo.split("vs");
+      const team1 = teams[0]?.replace(/%20/g, " ").trim();
+      const team2 = teams[1]?.replace(/%20/g, " ").trim();
+      
+      setteam1_name(team1);
+      setteam2_name(team2);
+      console.log("team1_name",team1_name, "team2_name", team2_name);
+    };
+    extractTeams(teamname);
+    
+  }, [teamname])
 
   const referenceTypes = [
     { id: 'prediction', label: 'Prediction', color: 'blue' },
@@ -29,8 +51,9 @@ const CreatePostModal = ({ isOpen, onClose, match, onSubmit }) => {
       content,
       reference: {
         type: referenceType,
-        content: referenceContent || `${match?.team1} vs ${match?.team2}`
+        content: referenceContent || `${team1_name} vs ${team2_name}`
       },
+      match_id: match_id
     };
 
     await onSubmit(postData);

@@ -39,9 +39,9 @@ function App() {
                                 <AddPrediction />
                             </AdminRoute>
                         } />
-                        <Route path="/menubar/:teamname/:matchId" element={<MenuBar />} />
-                        <Route path="/Dashboard/:teamname/:activePage" element={<MatchAnalytics />} />
-                        <Route path="/saved-teams/:teamname" element={<SavedTeams />} />
+                        <Route path="/menubar/:match_id/:teamname" element={<MenuBar />} />
+                        <Route path="/Dashboard/:match_id/:teamname/:activePage" element={<MatchAnalytics />} />
+                        <Route path="/saved-teams/:match_id/:teamname" element={<SavedTeams />} />
                         <Route path="/discussions/:id" element={<DiscussionDetail />} />
                         <Route path="/unauthorized" element={<UnauthorizedPage />} />
                     </Routes>

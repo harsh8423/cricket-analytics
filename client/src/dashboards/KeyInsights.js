@@ -1,9 +1,66 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Trophy, Target, MapPin, Zap, Users, Star, Cloud, List, TrendingUp } from 'lucide-react';
-import data from './match_insights.json';
+// import data from './${match_id}_match_insights.json';
+import {useParams} from 'react-router-dom';
+
 
 const FantasyInsights = () => {
 
+  const { match_id } = useParams(); // Get match_id from URL params
+  const [data, setData] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    const loadMatchData = async () => {
+      try {
+        setLoading(true);
+        // Dynamic import based on match_id
+        const matchData = await import(`../utilities/${match_id}_match_insights.json`);
+        setData(matchData.default);
+        setLoading(false);
+      } catch (err) {
+        console.error('Error loading match data:', err);
+        setError('Failed to load match data');
+        setLoading(false);
+      }
+    };
+
+    loadMatchData();
+  }, [match_id]);
+
+  // Loading state
+  if (loading) {
+    return (
+      <div className="flex items-center justify-center min-h-screen">
+        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-indigo-600"></div>
+      </div>
+    );
+  }
+
+  // Error state
+  if (error) {
+    return (
+      <div className="flex items-center justify-center min-h-screen">
+        <div className="text-red-600 text-center">
+          <h2 className="text-xl font-semibold mb-2">Error</h2>
+          <p>{error}</p>
+        </div>
+      </div>
+    );
+  }
+
+  // No data state
+  if (!data) {
+    return (
+      <div className="flex items-center justify-center min-h-screen">
+        <div className="text-gray-600 text-center">
+          <h2 className="text-xl font-semibold mb-2">No Data Available</h2>
+          <p>Match insights are not available for this match.</p>
+        </div>
+      </div>
+    );
+  }
 
   // Mock data for sections not in original JSON
   const weatherData = {

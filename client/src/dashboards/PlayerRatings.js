@@ -1,10 +1,32 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
+import { useParams } from 'react-router-dom';
 import { Users, ArrowUpDown } from 'lucide-react';
-const playerData = require('./playerWiseData');
 
 const PlayerAnalytics = () => {
+  const { match_id } = useParams();
   const [selectedRole, setSelectedRole] = useState('all');
   const [sortConfig, setSortConfig] = useState({ key: null, direction: 'desc' });
+  const [playerData, setPlayerData] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  // Dynamic data loading
+  useEffect(() => {
+    const loadPlayerData = async () => {
+      try {
+        setLoading(true);
+        const data = await import(`../utilities/${match_id}_playerWiseData.json`);
+        setPlayerData(data.default);
+        setLoading(false);
+      } catch (err) {
+        console.error('Error loading player data:', err);
+        setError('Failed to load player data');
+        setLoading(false);
+      }
+    };
+
+    loadPlayerData();
+  }, [match_id]);
 
   const roles = {
     all: 'All Players',
@@ -13,14 +35,16 @@ const PlayerAnalytics = () => {
     'Bowling Allrounder': 'All-rounders'
   };
 
+  // Moved useMemo hooks before conditional returns
   const processedData = useMemo(() => {
+    if (!playerData) return [];
+    
     return Object.values(playerData)
       .filter(player => selectedRole === 'all' || player.role === selectedRole)
       .map(player => {
         const totalFantasyPoints = (player.batting?.total_fantasy_points || 0) + 
                                  (player.bowling?.total_fantasy_points || 0);
         
-        // Calculate economy for bowlers
         const economy = player.bowling?.total_runs && player.bowling?.total_balls ? 
           (player.bowling.total_runs / (player.bowling.total_balls / 6)).toFixed(2) : 
           null;
@@ -32,21 +56,18 @@ const PlayerAnalytics = () => {
           team: player.team_name,
           battingStyle: player.batting_style,
           bowlingStyle: player.bowling_style,
-          // Batting stats
           totalRuns: player.batting?.total_runs || 0,
           averageRuns: player.batting?.average_runs?.toFixed(2) || 0,
           strikeRate: player.batting?.overall_strike_rate?.toFixed(2) || 0,
           battingFantasyPoints: player.batting?.total_fantasy_points || 0,
-          // Bowling stats
           totalWickets: player.bowling?.total_wickets || 0,
           economy: economy || 0,
           ballsPerWicket: player.bowling?.balls_per_wicket?.toFixed(2) || 0,
           bowlingFantasyPoints: player.bowling?.total_fantasy_points || 0,
-          // Combined stats
           totalFantasyPoints
         };
       });
-  }, [selectedRole]);
+  }, [selectedRole, playerData]);
 
   const sortedData = useMemo(() => {
     if (!sortConfig.key) return processedData;

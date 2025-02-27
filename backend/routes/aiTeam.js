@@ -36,9 +36,11 @@ router.post('/', verifyToken, async (req, res) => {
 });
 
 // Get user's teams
-router.get('/user-teams', verifyToken, async (req, res) => {
+router.get('/user-teams/:match_id', verifyToken, async (req, res) => {
+  const { match_id } = req.params;
+  console.log("match_id", match_id);
   try {
-    const teams = await AITeam.find({ user: req.user.sub })
+    const teams = await AITeam.find({ user: req.user.sub, match_id })
       .populate('match_id', 'team1 team2 date')
       .sort('-created_at');
     res.json(teams);

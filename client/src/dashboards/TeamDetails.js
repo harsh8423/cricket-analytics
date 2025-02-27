@@ -1,9 +1,8 @@
-import React,{useState} from 'react'
+import React, { useState, useEffect } from 'react';
 import TeamView from './TeamView';
 import { Users, Award, Check, X, Filter } from 'lucide-react';
 import TopNews from '../components/TopNews';
-const playerData = require("./playerWiseData.js");
-
+import { useParams } from 'react-router-dom';
 // Sample data for team performance
 const teamPerformanceData = {
   lastFiveMatches: [
@@ -265,15 +264,70 @@ const PlayersDetails = ({ players }) => {
   );
 };
 
-const TeamDetails = ({ teamname}) => {
-  const players = Object.values(playerData).filter(player => player.team_name === teamname);
-  console.log(players);
+const TeamDetails = ({teamname}) => {
+  const { match_id} = useParams();
+  const [playerData, setPlayerData] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    const loadPlayerData = async () => {
+      try {
+        setLoading(true);
+        const data = await import(`../utilities/${match_id}_playerWiseData.json`);
+        setPlayerData(data.default);
+        setLoading(false);
+      } catch (err) {
+        console.error('Error loading player data:', err);
+        setError('Failed to load player data');
+        setLoading(false);
+      }
+    };
+
+    loadPlayerData();
+  }, [match_id]);
+
+  // Loading state
+  if (loading) {
     return (
-      <div className="mx-auto"> {/*max-w-6xl */}
-        <HeadToHead/>
-        <PlayersDetails teamname={teamname} players={players}/>
-        <TopNews/>
+      <div className="flex items-center justify-center min-h-screen">
+        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-indigo-600"></div>
       </div>
     );
-  };
+  }
+
+  // Error state
+  if (error) {
+    return (
+      <div className="flex items-center justify-center min-h-screen">
+        <div className="text-red-600 text-center">
+          <h2 className="text-xl font-semibold mb-2">Error</h2>
+          <p>{error}</p>
+        </div>
+      </div>
+    );
+  }
+
+  // No data state
+  if (!playerData) {
+    return (
+      <div className="flex items-center justify-center min-h-screen">
+        <div className="text-gray-600 text-center">
+          <h2 className="text-xl font-semibold mb-2">No Data Available</h2>
+          <p>Team details are not available for this match.</p>
+        </div>
+      </div>
+    );
+  }
+
+  const players = Object.values(playerData).filter(player => player.team_name === teamname);
+
+  return (
+    <div className="mx-auto">
+      <HeadToHead />
+      <PlayersDetails teamname={teamname} players={players} />
+    </div>
+  );
+};
+
 export default TeamDetails;

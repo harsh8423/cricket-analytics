@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Search, ArrowUp, MessageCircle, Filter } from 'lucide-react';
 import { useAuth } from '../contexts/AuthContext';
 import AuthModal from '../components/AuthModal';
+import { useParams } from 'react-router-dom';
 
 const ExpertPredictions = () => {
   const [activeFilter, setActiveFilter] = useState('all');
@@ -12,12 +13,13 @@ const ExpertPredictions = () => {
   const [showAuthModal, setShowAuthModal] = useState(false);
   const { isAuthenticated, token, user } = useAuth();
 
+  const {match_id} = useParams();
   // Fetch predictions
   useEffect(() => {
     const fetchPredictions = async () => {
       try {
         setLoading(true);
-        const response = await fetch('http://localhost:8000/api/predictions/1'); // Using default matchId 1
+        const response = await fetch(`http://localhost:8000/api/predictions/${match_id}`); // Using default matchId 1
         if (!response.ok) throw new Error('Failed to fetch predictions');
         const data = await response.json();
         setPredictions(data);

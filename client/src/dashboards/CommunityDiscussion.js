@@ -6,8 +6,7 @@ import CreatePostModal from '../components/CreatePostModal';
 import { useNavigate } from 'react-router-dom';
 import { formatDistanceToNow } from 'date-fns';
 import axios from 'axios';
-import { debounce } from 'lodash';  // Fixed import statement
-
+import { useParams } from 'react-router-dom';
 
 const CommunityDiscussion = () => {
   const [selectedTag, setSelectedTag] = useState('latest');
@@ -21,6 +20,8 @@ const CommunityDiscussion = () => {
   const searchRef = useRef(null);
   const navigate = useNavigate();
   const { isAuthenticated, user, token, axiosInstance } = useAuth();
+
+  const {match_id} = useParams();
   
   const tags = [
     { id: 'latest', label: 'Latest', color: 'indigo' },
@@ -54,7 +55,7 @@ const CommunityDiscussion = () => {
   
   const fetchAllPosts = async () => {
     try {
-      const response = await axiosInstance.get('http://localhost:8000/api/discussions');
+      const response = await axiosInstance.get(`http://localhost:8000/api/discussions/${match_id}`);
       setAllPosts(response.data);
       setFilteredPosts(response.data);
       setLoading(false)
@@ -100,7 +101,7 @@ const CommunityDiscussion = () => {
     const fetchAndFilterPosts = async () => {
       try {
         setLoading(true);
-        const response = await axiosInstance.get('http://localhost:8000/api/discussions');
+        const response = await axiosInstance.get(`http://localhost:8000/api/discussions/${match_id}`);
         const allPosts = response.data;
 
         // Apply filtering based on selected tag
@@ -213,41 +214,13 @@ const CommunityDiscussion = () => {
     }
   };
   
-  let currentMatch={
-    team1:'CSK',
-    team2:'GT',
-    _id:123
-  }
-  
   const referenceTypeColors = {
     prediction: { bg: 'bg-blue-100', text: 'text-blue-700' },
     stats: { bg: 'bg-green-100', text: 'text-green-700' },
     question: { bg: 'bg-purple-100', text: 'text-purple-700' },
     ai_team: { bg: 'bg-orange-100', text: 'text-orange-700' }
   };
-  
-  const handleEditTeam = async (teamId) => {
-    try {
-      // Fetch the team details
-      const response = await axiosInstance.get(`http://localhost:8000/api/ai-teams/${teamId}`);
-      const team = response.data;
-      
-      // Extract team names from the reference content
-      const matchTeams = team.reference.content.split('vs').map(t => t.trim());
-      
-      // Navigate to fantasy page with edit mode and team data
-      navigate(`/dashboard/${matchTeams[0]}vs${matchTeams[1]}/fantasy`, {
-        state: { 
-          editMode: true,
-          teamId: teamId,
-          team: team
-        }
-      });
-    } catch (error) {
-      console.error('Error fetching team:', error);
-    }
-  };
-  
+ 
   return (
     <div className="min-h-screen bg-gray-100">
       <div className="max-w-2xl mx-auto px-4 py-6">
@@ -464,7 +437,6 @@ const CommunityDiscussion = () => {
             isOpen={showCreateModal}
             onClose={() => setShowCreateModal(false)}
             onSubmit={handleSubmitPost}
-            match={currentMatch}
           />
         )}
   

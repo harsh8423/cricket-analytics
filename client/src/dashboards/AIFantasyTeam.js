@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { FaUserCircle, FaSave, FaEdit, FaList, FaSearch, FaEye } from 'react-icons/fa';
+import { FaSave, FaEdit, FaList, FaSearch} from 'react-icons/fa';
 import { useAuth } from '../contexts/AuthContext';
 import AuthModal from '../components/AuthModal';
 import axios from 'axios';
@@ -87,7 +87,7 @@ const FantasyTeam = () => {
   const { isAuthenticated, token } = useAuth();
   const navigate = useNavigate();
   const location = useLocation();
-  const { teamname } = useParams();
+  const { teamname, match_id } = useParams();
 
   const [team1_name, setteam1_name] = useState(null)
   const [team2_name, setteam2_name] = useState(null)
@@ -107,12 +107,6 @@ const FantasyTeam = () => {
     extractTeams(teamname);
   
 }, [teamname])
-
-  let currentMatch={
-    team1:'CSK',
-    team2:'GT',
-    _id:123
-  }
 
   // Check if we're coming from saved teams or discussion edit
   useEffect(() => {
@@ -152,6 +146,7 @@ const FantasyTeam = () => {
         },
         body: JSON.stringify({
           query,
+          match_id,
           existing_team: isEditMode ? teamData.teams[currentTeamIndex].team : null,
           is_editing: isEditMode,
           total_teams: teamData?.teams?.length || 1
@@ -259,7 +254,7 @@ const FantasyTeam = () => {
       alert(editingTeamId ? 'Team updated successfully!' : 'Team saved successfully!');
       
       // Navigate back to saved teams
-      navigate(`/saved-teams/${team1_name}vs${team2_name}`);
+      navigate(`/saved-teams/${match_id}/${team1_name}vs${team2_name}`);
     } catch (error) {
       console.error('Error saving team:', error);
       alert(error.response?.data?.message || 'Failed to save team');
@@ -297,6 +292,7 @@ const FantasyTeam = () => {
         const dataToSave = {
           team: teamObj.team,
           strategies: teamData.strategies || {},
+          match_id: match_id
         };
 
         const response = await axios.post(
@@ -318,7 +314,7 @@ const FantasyTeam = () => {
       alert('All teams saved successfully!');
       
       // Navigate back to saved teams
-      navigate(`/saved-teams/${team1_name}vs${team2_name}`);
+      navigate(`/saved-teams/${match_id}/${team1_name}vs${team2_name}`);
     } catch (error) {
       console.error('Error saving teams:', error);
       alert(error.response?.data?.message || 'Failed to save teams');
@@ -408,7 +404,7 @@ const FantasyTeam = () => {
         <div className="fixed bottom-24 right-4 space-y-4">
           
           <button
-            onClick={() => navigate(`/saved-teams/${team1_name}vs${team2_name}`)}
+            onClick={() => navigate(`/saved-teams/${match_id}/${team1_name}vs${team2_name}`)}
             className="bg-blue-600 hover:bg-blue-700 text-white p-4 rounded-full shadow-lg"
             title="View Saved Teams"
           >

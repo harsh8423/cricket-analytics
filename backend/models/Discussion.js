@@ -39,9 +39,9 @@ const discussionSchema = new mongoose.Schema({
     required: true
   },
   match_id: {
-    type: mongoose.Schema.Types.ObjectId,
+    type: mongoose.Schema.Types.Number,
     ref: 'Match',
-    required: false
+    required: true
   },
   reference: {
     type: {

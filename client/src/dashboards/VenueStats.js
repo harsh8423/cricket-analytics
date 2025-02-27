@@ -1,13 +1,72 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { useParams } from 'react-router-dom';
 import { PieChart, BarChart, Bar, Pie, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 import { MapPin, Trophy, User } from 'lucide-react';
-const matchData = require("./processedData.js");
-const playerData = require("./playerWiseData.js");
 
-
-function VenueStats() {
+const VenueStats = () => {
+  const { match_id } = useParams();
   const [selectedInnings, setSelectedInnings] = useState("Overall");
-  
+  const [matchData, setMatchData] = useState(null);
+  const [playerData, setPlayerData] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    const loadData = async () => {
+      try {
+        setLoading(true);
+        // Dynamic imports based on match_id
+        const [matchDataModule, playerDataModule] = await Promise.all([
+          import(`../utilities/${match_id}_processedData.json`),
+          import(`../utilities/${match_id}_playerWiseData.json`)
+        ]);
+
+        setMatchData(matchDataModule.default);
+        setPlayerData(playerDataModule.default);
+        setLoading(false);
+      } catch (err) {
+        console.error('Error loading data:', err);
+        setError('Failed to load venue and player data');
+        setLoading(false);
+      }
+    };
+
+    loadData();
+  }, [match_id]);
+
+  // Loading state
+  if (loading) {
+    return (
+      <div className="flex items-center justify-center min-h-screen">
+        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-indigo-600"></div>
+      </div>
+    );
+  }
+
+  // Error state
+  if (error) {
+    return (
+      <div className="flex items-center justify-center min-h-screen">
+        <div className="text-red-600 text-center">
+          <h2 className="text-xl font-semibold mb-2">Error</h2>
+          <p>{error}</p>
+        </div>
+      </div>
+    );
+  }
+
+  // No data state
+  if (!matchData || !playerData) {
+    return (
+      <div className="flex items-center justify-center min-h-screen">
+        <div className="text-gray-600 text-center">
+          <h2 className="text-xl font-semibold mb-2">No Data Available</h2>
+          <p>Venue statistics are not available for this match.</p>
+        </div>
+      </div>
+    );
+  }
+
   // Calculate toss and match statistics
   const matchAnalysis = matchData.match_summary.venue_analysis.reduce((acc, match) => {
     acc.tossStats[match.toss_decision] = (acc.tossStats[match.toss_decision] || 0) + 1;
@@ -360,6 +419,6 @@ function VenueStats() {
       </div>
     </div>
   );
-}
+};
 
 export default VenueStats;

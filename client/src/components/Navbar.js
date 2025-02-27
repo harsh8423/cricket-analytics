@@ -1,71 +1,131 @@
 import React from 'react';
-import { User } from 'lucide-react';
+import { Link, useNavigate } from 'react-router-dom';
+import { useAuth } from '../contexts/AuthContext';
+import { 
+  User, 
+  Settings, 
+  LogOut, 
+  Home, 
+  Book, 
+  Phone, 
+  Star, 
+  Crown 
+} from 'lucide-react';
 
-const Navbar = ({ 
-  team1 = "CSK", 
-  team2 = "RCB", 
-  team1Full = "Chennai Super Kings",
-  team2Full = "Royal Challengers Bangalore",
-  matchTime = "19:30 IST" 
-}) => {
+const Navbar = () => {
+  const navigate = useNavigate();
+  const { isAuthenticated, logout, user } = useAuth();
+
+  const handleSignOut = () => {
+    logout();
+    navigate('/login');
+  };
+
   return (
-    <>
-      <nav className="fixed top-0 left-0 right-0 bg-gradient-to-r from-[#5851D8] to-[#4A45B2] shadow-lg z-50">
-        <div className="max-w-7xl mx-auto px-4">
-          {/* Desktop View */}
-          <div className="hidden md:flex items-center justify-between h-16">
-            {/* Team Names with Full Names */}
-            <div className="flex items-center space-x-2">
-              <div className="flex items-center bg-white/10 rounded-lg px-4 py-2">
-                <span className="text-white font-semibold">{team1Full}</span>
-                <span className="text-yellow-300 mx-2 font-bold">vs</span>
-                <span className="text-white font-semibold">{team2Full}</span>
+    <nav className="sticky top-0 backdrop-blur-lg bg-gradient-to-b from-white/90 to-white/50 border-b border-white/20 z-50 shadow-sm hover:shadow-md transition-shadow">
+      <div className="container mx-auto px-4">
+        <div className="flex justify-between items-center h-16">
+          {/* Logo */}
+          <div className="flex items-center gap-2 group hover:scale-105 transition-transform">
+            <Link to="/" className="text-xl font-bold flex items-center gap-2">
+              <div className="w-8 h-8 bg-gradient-to-tr from-indigo-600 to-purple-500 rounded-lg flex items-center justify-center">
+                <span className="text-white font-bold text-lg">C</span>
               </div>
-            </div>
-
-            {/* Match Time */}
-            <div className="bg-white/10 rounded-lg px-4 py-1">
-              <div className="text-red-400 font-bold animate-pulse">
-                {matchTime}
-              </div>
-            </div>
-
-            {/* Profile Section */}
-            <div className="flex items-center">
-              <button className="flex items-center space-x-2 bg-white/10 rounded-lg px-4 py-2 hover:bg-white/20 transition-all duration-200">
-                <User className="h-5 w-5 text-white" />
-                <span className="text-white text-sm">Profile</span>
-              </button>
-            </div>
+              <span className="bg-gradient-to-r from-indigo-600 to-purple-500 bg-clip-text text-transparent">
+                CricGenius
+              </span>
+            </Link>
           </div>
 
-          {/* Mobile View - Simplified */}
-          <div className="md:hidden flex items-center justify-between h-16">
-            {/* Short Team Names */}
-            <div className="flex items-center bg-white/10 rounded-lg px-3 py-1">
-              <span className="text-white font-semibold text-sm">{team1}</span>
-              <span className="text-yellow-300 mx-1 font-bold text-sm">vs</span>
-              <span className="text-white font-semibold text-sm">{team2}</span>
+          {/* Navigation Links */}
+          <div className="flex items-center gap-4">
+            {/* Always Visible Links */}
+
+            <div className="relative group">
+              <Link 
+                to="/blog" 
+                className="p-2 rounded-full flex items-center gap-1 text-gray-600 hover:text-indigo-600 transition-colors"
+              >
+                <span className="text-sm font-medium hidden md:inline-block">Blogs</span>
+              </Link>
+              <div className="absolute bottom-0 left-1/2 h-[2px] w-0 bg-indigo-600 group-hover:w-full transition-all duration-300 -translate-x-1/2"></div>
             </div>
 
-            {/* Match Time */}
-            <div className="bg-white/10 rounded-lg px-3 py-1">
-              <div className="text-red-400 font-bold text-sm animate-pulse">
-                {matchTime}
+            <div className="relative group">
+              <Link 
+                to="/contact" 
+                className="p-2 rounded-full flex items-center gap-1 text-gray-600 hover:text-indigo-600 transition-colors"
+              >
+                <span className="text-sm font-medium hidden md:inline-block">Contact Us</span>
+              </Link>
+              <div className="absolute bottom-0 left-1/2 h-[2px] w-0 bg-indigo-600 group-hover:w-full transition-all duration-300 -translate-x-1/2"></div>
+            </div>
+
+            <div className="relative group">
+              <Link 
+                to="/features" 
+                className="p-2 rounded-full flex items-center gap-1 text-gray-600 hover:text-indigo-600 transition-colors"
+              >
+                <span className="text-sm font-medium hidden md:inline-block">Features</span>
+              </Link>
+              <div className="absolute bottom-0 left-1/2 h-[2px] w-0 bg-indigo-600 group-hover:w-full transition-all duration-300 -translate-x-1/2"></div>
+            </div>
+
+            {/* Authentication-based Links */}
+            {isAuthenticated ? (
+              <>
+                  {!user?.isPro && (
+                    <div className="relative group">
+                      <Link 
+                        to="/upgrade" 
+                        className="p-2 rounded-full flex items-center gap-1 text-yellow-600 hover:text-yellow-700 transition-colors"
+                      >
+                        <Crown className="w-5 h-5" />
+                        <span className="text-sm font-medium hidden md:inline-block">Upgrade Pro</span>
+                      </Link>
+                      <div className="absolute bottom-0 left-1/2 h-[2px] w-0 bg-yellow-600 group-hover:w-full transition-all duration-300 -translate-x-1/2"></div>
+                    </div>
+                  )}
+                <div className="relative group">
+                  <Link 
+                    to="/profile" 
+                    className="p-2 rounded-full flex items-center gap-1 text-gray-600 hover:text-indigo-600 transition-colors"
+                  >
+                    <User className="w-5 h-5" />
+                    <span className="text-sm font-medium hidden md:inline-block">Profile</span>
+                  </Link>
+                  <div className="absolute bottom-0 left-1/2 h-[2px] w-0 bg-indigo-600 group-hover:w-full transition-all duration-300 -translate-x-1/2"></div>
+                </div>
+
+
+              
+                <div className="relative group">
+                  <button
+                    onClick={handleSignOut}
+                    className="p-2 rounded-full flex items-center gap-1 text-gray-600 hover:text-red-600 transition-colors"
+                  >
+                    <LogOut className="w-5 h-5" />
+                    <span className="text-sm font-medium hidden md:inline-block">Sign Out</span>
+                  </button>
+                  <div className="absolute bottom-0 left-1/2 h-[2px] w-0 bg-red-600 group-hover:w-full transition-all duration-300 -translate-x-1/2"></div>
+                </div>
+              </>
+            ) : (
+              <div className="relative group">
+                <Link 
+                  to="/login" 
+                  className="p-2 rounded-full flex items-center gap-1 text-indigo-600 hover:text-indigo-700 transition-colors"
+                >
+                  <User className="w-5 h-5" />
+                  <span className="text-sm font-medium hidden md:inline-block">Sign In</span>
+                </Link>
+                <div className="absolute bottom-0 left-1/2 h-[2px] w-0 bg-indigo-600 group-hover:w-full transition-all duration-300 -translate-x-1/2"></div>
               </div>
-            </div>
-
-            {/* Profile Icon */}
-            <button className="p-2 rounded-lg bg-white/10 hover:bg-white/20 transition-all duration-200">
-              <User className="h-5 w-5 text-white" />
-            </button>
+            )}
           </div>
         </div>
-      </nav>
-
-      {/* Spacer to prevent content from hiding under navbar */}
-      <div className="h-16" />
-    </>
+      </div>
+    </nav>
   );
 };
 

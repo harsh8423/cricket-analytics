@@ -84,10 +84,11 @@ def query_fantasy_team(prompt_context, query, existing_team=None):
             Rules:
             1. Return complete, valid JSON only
             2. Each team must have exactly 11 players
-            3. Each team must have 1 Captain and 1 Vice-Captain
+            3. Each team must have 1 Captain and 1 Vice-Captain, it should be the best player in the team
             4. Follow role requirements strictly
             5. Include all closing brackets and braces
-            6. Ensure JSON is properly formatted"""}
+            6. Ensure JSON is properly formatted
+            7. Give the reason on what basis and why you have chosen each player in reason field"""}
         ]
 
         # Increase max_tokens for multiple teams
@@ -122,11 +123,11 @@ def query_fantasy_team(prompt_context, query, existing_team=None):
         print(f"Error in query_fantasy_team: {str(e)}")
         return {"error": str(e)}
 
-def handle_team_query(query, existing_team=None):
+def handle_team_query(query,match_id, existing_team=None):
     """Handle team generation/modification requests"""
     try:
         # Load data
-        player_data = load_player_data('./utils/player_summaries.json')
+        player_data = load_player_data(f'./utils/{match_id}_player_summaries.json')
         
         # Generate prompt context
         prompt_context, _ = generate_fantasy_prompt(player_data)
