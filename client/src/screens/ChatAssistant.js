@@ -3,6 +3,7 @@ import { MessageCircle, X, Send, Bot } from 'lucide-react';
 import AuthModal from '../components/AuthModal';
 import { useAuth } from '../contexts/AuthContext';
 import ReactMarkdown from 'react-markdown';
+import { useLocation } from 'react-router-dom';
 
 const ChatAssistant = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,6 +13,25 @@ const ChatAssistant = () => {
   ]);
   const [inputMessage, setInputMessage] = useState('');
   const { isAuthenticated, loading } = useAuth();
+  const location = useLocation();
+
+  // Effect to handle automatic opening based on route or prop
+  useEffect(() => {
+    const shouldOpenChat = () => {
+      // Check if we're on the chat route
+      const isChatRoute = location.pathname.includes('/chat');
+      console.log("isChatRoute",isChatRoute);
+      return isChatRoute;
+    };
+
+    if (shouldOpenChat()) {
+      if (!isAuthenticated && !loading) {
+        setShowAuthModal(true);
+      } else {
+        setIsOpen(true);
+      }
+    }
+  }, [location, isAuthenticated, loading]);
 
   const handleChatButtonClick = () => {
     if (!isAuthenticated && !loading) {
@@ -23,7 +43,7 @@ const ChatAssistant = () => {
 
   const handleAuthSuccess = () => {
     setShowAuthModal(false);
-    // setIsOpen(true);
+    // setIsOpen(true); // Ensure chat opens after authentication
   };
 
   const handleCloseChat = () => {

@@ -27,4 +27,15 @@ router.get('/matches/upcoming', async (req, res) => {
     }
   });
 
+  // API to fetch match by id
+router.get('/matches/:match_id', async (req, res) => {
+    try {
+      const match = await Match.findById(req.params.match_id);
+      res.status(200).json(match);
+    } catch (err) {
+      console.error(err);
+      res.status(500).json({ error: 'Failed to fetch match' });
+    }
+  });
+
 module.exports = router;

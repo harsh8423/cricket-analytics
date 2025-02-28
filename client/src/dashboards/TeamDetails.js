@@ -1,38 +1,59 @@
 import React, { useState, useEffect } from 'react';
 import TeamView from './TeamView';
 import { Users, Award, Check, X, Filter } from 'lucide-react';
-import TopNews from '../components/TopNews';
 import { useParams } from 'react-router-dom';
-// Sample data for team performance
-const teamPerformanceData = {
-  lastFiveMatches: [
-    {
-      date: "Jan 15, 2024",
-      opponent: "Australia",
-      result: "Won",
-      score: "India 325/6 vs AUS 280/10",
-      venue: "MCG",
-      topPerformers: [
-        { name: "Virat Kohli", performance: "120(95)", role: "Batter" },
-        { name: "Jasprit Bumrah", performance: "4/35", role: "Bowler" }
-      ]
-    },
-    {
-      date: "Jan 10, 2024",
-      opponent: "England",
-      result: "Lost",
-      score: "India 245/10 vs ENG 248/4",
-      venue: "Lords",
-      topPerformers: [
-        { name: "Rohit Sharma", performance: "85(75)", role: "Batter" },
-        { name: "Ravindra Jadeja", performance: "3/42", role: "All-Rounder" }
-      ]
-    },
-    // Add more matches...
-  ]
-};
+import axios from 'axios';
 
-const HeadToHead = () => {
+const HeadToHead = ({ teamname }) => {
+  const [recentMatches, setRecentMatches] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    const fetchTeamPerformance = async () => {
+      try {
+        setLoading(true);
+        const response = await axios.get(`http://localhost:8000/api/matches/team-performance/${teamname}`);
+        setRecentMatches(response.data);
+        setLoading(false);
+      } catch (err) {
+        console.error('Error fetching team performance:', err);
+        setError('Failed to load team performance data');
+        setLoading(false);
+      }
+    };
+
+    if (teamname) {
+      fetchTeamPerformance();
+    }
+  }, [teamname]);
+
+  if (loading) {
+    return (
+      <div className="bg-white mb-8 rounded-xl p-6">
+        <div className="animate-pulse">
+          <div className="h-6 bg-gray-200 rounded w-1/4 mb-6"></div>
+          <div className="space-y-4">
+            {[...Array(5)].map((_, i) => (
+              <div key={i} className="h-24 bg-gray-100 rounded"></div>
+            ))}
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  if (error) {
+    return (
+      <div className="bg-white mb-8 rounded-xl p-6">
+        <div className="text-red-600 text-center">
+          <h2 className="text-xl font-semibold mb-2">Error</h2>
+          <p>{error}</p>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className="bg-white mb-8 rounded-xl p-6">
       <div className="flex items-center justify-between mb-6">
@@ -43,7 +64,7 @@ const HeadToHead = () => {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        {teamPerformanceData.lastFiveMatches.map((match, idx) => (
+        {recentMatches.map((match, idx) => (
           <div key={idx} className="bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
             <div className="p-4">
               {/* Header with Date and Result */}
@@ -324,7 +345,7 @@ const TeamDetails = ({teamname}) => {
 
   return (
     <div className="mx-auto">
-      <HeadToHead />
+      <HeadToHead teamname={teamname} />
       <PlayersDetails teamname={teamname} players={players} />
     </div>
   );

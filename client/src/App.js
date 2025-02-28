@@ -13,6 +13,7 @@ import SavedTeams from './pages/SavedTeams';
 import DiscussionDetail from './pages/DiscussionDetail';
 import UnauthorizedPage from './pages/UnauthorizedPage';
 import { AdminRoute } from './components/ProtectedRoute';
+import MatchEditor from './admin/MatchEditor';
 
 function App() {
     return (
@@ -37,6 +38,11 @@ function App() {
                         <Route path="/admin/add-prediction" element={
                             <AdminRoute>
                                 <AddPrediction />
+                            </AdminRoute>
+                        } />
+                        <Route path="/admin/match-editor" element={
+                            <AdminRoute>
+                                <MatchEditor />
                             </AdminRoute>
                         } />
                         <Route path="/menubar/:match_id/:teamname" element={<MenuBar />} />

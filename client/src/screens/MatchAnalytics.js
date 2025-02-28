@@ -24,6 +24,18 @@ const MatchAnalytics = () => {
     location.state?.activePage || "overview"
   );
 
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkScreenSize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+    checkScreenSize();
+    window.addEventListener('resize', checkScreenSize);
+    return () => window.removeEventListener('resize', checkScreenSize);
+  }, []);
+
+
   const { teamname } = useParams();
 
   const [team1_name, setteam1_name] = useState(null)
@@ -47,12 +59,12 @@ const MatchAnalytics = () => {
 
   return (
     <div className="flex h-screen bg-gray-100">
-      <Sidebar
+      {!isMobile && <Sidebar
         collapsed={sidebarCollapsed}
         setCollapsed={setSidebarCollapsed}
         activePage={activePage}
         setActivePage={setActivePage}
-      />
+      />}
       <div className="flex-1 overflow-auto p-4">
         {activePage === "team1" && <TeamDetails teamname={team1_name} />}
         {activePage === "team2" && <TeamDetails teamname={team2_name} />}
@@ -60,7 +72,7 @@ const MatchAnalytics = () => {
         {activePage === "fantasy" && <AIFantasyTeam />}
         {activePage === "discussion" && <CommunityDiscussion />}
         {activePage === "expertPrediction" && <ExpertPredictions />}
-        {activePage === "chat" && <ChatAssistant />}
+        {activePage === "chat" && <ChatAssistant/>}
         {activePage === "KeyInsights" && <KeyInsights />}
         {activePage === "PlayerRatings" && <PlayerRatings />}
         {activePage === "VenueStats" && <VenueStats />}

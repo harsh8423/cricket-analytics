@@ -2,19 +2,48 @@ const mongoose = require("mongoose");
 
 const MatchSchema = new mongoose.Schema({
   _id: { type: Number, required: true },
-  team1: { type: Object, required: true },
-  team2: { type: Object, required: true },
-  seriesDesc: { type: String},
+  team1: { 
+    _id: { type: Number, required: true },
+    short_name: String,
+    team_name: String,
+    players: [Number],
+    winPrediction: { type: Number, default: 50 }
+  },
+  team2: { 
+    _id: { type: Number, required: true },
+    short_name: String,
+    team_name: String,
+    players: [Number],
+    winPrediction: { type: Number, default: 50 }
+  },
+  probablePlaying11: {
+    team1: [{
+      playerId: Number,
+      name: String,
+      salePercentage: { type: Number, default: 0 }
+    }],
+    team2: [{
+      playerId: Number,
+      name: String,
+      salePercentage: { type: Number, default: 0 }
+    }]
+  },
+  weather: {
+    temperature: String,
+    chanceOfRain: String,
+    windSpeed: String,
+    humidity: String,
+    dewFactor: String,
+  },
   venue: { type: Object, required: true },
   playersOfTheMatch: { type: Object},
   result: { type: Object},
   tossResults: { type: Object},
   matchStartTimestamp: { type: Date, required: true },
-  state: { type: String},
+  state: String,
   playingXI: { type: Object},
   scorecard: { type: Number, ref: 'Scorecard' }, // Referencing scorecard by _id
   commentary: { type: Number, ref: 'Commentary' }, 
-
 });
 const Match = mongoose.model('Match', MatchSchema);
 

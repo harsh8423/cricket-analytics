@@ -65,6 +65,8 @@ app.use('/api/discussions', require('./routes/discussion'));
 app.use('/api/admin', require('./routes/admin'));
 app.use('/api/predictions', require('./routes/predictions'));
 app.use('/api/ai-teams', aiTeamRoutes);
+app.use('/api/matches', require('./routes/matches'));
+app.use('/api/players', require('./routes/players'));
 
 // Define a test route
 app.get("/", async (req, res) => {

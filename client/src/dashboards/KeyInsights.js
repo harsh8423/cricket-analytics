@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Trophy, Target, MapPin, Zap, Users, Star, Cloud, List, TrendingUp } from 'lucide-react';
 // import data from './${match_id}_match_insights.json';
 import {useParams} from 'react-router-dom';
+import axios from 'axios';
 
 
 const FantasyInsights = () => {
@@ -10,14 +11,24 @@ const FantasyInsights = () => {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const [predictedXI, setPredictedXI] = useState(null);
+  const [weatherData, setWeatherData] = useState(null);
 
   useEffect(() => {
     const loadMatchData = async () => {
       try {
         setLoading(true);
-        // Dynamic import based on match_id
-        const matchData = await import(`../utilities/${match_id}_match_insights.json`);
-        setData(matchData.default);
+        const [matchDataResponse, insightsResponse] = await Promise.all([
+          import(`../utilities/${match_id}_match_insights.json`),
+          axios.get(`http://localhost:8000/api/matches/insights/${match_id}`)
+        ]);
+
+        setData(matchDataResponse.default);
+        
+        // Update probable XI and weather data
+        setPredictedXI(insightsResponse.data.probablePlaying11);
+        setWeatherData(insightsResponse.data.weather);
+        
         setLoading(false);
       } catch (err) {
         console.error('Error loading match data:', err);
@@ -62,24 +73,24 @@ const FantasyInsights = () => {
     );
   }
 
-  // Mock data for sections not in original JSON
-  const weatherData = {
-    temperature: "28°C",
-    humidity: "65%",
-    windSpeed: "12 km/h",
-    chanceOfRain: "10%"
-  };
+  // // Mock data for sections not in original JSON
+  // const weatherData = {
+  //   temperature: "28°C",
+  //   humidity: "65%",
+  //   windSpeed: "12 km/h",
+  //   chanceOfRain: "10%"
+  // };
 
-  const predictedXI = {
-    team1: {
-      name: "Team 1",
-      players: ["Player 1", "Player 2", "Player 3", "Player 4", "Player 5", "Player 6", "Player 7", "Player 8", "Player 9", "Player 10", "Player 11"]
-    },
-    team2: {
-      name: "Team 2",
-      players: ["Player 1", "Player 2", "Player 3", "Player 4", "Player 5", "Player 6", "Player 7", "Player 8", "Player 9", "Player 10", "Player 11"]
-    }
-  };
+  // const predictedXI = {
+  //   team1: {
+  //     name: "Team 1",
+  //     players: ["Player 1", "Player 2", "Player 3", "Player 4", "Player 5", "Player 6", "Player 7", "Player 8", "Player 9", "Player 10", "Player 11"]
+  //   },
+  //   team2: {
+  //     name: "Team 2",
+  //     players: ["Player 1", "Player 2", "Player 3", "Player 4", "Player 5", "Player 6", "Player 7", "Player 8", "Player 9", "Player 10", "Player 11"]
+  //   }
+  // };
 
   return (
     <div className="max-w-7xl mx-auto p-4 space-y-6">
@@ -284,11 +295,20 @@ const FantasyInsights = () => {
             <h2 className="text-lg font-semibold">Predicted Playing XI</h2>
           </div>
           <div className="grid md:grid-cols-2 gap-4">
-            {[predictedXI.team1, predictedXI.team2].map((team) => (
+            {predictedXI && [predictedXI.team1, predictedXI.team2].map((team) => (
               <div key={team.name} className="space-y-2">
                 <h3 className="font-medium">{team.name}</h3>
                 <div className="p-3 bg-gray-50 rounded">
-                  <p className="text-sm">{team.players.join(", ")}</p>
+                  <div className="space-y-2">
+                    {team.players.map(player => (
+                      <div key={player.id} className="flex justify-between items-center text-sm">
+                        <span>{player.name}</span>
+                        <span className="text-blue-600 font-medium">
+                          {player.salePercentage}%
+                        </span>
+                      </div>
+                    ))}
+                  </div>
                 </div>
               </div>
             ))}

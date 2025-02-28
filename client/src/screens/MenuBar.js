@@ -262,18 +262,14 @@ const FloatingActionButton = ({ onActionSelect }) => {
       extractTeams(teamname);
       
     }, [teamname])
-    
-
-    // Extract team names from the URL parameter
-  
   
     const handleNavigation = (page) => {
       if (isMobile) {
         setActivePage(page);
-        // Update mobile content based on page
         setMobileContent(getMobileComponent(page));
+        navigate(`/dashboard/${match_id}/${team1_name}vs${team2_name}/${page}`);
       } else {
-        navigate(`/dashboard/${match_id}/${team1_name}vs${team2_name}/${page}`, { state: { activePage: page } });
+        navigate(`/dashboard/${match_id}/${team1_name}vs${team2_name}/${page}`);
       }
     };
   
@@ -281,15 +277,18 @@ const FloatingActionButton = ({ onActionSelect }) => {
       switch (action) {
         case 'chat':
           setActivePage('chat');
-          setMobileContent(<ChatAssistant open={true} />);
+          setMobileContent(<ChatAssistant/>);
+          navigate(`/dashboard/${match_id}/${team1_name}vs${team2_name}/chat`);
           break;
         case 'discussion':
           setActivePage('discussion');
           setMobileContent(<CommunityDiscussion />);
+          navigate(`/dashboard/${match_id}/${team1_name}vs${team2_name}/discussion`);
           break;
         case 'prediction':
           setActivePage('expertPrediction');
           setMobileContent(<ExpertPredictions />);
+          navigate(`/dashboard/${match_id}/${team1_name}vs${team2_name}/expertPrediction`);
           break;
         
         default:
@@ -302,7 +301,7 @@ const FloatingActionButton = ({ onActionSelect }) => {
         case 'fantasy':
           return <AIFantasyTeam />;
         case 'chat':
-          return <ChatAssistant open={true} />;
+          return <ChatAssistant />;
         case 'discussion':
           return <CommunityDiscussion />;
         case 'expertPrediction':
@@ -443,7 +442,10 @@ const FloatingActionButton = ({ onActionSelect }) => {
           {isMobile && mobileContent && (
             <div className="fixed inset-0 bg-white z-10 overflow-auto pb-20">
               <button 
-                onClick={() => setMobileContent(null)}
+                onClick={() => {
+                  setMobileContent(null);
+                  navigate(`/dashboard/${match_id}/${team1_name}vs${team2_name}/overview`);
+                }}
                 className="fixed top-4 left-4 p-2 rounded-full bg-gray-100 hover:bg-gray-200"
               >
                 <X className="w-6 h-6" />
@@ -461,10 +463,10 @@ const FloatingActionButton = ({ onActionSelect }) => {
               setActivePage={(page) => {
                 setActivePage(page);
                 setMobileContent(getMobileComponent(page));
+                navigate(`/dashboard/${match_id}/${team1_name}vs${team2_name}/${page}`);
               }} 
             />
-            ///////////////////////////////////////////////////////////////
-            {/* <FloatingActionButton onActionSelect={handleFabAction} /> */}
+            <FloatingActionButton onActionSelect={handleFabAction} />
           </>
         )}
       </div>

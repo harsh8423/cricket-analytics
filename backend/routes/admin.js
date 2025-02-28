@@ -3,6 +3,7 @@ const router = express.Router();
 const adminAuth = require('../middleware/adminAuth');
 const { verifyToken } = require('../middleware/auth');
 const ExpertPrediction = require('../models/ExpertPrediction');
+const {Match, Player} = require('../models/match');
 
 // Verify admin access - use both verifyToken and adminAuth
 router.get('/verify', verifyToken, adminAuth, (req, res) => {
@@ -100,6 +101,94 @@ router.delete('/predictions/:id', verifyToken, adminAuth, async (req, res) => {
   } catch (error) {
     console.error('Error deleting prediction:', error);
     res.status(500).json({ message: 'Failed to delete prediction' });
+  }
+});
+
+// Update win predictions
+router.put('/match/:matchId/predictions', async (req, res) => {
+  try {
+    const { team1Prediction, team2Prediction } = req.body;
+    const match = await Match.findById(req.params.matchId);
+    
+    if (!match) {
+      return res.status(404).json({ message: 'Match not found' });
+    }
+
+    match.team1.winPrediction = team1Prediction;
+    match.team2.winPrediction = team2Prediction;
+    await match.save();
+
+    res.json(match);
+  } catch (error) {
+    res.status(500).json({ message: error.message });
+  }
+});
+
+// Update probable playing XI and sale percentages
+router.put('/match/:matchId/playing11', async (req, res) => {
+  try {
+    const { team1Players, team2Players } = req.body;
+    const match = await Match.findById(req.params.matchId);
+    
+    if (!match) {
+      return res.status(404).json({ message: 'Match not found' });
+    }
+
+    // Update probable playing XI with player names
+    const team1Playing11 = await Promise.all(team1Players.map(async (player) => {
+      const playerDoc = await Player.findById(player.playerId);
+      return {
+        playerId: player.playerId,
+        name: playerDoc.name,
+        salePercentage: player.salePercentage
+      };
+    }));
+
+    const team2Playing11 = await Promise.all(team2Players.map(async (player) => {
+      const playerDoc = await Player.findById(player.playerId);
+      return {
+        playerId: player.playerId,
+        name: playerDoc.name,
+        salePercentage: player.salePercentage
+      };
+    }));
+
+    match.probablePlaying11 = {
+      team1: team1Playing11,
+      team2: team2Playing11
+    };
+    
+    await match.save();
+    res.json(match);
+  } catch (error) {
+    console.log(error);
+    res.status(500).json({ message: error.message });
+  }
+});
+
+// Update weather data
+router.put('/match/:matchId/weather', async (req, res) => {
+  try {
+    const { temperature, chanceOfRain, windSpeed, humidity, dewFactor } = req.body;
+    const match = await Match.findById(req.params.matchId);
+    
+    if (!match) {
+      return res.status(404).json({ message: 'Match not found' });
+    }
+
+    match.weather = {
+      temperature,
+      chanceOfRain,
+      windSpeed,
+      humidity,
+      dewFactor
+    };
+    
+    await match.save();
+    res.json(match);
+  } catch (error) {
+    console.log(error);
+    res.status(500).json({ message: error.message });
   }
 });
 
