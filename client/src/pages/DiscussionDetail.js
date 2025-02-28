@@ -158,7 +158,7 @@ export default function DiscussionDetail() {
 
   const fetchDiscussion = async () => {
     try {
-      const response = await axiosInstance.get(`http://localhost:8000/api/discussions/detail/${id}`);
+      const response = await axiosInstance.get(`https://cricket-analytics-node.onrender.com/api/discussions/detail/${id}`);
       setDiscussion(response.data);
     } catch (error) {
       console.error('Error fetching discussion:', error);
@@ -175,7 +175,7 @@ export default function DiscussionDetail() {
 
     try {
       const response = await axiosInstance.post(
-        `http://localhost:8000/api/discussions/${type === 'discussion' ? id : `${id}/replies/${itemId}`}/like`,
+        `https://cricket-analytics-node.onrender.com/api/discussions/${type === 'discussion' ? id : `${id}/replies/${itemId}`}/like`,
         {},
         {
           headers: { Authorization: `Bearer ${token}` }
@@ -208,7 +208,7 @@ export default function DiscussionDetail() {
 
     try {
       const response = await axiosInstance.post(
-        `http://localhost:8000/api/discussions/${id}/replies`,
+        `https://cricket-analytics-node.onrender.com/api/discussions/${id}/replies`,
         {
           content: content || replyContent,
           parentReplyId

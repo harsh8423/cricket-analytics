@@ -21,7 +21,7 @@ export default function AddPrediction() {
   const fetchPredictions = async () => {
     try {
       setLoading(true);
-      const response = await fetch(`http://localhost:8000/api/admin/predictions/${matchId}`, {
+      const response = await fetch(`https://cricket-analytics-node.onrender.com/api/admin/predictions/${matchId}`, {
         headers: {
           'Authorization': `Bearer ${token}`
         }
@@ -46,8 +46,8 @@ export default function AddPrediction() {
     e.preventDefault();
     try {
       const url = editingPrediction 
-        ? `http://localhost:8000/api/admin/predictions/${editingPrediction._id}`
-        : 'http://localhost:8000/api/admin/predictions';
+        ? `https://cricket-analytics-node.onrender.com/api/admin/predictions/${editingPrediction._id}`
+        : 'https://cricket-analytics-node.onrender.com/api/admin/predictions';
       
       const method = editingPrediction ? 'PUT' : 'POST';
       
@@ -85,7 +85,7 @@ export default function AddPrediction() {
     if (!window.confirm('Are you sure you want to delete this prediction?')) return;
 
     try {
-      const response = await fetch(`http://localhost:8000/api/admin/predictions/${id}`, {
+      const response = await fetch(`https://cricket-analytics-node.onrender.com/api/admin/predictions/${id}`, {
         method: 'DELETE',
         headers: {
           'Authorization': `Bearer ${token}`

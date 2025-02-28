@@ -49,8 +49,8 @@ export default function TeamH2H() {
     const fetchH2HData = async (team1, team2) => {
       try {
         const [h2hResponse, predictionsResponse] = await Promise.all([
-          axios.get(`http://localhost:8000/api/matches/head2head/${team1}/${team2}`),
-          axios.get(`http://localhost:8000/api/matches/predictions/${team1}/${team2}`)
+          axios.get(`https://cricket-analytics-node.onrender.com/api/matches/head2head/${team1}/${team2}`),
+          axios.get(`https://cricket-analytics-node.onrender.com/api/matches/predictions/${team1}/${team2}`)
         ]);
 
         setLastFiveMatches(h2hResponse.data);

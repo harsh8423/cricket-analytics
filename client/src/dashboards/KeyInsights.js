@@ -20,7 +20,7 @@ const FantasyInsights = () => {
         setLoading(true);
         const [matchDataResponse, insightsResponse] = await Promise.all([
           import(`../utilities/${match_id}_match_insights.json`),
-          axios.get(`http://localhost:8000/api/matches/insights/${match_id}`)
+          axios.get(`https://cricket-analytics-node.onrender.com/api/matches/insights/${match_id}`)
         ]);
 
         setData(matchDataResponse.default);
@@ -72,25 +72,6 @@ const FantasyInsights = () => {
       </div>
     );
   }
-
-  // // Mock data for sections not in original JSON
-  // const weatherData = {
-  //   temperature: "28°C",
-  //   humidity: "65%",
-  //   windSpeed: "12 km/h",
-  //   chanceOfRain: "10%"
-  // };
-
-  // const predictedXI = {
-  //   team1: {
-  //     name: "Team 1",
-  //     players: ["Player 1", "Player 2", "Player 3", "Player 4", "Player 5", "Player 6", "Player 7", "Player 8", "Player 9", "Player 10", "Player 11"]
-  //   },
-  //   team2: {
-  //     name: "Team 2",
-  //     players: ["Player 1", "Player 2", "Player 3", "Player 4", "Player 5", "Player 6", "Player 7", "Player 8", "Player 9", "Player 10", "Player 11"]
-  //   }
-  // };
 
   return (
     <div className="max-w-7xl mx-auto p-4 space-y-6">

@@ -58,7 +58,7 @@ const ChatAssistant = () => {
       
       try {
         const token = localStorage.getItem('token');
-        const response = await fetch('http://localhost:5000/api/chat/message', {
+        const response = await fetch('https://cricket-analytics.onrender.com/api/chat/message', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',

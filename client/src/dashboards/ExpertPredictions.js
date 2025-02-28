@@ -19,7 +19,7 @@ const ExpertPredictions = () => {
     const fetchPredictions = async () => {
       try {
         setLoading(true);
-        const response = await fetch(`http://localhost:8000/api/predictions/${match_id}`); // Using default matchId 1
+        const response = await fetch(`https://cricket-analytics-node.onrender.com/api/predictions/${match_id}`); // Using default matchId 1
         if (!response.ok) throw new Error('Failed to fetch predictions');
         const data = await response.json();
         setPredictions(data);
@@ -42,7 +42,7 @@ const ExpertPredictions = () => {
     }
 
     try {
-      const response = await fetch(`http://localhost:8000/api/predictions/${predictionId}/upvote`, {
+      const response = await fetch(`https://cricket-analytics-node.onrender.com/api/predictions/${predictionId}/upvote`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

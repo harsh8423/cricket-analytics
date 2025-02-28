@@ -22,7 +22,7 @@ export default function MatchEditor() {
   const fetchPlayers = async (playerIds) => {
     try {
       // Use batch endpoint instead of multiple requests
-      const response = await axios.post('http://localhost:8000/api/players/batch', {
+      const response = await axios.post('https://cricket-analytics-node.onrender.com/api/players/batch', {
         playerIds
       });
       return response.data.map(player => ({
@@ -41,7 +41,7 @@ export default function MatchEditor() {
       setLoading(true);
       setError(null);
       
-      const response = await axios.get(`http://localhost:8000/api/matches/${matchId}`);
+      const response = await axios.get(`https://cricket-analytics-node.onrender.com/api/matches/${matchId}`);
       setMatch(response.data);
       
       // Initialize form states with existing data
@@ -80,16 +80,16 @@ export default function MatchEditor() {
 
       await Promise.all([
         // Update win predictions
-        axios.put(`http://localhost:8000/api/admin/match/${matchId}/predictions`, {
+        axios.put(`https://cricket-analytics-node.onrender.com/api/admin/match/${matchId}/predictions`, {
           team1Prediction: predictions.team1,
           team2Prediction: predictions.team2
         }),
 
         // Update weather data
-        axios.put(`http://localhost:8000/api/admin/match/${matchId}/weather`, weather),
+        axios.put(`https://cricket-analytics-node.onrender.com/api/admin/match/${matchId}/weather`, weather),
 
         // Update playing XI and sale percentages
-        axios.put(`http://localhost:8000/api/admin/match/${matchId}/playing11`, {
+        axios.put(`https://cricket-analytics-node.onrender.com/api/admin/match/${matchId}/playing11`, {
           team1Players: team1Players
             .filter(p => p.selected)
             .map(p => ({

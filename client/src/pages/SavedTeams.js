@@ -47,7 +47,7 @@ export default function SavedTeams() {
   const fetchTeams = async () => {
     console.log("match_id", match_id);
     try {
-      const response = await axios.get(`http://localhost:8000/api/ai-teams/user-teams/${match_id}`, {
+      const response = await axios.get(`https://cricket-analytics-node.onrender.com/api/ai-teams/user-teams/${match_id}`, {
         headers: {
           Authorization: `Bearer ${token}`
         }
@@ -63,7 +63,7 @@ export default function SavedTeams() {
   const handleDelete = async (teamId) => {
     if (window.confirm('Are you sure you want to delete this team?')) {
       try {
-        await axios.delete(`http://localhost:8000/api/ai-teams/${teamId}`, {
+        await axios.delete(`https://cricket-analytics-node.onrender.com/api/ai-teams/${teamId}`, {
           headers: {
             Authorization: `Bearer ${token}`
           }

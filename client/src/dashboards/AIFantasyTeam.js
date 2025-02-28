@@ -138,7 +138,7 @@ const FantasyTeam = () => {
     setError(null);
     
     try {
-      const response = await fetch('http://localhost:5000/api/fantasy/team', {
+      const response = await fetch('https://cricket-analytics.onrender.com/api/fantasy/team', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -227,7 +227,7 @@ const FantasyTeam = () => {
       if (editingTeamId) {
         // Update existing team
         response = await axios.put(
-          `http://localhost:8000/api/ai-teams/${editingTeamId}`,
+          `https://cricket-analytics-node.onrender.com/api/ai-teams/${editingTeamId}`,
           dataToSave,
           {
             headers: {
@@ -239,7 +239,7 @@ const FantasyTeam = () => {
       } else {
         // Create new team
         response = await axios.post(
-          'http://localhost:8000/api/ai-teams',
+          'https://cricket-analytics-node.onrender.com/api/ai-teams',
           dataToSave,
           {
             headers: {
@@ -296,7 +296,7 @@ const FantasyTeam = () => {
         };
 
         const response = await axios.post(
-          'http://localhost:8000/api/ai-teams',
+          'https://cricket-analytics-node.onrender.com/api/ai-teams',
           dataToSave,
           {
             headers: {

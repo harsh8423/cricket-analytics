@@ -15,7 +15,7 @@ export const AdminRoute = ({ children }) => {
       }
 
       try {
-        const response = await fetch('http://localhost:8000/api/admin/verify', {
+        const response = await fetch('https://cricket-analytics-node.onrender.com/api/admin/verify', {
           headers: {
             'Authorization': `Bearer ${token}`
           }

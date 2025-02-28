@@ -13,7 +13,7 @@ const HeadToHead = ({ teamname }) => {
     const fetchTeamPerformance = async () => {
       try {
         setLoading(true);
-        const response = await axios.get(`http://localhost:8000/api/matches/team-performance/${teamname}`);
+        const response = await axios.get(`https://cricket-analytics-node.onrender.com/api/matches/team-performance/${teamname}`);
         setRecentMatches(response.data);
         setLoading(false);
       } catch (err) {

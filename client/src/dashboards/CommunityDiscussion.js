@@ -55,7 +55,7 @@ const CommunityDiscussion = () => {
   
   const fetchAllPosts = async () => {
     try {
-      const response = await axiosInstance.get(`http://localhost:8000/api/discussions/${match_id}`);
+      const response = await axiosInstance.get(`https://cricket-analytics-node.onrender.com/api/discussions/${match_id}`);
       setAllPosts(response.data);
       setFilteredPosts(response.data);
       setLoading(false)
@@ -85,7 +85,7 @@ const CommunityDiscussion = () => {
     try {
       setLoading(true);
       const response = await axiosInstance.get(
-        `http://localhost:8000/api/discussions/search?q=${encodeURIComponent(searchQuery)}`
+        `https://cricket-analytics-node.onrender.com/api/discussions/search?q=${encodeURIComponent(searchQuery)}`
       );
       setFilteredPosts(response.data);
       setShowSearchDropdown(false);
@@ -101,7 +101,7 @@ const CommunityDiscussion = () => {
     const fetchAndFilterPosts = async () => {
       try {
         setLoading(true);
-        const response = await axiosInstance.get(`http://localhost:8000/api/discussions/${match_id}`);
+        const response = await axiosInstance.get(`https://cricket-analytics-node.onrender.com/api/discussions/${match_id}`);
         const allPosts = response.data;
 
         // Apply filtering based on selected tag
@@ -160,7 +160,7 @@ const CommunityDiscussion = () => {
     
     try {
       const response = await axios.post(
-        `http://localhost:8000/api/discussions/${postId}/like`,
+        `https://cricket-analytics-node.onrender.com/api/discussions/${postId}/like`,
         {},
         {
           headers: {
@@ -194,7 +194,7 @@ const CommunityDiscussion = () => {
   const handleSubmitPost = async (postData) => {
     try {
       const response = await axios.post(
-        'http://localhost:8000/api/discussions', 
+        'https://cricket-analytics-node.onrender.com/api/discussions', 
         postData,
         {
           headers: {

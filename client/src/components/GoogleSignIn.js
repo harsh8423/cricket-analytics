@@ -45,7 +45,7 @@ const GoogleSignIn = ({ onSuccess }) => {
     try {
       console.log('Google response:', response); // Debug log
 
-      const result = await fetch('http://localhost:5000/api/auth/google', {
+      const result = await fetch('https://cricket-analytics.onrender.com/api/auth/google', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

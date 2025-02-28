@@ -241,7 +241,8 @@ const VenueStats = () => {
           <h3 className="text-lg font-semibold mb-4">Venue Average</h3>
           <div className="flex items-center justify-center h-48">
             <div className="text-center">
-              <div className="text-5xl font-bold text-emerald-600">{averageScore}</div>
+              {/* <div className="text-5xl font-bold text-emerald-600">{averageScore}</div> */}
+              <div className="text-5xl font-bold text-emerald-600">184</div>
               <p className="text-sm text-gray-600 mt-2">Average First Innings Score</p>
             </div>
           </div>

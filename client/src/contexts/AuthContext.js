@@ -114,7 +114,7 @@ export const AuthProvider = ({ children }) => {
     const verifyToken = async () => {
       if (token) {
         try {
-          const response = await axios.get('http://localhost:5000/api/auth/verify', {
+          const response = await axios.get('https://cricket-analytics.onrender.com/api/auth/verify', {
             headers: {
               Authorization: `Bearer ${token}`
             }

@@ -38,7 +38,7 @@ const HomePage = () => {
   useEffect(() => {
     const fetchMatches = async () => {
       try {
-        const response = await axios.get('http://localhost:8000/api/matches/upcoming');
+        const response = await axios.get('https://cricket-analytics-node.onrender.com/api/matches/upcoming');
         const transformedMatches = response.data.map((match) => ({
           id: match._id,
           team1: match.team1.short_name,
