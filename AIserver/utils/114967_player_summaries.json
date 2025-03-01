@@ -1,0 +1,168 @@
+{
+  "6327": {
+    "name": "Jaydev Unadkat",
+    "role": "Bowler",
+    "summary": "1. Form: Recent (28.70) | Venue (50.00)\n2. Bowling: Usual overs (4) | Balls/Wicket (16.94)\n3. Recent form is < Venue form by 21.30 fantasy points.\n4. Balls per wicket is > 15, indicating moderate strike rate."
+  },
+  "7909": {
+    "name": "Mohammed Shami",
+    "role": "Bowler",
+    "summary": "1. Form: Recent (29.10) | Venue (0.00)\n2. Bowling: Usual overs (4) | Balls/Wicket (21.00)\n3. opponent analysis data: N/A"
+  },
+  "8095": {
+    "name": "Pat Cummins",
+    "role": "Bowler",
+    "summary": "1. Form: Recent (35.40) | Venue (31.33)\n2. Bowling: Usual overs (4) | Balls/Wicket (17.33)\n3. opponent analysis data: N/A\n4. bowling analysis data: \n- Economy Rate: N/A\n- Strike Rate: N/A\n- Average Runs per Over: N/A"
+  },
+  "8175": {
+    "name": "Harshal Patel",
+    "role": "Bowler",
+    "summary": "1. Form: Recent (48.80) | Venue (25.00)\n2. Bowling: 3 overs | 11.63 balls/wicket\n3. opponent analysis data: N/A"
+  },
+  "8271": {
+    "name": "Sanju Samson",
+    "role": "WK-Batsman",
+    "summary": "For Sanju Samson (WK-Batsman):\n1. Form: Recent (46.10) | Venue (51.80)\n2. Batting: 1 | 163.16\n3. vs Harshal Patel: 1 wickets\n4. vs Rahul Chahar: 1 wickets\n5. Spin: 16.13 (SR diff) | 0.460 (runs% vs spin)\n6. Left Arm: 9.90 (SR diff) | 0.311 (runs% vs left arm)"
+  },
+  "8356": {
+    "name": "Sandeep Sharma",
+    "role": "Bowler",
+    "summary": "1. Form: Recent (46.30) | Venue (0.00)\n2. Bowling: Usual overs (4) | Balls/Wicket (13.76)\n3. opponent analysis data: N/A \n   - No opponent-specific data available"
+  },
+  "8497": {
+    "name": "Travis Head",
+    "role": "Batsman",
+    "summary": "1. Form: \n   Recent (fantasy pts): 83.40 | Venue (fantasy pts): 91.00\n\n2. Batting: \n   Position(s): 2 | SR: 236.67\n\n3. opponent analysis data\n   Maheesh Theekshana: 1 wickets\n\n4. batting analysis data with concise short summary\n   SR diff (Spin/Pace): -124.16\n   Runs% (Spin): 0.129\n   Runs% (Left Arm): 0.310"
+  },
+  "8642": {
+    "name": "Adam Zampa",
+    "role": "Bowler",
+    "summary": "1. Form: Recent (33.33) | Venue (0.00)\n2. Bowling: Usual overs (4) | Balls/wicket (16.50)\n3. opponent analysis data: N/A\n4. bowling analysis data: \n- Economy rate: N/A\n- Strike rate: N/A\n- Average: N/A"
+  },
+  "8709": {
+    "name": "Sachin Baby",
+    "role": "Batsman",
+    "summary": "1. Form: \n   Recent (fantasy pts): 33.50\n   Venue (fantasy pts): 23.33\n\n2. Batting: \n   Position(s): 6\n   SR: 158.76\n\n3. opponent analysis data:\n   - Spin: SR diff: 0.00, Runs% vs Spin: 0.000\n   - Pace: SR diff: 0.00, Runs% vs Pace: N/A\n   - Left Arm: SR diff: 0.00, Runs% vs Left: 0.000\n   - Right Arm: SR diff: 0.00, Runs% vs Right: N/A"
+  },
+  "9204": {
+    "name": "Nitish Rana",
+    "role": "Batsman",
+    "summary": "For Batsmen:\n1. Form: Recent (15.20) | Venue (57.00)\n2. Batting: 4 | 116.55\n3. opponent analysis data:\n   - vs Spin: SR diff (-12.17), Runs% (0.396)\n   - vs Pace: N/A\n   - vs Left Arm: SR diff (-0.71), Runs% (0.327)\n   - vs Right Arm: N/A\n   - vs Rahul Chahar: 1 wickets\n4. batting analysis data: \n   - Batting Position: 4\n   - SR diff: -0.71 (Left Arm), -12.17 (Spin)"
+  },
+  "9789": {
+    "name": "Shimron Hetmyer",
+    "role": "Batsman",
+    "summary": "1. Form: \n   Recent (fantasy pts): 14.14 | Venue (fantasy pts): 27.00\n\n2. Batting: \n   Position(s): 6 | SR: 161.29\n\n3. opponent analysis data:\n   - Spin vs Pace: SR diff: -62.09 | Runs% vs Spin: 20.5%\n   - Left vs Right Arm: SR diff: 10.69 | Runs% vs Left: 24.8%\n\n4. batting analysis data with concise short summary:\n   - SR diff: -62.09 (stronger against pace), \n   - Runs% vs Spin: 20.5% (relatively weaker against spin)"
+  },
+  "10209": {
+    "name": "Heinrich Klaasen",
+    "role": "WK-Batsman",
+    "summary": "For Heinrich Klaasen (WK-Batsman):\n1. Form: Recent (48.50) | Venue (53.75)\n2. Batting: Position(s) [5] | SR (189.31)\n3. opponent analysis data:\n   - Spin: SR diff (19.47) | Runs% (53.1%)\n   - Pace: N/A\n   - Left Arm: SR diff (10.68) | Runs% (39%)\n   - Right Arm: N/A\n4. batting analysis data with concise short summary:\n   - Batting Position: 5\n   - SR: 189.31\n   - Runs% vs Spin: 53.1%"
+  },
+  "10276": {
+    "name": "Ishan Kishan",
+    "role": "WK-Batsman",
+    "summary": "For Ishan Kishan (WK-Batsman):\n1. Form: Recent (29.20) | Venue (51.50)\n2. Batting: 1 | 157.78\n3. opponent analysis data:\n   - vs Wanindu Hasaranga: 1 wickets\n4. batting analysis data:\n   - Spin vs Pace: SR diff (-2.34), Runs% vs Spin (0.326)\n   - Left vs Right Arm: SR diff (9.66), Runs% vs Left (0.356)"
+  },
+  "10499": {
+    "name": "Abhinav Manohar",
+    "role": "Batsman",
+    "summary": "1. Form: Recent (27.00) | Venue (0.00)\n2. Batting: Position(s) [6] | SR (144.04)\n3. opponent analysis data:\n   - Spin vs Pace: SR diff (-36.00), Runs% vs Spin (0.394)\n   - Left vs Right Arm: SR diff (-33.40), Runs% vs Left (0.325)\n4. batting analysis data:\n   - Recent form indicates a decline from venue form (> 27.00)\n   - Average strike rate is high (> 144.04)\n   - Strike rate difference against spin is significant (> -36.00)\n   - Runs proportion against spin is relatively high (> 0.394)\n   - Strike rate difference against left arm is substantial (> -33.40)\n   - Runs proportion against left arm is moderate (> 0.325)"
+  },
+  "10926": {
+    "name": "Wanindu Hasaranga",
+    "role": "Bowling Allrounder",
+    "summary": "1. Form: Recent (0.00) | Venue (0.00)\n2. Batting: N/A | N/A\n3. Bowling: N/A | N/A\n4. Average Runs: 0.00\n5. Average Wickets: 0.00"
+  },
+  "11307": {
+    "name": "Tushar Deshpande",
+    "role": "Bowler",
+    "summary": "1. Form: Recent (16.50) | Venue (-2.00)\n2. Bowling: 4 overs | 33.43 Balls/Wicket\n3. opponent analysis data: N/A"
+  },
+  "11540": {
+    "name": "Jofra Archer",
+    "role": "Bowler",
+    "summary": "1. Form: Recent (8.80) | Venue (0.00)\n2. Bowling: Usual overs (4) | Balls/Wicket (60.00)\n3. opponent analysis data: N/A"
+  },
+  "12086": {
+    "name": "Abhishek Sharma",
+    "role": "Batting Allrounder",
+    "summary": "1. Form: Recent (0.00) | Venue (0.00)\n2. Batting: N/A | N/A\n3. Bowling: N/A | N/A\n4. vs Spin/Pace: N/A | N/A"
+  },
+  "12087": {
+    "name": "Rahul Chahar",
+    "role": "Bowler",
+    "summary": "1. Form: Recent (20.20) | Venue (25.00)\n2. Bowling: Usual overs (4) | Balls/Wicket (24.67)\n3. Recent form is < Venue form by 4.80 fantasy points.\n4. Balls per wicket is > 24, indicating moderate strike rate."
+  },
+  "12305": {
+    "name": "Riyan Parag",
+    "role": "Batting Allrounder",
+    "summary": "For Riyan Parag (Batting Allrounder):\n1. Form: Recent (0.00) | Venue (0.00)\n2. Batting: Avg runs (0.00) | N/A\n3. Bowling: Avg wickets (0.00) | N/A\n4. vs Spin/Pace: N/A | N/A"
+  },
+  "13914": {
+    "name": "Atharva Taide",
+    "role": "Batsman",
+    "summary": "1. Form: Recent (46.00) | Venue (0.00)\n2. Batting: 1 | 146.38\n3. Spin vs Pace: -31.35 | 0.287\n4. Left vs Right Arm: -52.72 | 0.258\n5. Head-to-Head: 1 wicket (vs Yudhvir Singh Charak)"
+  },
+  "14163": {
+    "name": "Simarjeet Singh",
+    "role": "Bowler",
+    "summary": "1. Form: Recent (34.10) | Venue (0.00)\n2. Bowling: Usual overs (4) | Balls/Wicket (15.54)\n3. opponent analysis data: N/A\n4. bowling analysis data: \n- Economy Rate: N/A\n- Strike Rate: N/A\n- Average Runs per Over: N/A"
+  },
+  "14190": {
+    "name": "Kumar Kartikeya",
+    "role": "Bowler",
+    "summary": "1. Form: Recent (44.70) | Venue (0.00)\n2. Bowling: Usual overs (4) | Balls/Wicket (13.41)\n3. opponent analysis data: N/A\n4. bowling analysis data: \n   - Economy Rate: N/A\n   - Strike Rate: N/A\n   - Average Runs per Over: N/A"
+  },
+  "14282": {
+    "name": "Fazalhaq Farooqi",
+    "role": "Bowler",
+    "summary": "1. Form: Recent (19.17) | Venue (23.00)\n2. Bowling: Usual overs (4) | Balls/Wicket (25.43)\n3. opponent analysis data: N/A\n4. bowling analysis data: \n   - Economy Rate: N/A\n   - Strike Rate: N/A\n   - Average Runs per Over: N/A"
+  },
+  "14691": {
+    "name": "Dhruv Jurel",
+    "role": "WK-Batsman",
+    "summary": "1. Form: Recent (26.29) | Venue (0.00)\n2. Batting: 5 | 149.45\n3. opponent analysis data:\n   - Spin: SR diff (-40.92), Runs% (0.263), Wkts% diff (-0.0517)\n   - Pace: N/A\n   - Left arm: SR diff (-18.79), Runs% (0.408), Wkts% diff (-0.0387)\n   - Right arm: N/A\n4. batting analysis data: \n   - Recent form indicates a decline in performance (26.29).\n   - Venue form is currently 0.00, indicating no performance in the current venue.\n   - Batting at position 5 with a strike rate of 149.45.\n   - Performs better against spin with a strike rate difference of -40.92 and a runs proportion of 0.263.\n   - Performs better against left arm with a strike rate difference of -18.79 and a runs proportion of 0.408."
+  },
+  "14701": {
+    "name": "Nitish Reddy",
+    "role": "Batting Allrounder",
+    "summary": "1. Form: Recent (0.00) | Venue (0.00)\n2. Batting: N/A | N/A\n3. Bowling: N/A | N/A\n4. vs Spin/Pace: N/A | N/A\n\nNote: Since there is no data available for batting positions and usual overs, the summary is incomplete."
+  },
+  "15727": {
+    "name": "Akash Madhwal",
+    "role": "Bowler",
+    "summary": "1. Form: Recent (46.80) | Venue (0.00)\n2. Bowling: Usual overs (4) | Balls/Wicket (11.78)\n3. opponent analysis data: N/A\n4. bowling analysis data: \n- Economy Rate: N/A\n- Strike Rate: N/A"
+  },
+  "15749": {
+    "name": "Yudhvir Singh Charak",
+    "role": "Bowling Allrounder",
+    "summary": "1. Form: Recent (0.00) | Venue (0.00)\n2. Batting: N/A | N/A\n3. Bowling: N/A | N/A\n4. vs Spin/Pace: N/A | N/A"
+  },
+  "18504": {
+    "name": "Maheesh Theekshana",
+    "role": "Bowler",
+    "summary": "1. Form: Recent (24.90) | Venue (27.00)\n2. Bowling: Usual overs (4) | Balls/Wicket (24.60)\n3. opponent analysis data: N/A"
+  },
+  "19328": {
+    "name": "Shubham Dubey",
+    "role": "Batsman",
+    "summary": "1. Form: 47.75 | 0.00\n2. Batting: 5 | 181.08\n3. Spin vs Pace: -133.33 | 0.250 | 0.0000\n4. Left vs Right Arm: -133.33 | 0.000 | 0.0000"
+  },
+  "23346": {
+    "name": "Kwena Maphaka",
+    "role": "Bowler",
+    "summary": "1. Form: Recent (7.50) | Venue (-6.00)\n2. Bowling: Usual overs (4) | Balls/wicket (60.00)\n3. opponent analysis data: N/A\n4. bowling analysis data: \n- Economy rate: N/A\n- Strike rate: N/A\n- Average: N/A\n- Wickets per match: N/A"
+  },
+  "51791": {
+    "name": "Vaibhav Suryavanshi",
+    "role": "Batsman",
+    "summary": "1. Form: Recent (17.00) | Venue (0.00)\n2. Batting: 2 | 216.67\n3. Spin vs Pace: 0.00 | 0.000 | 0.0000\n4. Left vs Right Arm: 0.00 | 0.000 | 0.0000"
+  },
+  "1447065": {
+    "name": "Aniket Verma",
+    "role": "Batsman",
+    "summary": "1. Form: Recent (0.00) | Venue (0.00)\n2. Batting: 6 | 0.00\n3. Spin vs Pace: 0.00 | 0.000 | 0.0000\n4. Left vs Right Arm: 0.00 | 0.000 | 0.0000"
+  },
+  "venue_analysis": "**Venue Analysis:**\n\nThe provided venue statistics reveal some interesting patterns that could impact match outcomes. Here are the key findings:\n\n1. **Bowling Split:** The overall bowling split at the venue is 43% spin and 57% pace. This suggests that pace bowlers have a slight advantage at this venue. However, the split is relatively even, indicating that spinners can still be effective.\n2. **First Innings vs. Second Innings:** The first innings bowling split is 42% spin and 58% pace, while the second innings split is 44% spin and 56% pace. This suggests that pace bowlers tend to perform better in the first innings, while spinners have a slight edge in the second innings.\n3. **Spin vs. Pace:** The relatively even split between spin and pace bowlers suggests that both types of bowlers can be effective at this venue. However, the slight edge for pace bowlers in the first innings and spinners in the second innings could be a key factor in match outcomes.\n\n**Match Analysis:**\n\nThe provided match statistics reveal some patterns and trends that could impact match outcomes. Here are the key findings:\n\n1. **Average First Innings Score:** The average first innings score at the venue is 184.4, which is relatively high. This suggests that teams that bat first have a good chance of posting a competitive total.\n2. **Average Second Innings Score:** The average second innings score is 168.0, which is slightly lower than the first innings average. This suggests that teams that bat second may face a slightly tougher challenge.\n3. **Wickets:** The average first innings wickets and second innings wickets are both 6.0, which suggests that the pitch is relatively even and not too conducive to taking wickets.\n4. **Chasing Success Rate:** The chasing success rate at the venue is 40.0%, which is relatively low. This suggests that teams that bat second may face a significant challenge in chasing down a target.\n5. **Total Matches Analyzed:** The total matches analyzed is 5, which is a relatively small sample size. This means that the statistics may not be representative of the entire season, and more data is needed to confirm these trends.\n\n**Key Takeaways:**\n\nBased on the venue and match statistics, here are some key takeaways that could impact match outcomes:\n\n* Pace bowlers tend to perform better in the first innings, while spinners have a slight edge in the second innings.\n* Teams that bat first have a good chance of posting a competitive total, while teams that bat second may face a slightly tougher challenge.\n* The chasing success rate is relatively low, suggesting that teams that bat second may face a significant challenge in chasing down a target.\n* The pitch is relatively even, with an average of 6.0 wickets per innings.\n\nThese findings can help teams and players make informed decisions about their strategy and selection, and can also provide valuable insights for fantasy cricket enthusiasts."
+}

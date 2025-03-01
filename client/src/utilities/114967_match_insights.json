@@ -1,0 +1,693 @@
+{
+  "match_insights": {
+    "top_performers": {
+      "batsmen": [
+        {
+          "name": "Abhishek Sharma",
+          "runs": 366,
+          "strike_rate": 223.17,
+          "fantasy_points": 530
+        },
+        {
+          "name": "Heinrich Klaasen",
+          "runs": 346,
+          "strike_rate": 194.38,
+          "fantasy_points": 485
+        },
+        {
+          "name": "Riyan Parag",
+          "runs": 353,
+          "strike_rate": 159.73,
+          "fantasy_points": 479
+        },
+        {
+          "name": "Sanju Samson",
+          "runs": 343,
+          "strike_rate": 161.79,
+          "fantasy_points": 461
+        },
+        {
+          "name": "Yashasvi Jaiswal",
+          "runs": 337,
+          "strike_rate": 158.96,
+          "fantasy_points": 461
+        },
+        {
+          "name": "Atharva Taide",
+          "runs": 344,
+          "strike_rate": 146.38,
+          "fantasy_points": 460
+        },
+        {
+          "name": "Travis Head",
+          "runs": 293,
+          "strike_rate": 232.54,
+          "fantasy_points": 417
+        },
+        {
+          "name": "Ishan Kishan",
+          "runs": 212,
+          "strike_rate": 155.88,
+          "fantasy_points": 292
+        },
+        {
+          "name": "Abhinav Manohar",
+          "runs": 157,
+          "strike_rate": 144.04,
+          "fantasy_points": 216
+        },
+        {
+          "name": "Shubham Dubey",
+          "runs": 134,
+          "strike_rate": 181.08,
+          "fantasy_points": 191
+        },
+        {
+          "name": "Dhruv Jurel",
+          "runs": 136,
+          "strike_rate": 149.45,
+          "fantasy_points": 184
+        },
+        {
+          "name": "Nitish Reddy",
+          "runs": 128,
+          "strike_rate": 150.59,
+          "fantasy_points": 173
+        },
+        {
+          "name": "Nitish Rana",
+          "runs": 120,
+          "strike_rate": 111.11,
+          "fantasy_points": 152
+        },
+        {
+          "name": "Sachin Baby",
+          "runs": 101,
+          "strike_rate": 157.81,
+          "fantasy_points": 134
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "Harshal Patel",
+          "wickets": 18,
+          "economy": 8.4,
+          "fantasy_points": 488
+        },
+        {
+          "name": "Akash Madhwal",
+          "wickets": 18,
+          "economy": 9.14,
+          "fantasy_points": 468
+        },
+        {
+          "name": "Sandeep Sharma",
+          "wickets": 17,
+          "economy": 7.51,
+          "fantasy_points": 463
+        },
+        {
+          "name": "Kumar Kartikeya",
+          "wickets": 17,
+          "economy": 7.63,
+          "fantasy_points": 447
+        },
+        {
+          "name": "Pat Cummins",
+          "wickets": 14,
+          "economy": 8.78,
+          "fantasy_points": 354
+        },
+        {
+          "name": "Simarjeet Singh",
+          "wickets": 13,
+          "economy": 7.43,
+          "fantasy_points": 341
+        },
+        {
+          "name": "Mohammed Shami",
+          "wickets": 11,
+          "economy": 8.04,
+          "fantasy_points": 291
+        },
+        {
+          "name": "Jaydev Unadkat",
+          "wickets": 11,
+          "economy": 7.81,
+          "fantasy_points": 287
+        },
+        {
+          "name": "Wanindu Hasaranga",
+          "wickets": 11,
+          "economy": 8.81,
+          "fantasy_points": 267
+        },
+        {
+          "name": "Yudhvir Singh Charak",
+          "wickets": 10,
+          "economy": 7.65,
+          "fantasy_points": 254
+        },
+        {
+          "name": "Maheesh Theekshana",
+          "wickets": 9,
+          "economy": 7.35,
+          "fantasy_points": 249
+        },
+        {
+          "name": "Abhishek Sharma",
+          "wickets": 7,
+          "economy": 7.4,
+          "fantasy_points": 203
+        },
+        {
+          "name": "Rahul Chahar",
+          "wickets": 8,
+          "economy": 7.65,
+          "fantasy_points": 202
+        },
+        {
+          "name": "Adam Zampa",
+          "wickets": 8,
+          "economy": 8.55,
+          "fantasy_points": 200
+        },
+        {
+          "name": "Tushar Deshpande",
+          "wickets": 7,
+          "economy": 9.43,
+          "fantasy_points": 165
+        },
+        {
+          "name": "Fazalhaq Farooqi",
+          "wickets": 5,
+          "economy": 9.64,
+          "fantasy_points": 115
+        },
+        {
+          "name": "Nitish Rana",
+          "wickets": 4,
+          "economy": 6.27,
+          "fantasy_points": 112
+        },
+        {
+          "name": "Nitish Reddy",
+          "wickets": 3,
+          "economy": 10.3,
+          "fantasy_points": 67
+        }
+      ],
+      "all_rounders": [
+        {
+          "name": "Abhishek Sharma",
+          "runs": 366,
+          "wickets": 7,
+          "fantasy_points": 733
+        },
+        {
+          "name": "Yudhvir Singh Charak",
+          "runs": 74,
+          "wickets": 10,
+          "fantasy_points": 358
+        },
+        {
+          "name": "Nitish Rana",
+          "runs": 120,
+          "wickets": 4,
+          "fantasy_points": 264
+        },
+        {
+          "name": "Nitish Reddy",
+          "runs": 128,
+          "wickets": 3,
+          "fantasy_points": 240
+        }
+      ],
+      "form_players": [
+        {
+          "name": "Abhishek Sharma",
+          "fantasy_points": 733,
+          "role": "Batting Allrounder"
+        },
+        {
+          "name": "Harshal Patel",
+          "fantasy_points": 513,
+          "role": "Bowler"
+        },
+        {
+          "name": "Heinrich Klaasen",
+          "fantasy_points": 485,
+          "role": "WK-Batsman"
+        },
+        {
+          "name": "Atharva Taide",
+          "fantasy_points": 485,
+          "role": "Batsman"
+        },
+        {
+          "name": "Riyan Parag",
+          "fantasy_points": 479,
+          "role": "Batting Allrounder"
+        },
+        {
+          "name": "Akash Madhwal",
+          "fantasy_points": 472,
+          "role": "Bowler"
+        },
+        {
+          "name": "Sandeep Sharma",
+          "fantasy_points": 470,
+          "role": "Bowler"
+        },
+        {
+          "name": "Sanju Samson",
+          "fantasy_points": 461,
+          "role": "WK-Batsman"
+        },
+        {
+          "name": "Yashasvi Jaiswal",
+          "fantasy_points": 461,
+          "role": ""
+        },
+        {
+          "name": "Kumar Kartikeya",
+          "fantasy_points": 455,
+          "role": "Bowler"
+        },
+        {
+          "name": "Travis Head",
+          "fantasy_points": 417,
+          "role": "Batsman"
+        },
+        {
+          "name": "Pat Cummins",
+          "fantasy_points": 408,
+          "role": "Bowler"
+        },
+        {
+          "name": "Yudhvir Singh Charak",
+          "fantasy_points": 358,
+          "role": "Bowling Allrounder"
+        },
+        {
+          "name": "Simarjeet Singh",
+          "fantasy_points": 348,
+          "role": "Bowler"
+        },
+        {
+          "name": "Mohammed Shami",
+          "fantasy_points": 340,
+          "role": "Bowler"
+        },
+        {
+          "name": "Jaydev Unadkat",
+          "fantasy_points": 315,
+          "role": "Bowler"
+        },
+        {
+          "name": "Wanindu Hasaranga",
+          "fantasy_points": 303,
+          "role": "Bowling Allrounder"
+        },
+        {
+          "name": "Ishan Kishan",
+          "fantasy_points": 292,
+          "role": "WK-Batsman"
+        },
+        {
+          "name": "Nitish Rana",
+          "fantasy_points": 264,
+          "role": "Batsman"
+        },
+        {
+          "name": "Maheesh Theekshana",
+          "fantasy_points": 249,
+          "role": "Bowler"
+        },
+        {
+          "name": "Nitish Reddy",
+          "fantasy_points": 240,
+          "role": "Batting Allrounder"
+        },
+        {
+          "name": "Abhinav Manohar",
+          "fantasy_points": 216,
+          "role": "Batsman"
+        },
+        {
+          "name": "Rahul Chahar",
+          "fantasy_points": 212,
+          "role": "Bowler"
+        },
+        {
+          "name": "Adam Zampa",
+          "fantasy_points": 210,
+          "role": "Bowler"
+        },
+        {
+          "name": "Shubham Dubey",
+          "fantasy_points": 191,
+          "role": "Batsman"
+        },
+        {
+          "name": "Dhruv Jurel",
+          "fantasy_points": 184,
+          "role": "WK-Batsman"
+        },
+        {
+          "name": "Tushar Deshpande",
+          "fantasy_points": 165,
+          "role": "Bowler"
+        },
+        {
+          "name": "Sachin Baby",
+          "fantasy_points": 134,
+          "role": "Batsman"
+        },
+        {
+          "name": "Fazalhaq Farooqi",
+          "fantasy_points": 118,
+          "role": "Bowler"
+        }
+      ]
+    },
+    "venue_analysis": {
+      "pitch_behavior": {
+        "pace_bowling": {
+          "innings": "Overall",
+          "bowler_type": "pace",
+          "total_runs": 2198,
+          "total_balls": 1527,
+          "total_wickets": 66,
+          "runs_per_wicket": 33.3,
+          "balls_per_wicket": 23.14,
+          "economy_rate": 8.64,
+          "strike_rate": 143.94
+        },
+        "spin_bowling": {
+          "innings": "Overall",
+          "bowler_type": "spin",
+          "total_runs": 1359,
+          "total_balls": 925,
+          "total_wickets": 27,
+          "runs_per_wicket": 50.33,
+          "balls_per_wicket": 34.26,
+          "economy_rate": 8.82,
+          "strike_rate": 146.92
+        }
+      },
+      "toss_analysis": {
+        "batting_first_wins": 6,
+        "bowling_first_wins": 4,
+        "preferred_choice": "Bowling"
+      },
+      "scoring_patterns": {
+        "first_innings": {},
+        "second_innings": {}
+      }
+    },
+    "phase_specialists": {
+      "powerplay": {
+        "batsmen": [
+          {
+            "name": "Travis Head",
+            "strike_rate": 230.97,
+            "runs": 261
+          },
+          {
+            "name": "Heinrich Klaasen",
+            "strike_rate": 204.76,
+            "runs": 43
+          },
+          {
+            "name": "Yashasvi Jaiswal",
+            "strike_rate": 158.63,
+            "runs": 717
+          },
+          {
+            "name": "Abhishek Sharma",
+            "strike_rate": 150.77,
+            "runs": 588
+          }
+        ],
+        "bowlers": [
+          {
+            "name": "Sandeep Sharma",
+            "economy": 6.47,
+            "wickets": 4
+          },
+          {
+            "name": "Adam Zampa",
+            "economy": 6.5,
+            "wickets": 1
+          },
+          {
+            "name": "Mohammed Shami",
+            "economy": 6.6,
+            "wickets": 22
+          },
+          {
+            "name": "Fazalhaq Farooqi",
+            "economy": 7.11,
+            "wickets": 2
+          },
+          {
+            "name": "Akash Madhwal",
+            "economy": 7.48,
+            "wickets": 4
+          },
+          {
+            "name": "Simarjeet Singh",
+            "economy": 7.79,
+            "wickets": 3
+          },
+          {
+            "name": "Jofra Archer",
+            "economy": 7.97,
+            "wickets": 0
+          }
+        ]
+      },
+      "middle": {
+        "batsmen": [
+          {
+            "name": "Pat Cummins",
+            "strike_rate": 273.53,
+            "runs": 93
+          },
+          {
+            "name": "Heinrich Klaasen",
+            "strike_rate": 168.1,
+            "runs": 469
+          },
+          {
+            "name": "Abhishek Sharma",
+            "strike_rate": 153.51,
+            "runs": 350
+          },
+          {
+            "name": "Nitish Reddy",
+            "strike_rate": 151.61,
+            "runs": 94
+          },
+          {
+            "name": "Sanju Samson",
+            "strike_rate": 150.48,
+            "runs": 790
+          }
+        ],
+        "bowlers": [
+          {
+            "name": "Fazalhaq Farooqi",
+            "economy": 6.92,
+            "wickets": 2
+          },
+          {
+            "name": "Jofra Archer",
+            "economy": 7.04,
+            "wickets": 1
+          },
+          {
+            "name": "Nitish Rana",
+            "economy": 7.14,
+            "wickets": 2
+          },
+          {
+            "name": "Maheesh Theekshana",
+            "economy": 7.59,
+            "wickets": 8
+          },
+          {
+            "name": "Harshal Patel",
+            "economy": 7.6,
+            "wickets": 18
+          },
+          {
+            "name": "Pat Cummins",
+            "economy": 7.66,
+            "wickets": 7
+          },
+          {
+            "name": "Kumar Kartikeya",
+            "economy": 7.76,
+            "wickets": 8
+          },
+          {
+            "name": "Rahul Chahar",
+            "economy": 7.77,
+            "wickets": 15
+          },
+          {
+            "name": "Wanindu Hasaranga",
+            "economy": 7.98,
+            "wickets": 19
+          }
+        ]
+      },
+      "death": {
+        "batsmen": [
+          {
+            "name": "Yashasvi Jaiswal",
+            "strike_rate": 228.57,
+            "runs": 48
+          },
+          {
+            "name": "Heinrich Klaasen",
+            "strike_rate": 204.67,
+            "runs": 219
+          },
+          {
+            "name": "Sanju Samson",
+            "strike_rate": 200,
+            "runs": 164
+          },
+          {
+            "name": "Shimron Hetmyer",
+            "strike_rate": 191.63,
+            "runs": 458
+          },
+          {
+            "name": "Dhruv Jurel",
+            "strike_rate": 181.44,
+            "runs": 176
+          },
+          {
+            "name": "Abhinav Manohar",
+            "strike_rate": 180.85,
+            "runs": 85
+          },
+          {
+            "name": "Jaydev Unadkat",
+            "strike_rate": 175.51,
+            "runs": 86
+          },
+          {
+            "name": "Riyan Parag",
+            "strike_rate": 170.87,
+            "runs": 217
+          },
+          {
+            "name": "Nitish Rana",
+            "strike_rate": 167.39,
+            "runs": 77
+          }
+        ],
+        "bowlers": [
+          {
+            "name": "Maheesh Theekshana",
+            "economy": 6.1,
+            "wickets": 6
+          },
+          {
+            "name": "Wanindu Hasaranga",
+            "economy": 6.86,
+            "wickets": 6
+          }
+        ]
+      }
+    },
+    "captain_recommendations": {
+      "captain_picks": [
+        {
+          "name": "Abhishek Sharma",
+          "role": "Batting Allrounder",
+          "score": 399.2,
+          "form_rating": "Excellent",
+          "batting_points": 530,
+          "bowling_points": 203
+        },
+        {
+          "name": "Heinrich Klaasen",
+          "role": "WK-Batsman",
+          "score": 291.0,
+          "form_rating": "Excellent",
+          "batting_points": 485,
+          "bowling_points": 0
+        },
+        {
+          "name": "Riyan Parag",
+          "role": "Batting Allrounder",
+          "score": 287.4,
+          "form_rating": "Excellent",
+          "batting_points": 479,
+          "bowling_points": 0
+        }
+      ],
+      "differential_picks": [
+        {
+          "name": "Atharva Taide",
+          "role": "Batsman",
+          "score": 286.0,
+          "form_rating": "Excellent",
+          "batting_points": 460,
+          "bowling_points": 25
+        },
+        {
+          "name": "Sanju Samson",
+          "role": "WK-Batsman",
+          "score": 276.59999999999997,
+          "form_rating": "Excellent",
+          "batting_points": 461,
+          "bowling_points": 0
+        },
+        {
+          "name": "Yashasvi Jaiswal",
+          "role": "",
+          "score": 276.59999999999997,
+          "form_rating": "Excellent",
+          "batting_points": 461,
+          "bowling_points": 0
+        },
+        {
+          "name": "Travis Head",
+          "role": "Batsman",
+          "score": 250.2,
+          "form_rating": "Excellent",
+          "batting_points": 417,
+          "bowling_points": 0
+        },
+        {
+          "name": "Harshal Patel",
+          "role": "Bowler",
+          "score": 210.20000000000002,
+          "form_rating": "Excellent",
+          "batting_points": 25,
+          "bowling_points": 488
+        }
+      ]
+    },
+    "head_to_head": [
+      "Sunrisers Hyderabad won by 4 wickets",
+      "Rajasthan Royals won by 72 runs",
+      "Rajasthan Royals won by 61 runs"
+    ],
+    "generated_at": "2025-03-01 08:01:27"
+  },
+  "fantasy_tips": [
+    "Pick players batting in top 4 for this high-scoring venue",
+    "Prefer Bowling first specialists based on toss analysis",
+    "Include at least 2 all-rounders in your team",
+    "Pick death over specialists for maximum points",
+    "Consider pitch behavior while selecting spinner vs pacer ratio"
+  ]
+}
