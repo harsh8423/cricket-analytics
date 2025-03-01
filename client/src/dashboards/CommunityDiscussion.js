@@ -206,6 +206,7 @@ const CommunityDiscussion = () => {
       
       setPosts([response.data, ...posts]);
       setShowCreateModal(false);
+      navigate(`/discussions/${response.data._id}`)
     } catch (error) {
       console.error('Error creating post:', error);
       if (error.response?.status === 403) {

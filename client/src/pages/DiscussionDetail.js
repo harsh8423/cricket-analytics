@@ -270,6 +270,9 @@ export default function DiscussionDetail() {
         <h1 className="text-2xl font-bold text-gray-900 mb-4">{discussion?.title}</h1>
         
         <div className="prose prose-sm max-w-none mb-6">
+          {discussion?.reference?.content}
+        </div>
+        <div className="prose prose-sm max-w-none mb-6">
           {discussion?.content}
         </div>
 

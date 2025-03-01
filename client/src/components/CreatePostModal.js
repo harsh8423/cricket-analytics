@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { X } from 'lucide-react';
 import { useParams } from 'react-router-dom';
 
-const CreatePostModal = ({ isOpen, onClose, onSubmit }) => {
+const CreatePostModal = ({ isOpen, onClose, onSubmit, rt,rc }) => {
   const [title, setTitle] = useState('');
   const [content, setContent] = useState('');
   const [referenceType, setReferenceType] = useState('prediction');
@@ -50,8 +50,8 @@ const CreatePostModal = ({ isOpen, onClose, onSubmit }) => {
       title,
       content,
       reference: {
-        type: referenceType,
-        content: referenceContent || `${team1_name} vs ${team2_name}`
+        type: rt? rt:referenceType,
+        content: rc? rc: `${team1_name} vs ${team2_name}`
       },
       match_id: match_id
     };

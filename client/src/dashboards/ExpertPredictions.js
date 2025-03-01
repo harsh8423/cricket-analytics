@@ -2,8 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { Search, ArrowUp, MessageCircle, Filter } from 'lucide-react';
 import { useAuth } from '../contexts/AuthContext';
 import AuthModal from '../components/AuthModal';
-import { useParams } from 'react-router-dom';
-
+import { useParams, useNavigate } from 'react-router-dom';
+import CreatePostModal from '../components/CreatePostModal';
+import axios from 'axios';
 const ExpertPredictions = () => {
   const [activeFilter, setActiveFilter] = useState('all');
   const [predictions, setPredictions] = useState([]);
@@ -12,6 +13,10 @@ const ExpertPredictions = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const [showAuthModal, setShowAuthModal] = useState(false);
   const { isAuthenticated, token, user } = useAuth();
+  const [showCreateModal, setShowCreateModal] = useState(false);
+  const [discussTitle, setDiscussTitle] = useState("");
+  const [discussAuthor, setDiscussAuthor] = useState("");
+  const navigate = useNavigate();
 
   const {match_id} = useParams();
   // Fetch predictions
@@ -33,6 +38,30 @@ const ExpertPredictions = () => {
 
     fetchPredictions();
   }, []);
+
+
+  const handleSubmitPost = async (postData) => {
+    try {
+      const response = await axios.post(
+        'https://cricket-analytics-node.onrender.com/api/discussions', 
+        postData,
+        {
+          headers: {
+            'Authorization': `Bearer ${token}`,
+            'Content-Type': 'application/json'
+          }
+        }
+      );
+      
+      setShowCreateModal(false);
+      navigate(`/discussions/${response.data._id}`)
+    } catch (error) {
+      console.error('Error creating post:', error);
+      if (error.response?.status === 403) {
+        setShowAuthModal(true);
+      }
+    }
+  };
 
   // Handle upvote
   const handleUpvote = async (predictionId) => {
@@ -87,6 +116,11 @@ const ExpertPredictions = () => {
     );
   }
 
+  const handleDiscussion = (prediction) => {
+    setDiscussTitle(prediction.content)
+    setDiscussAuthor(prediction.predictor)
+    setShowCreateModal(true)
+  }
   return (
     <div className="min-h-screen p-4 sm:p-6">
       {/* Header */}
@@ -219,6 +253,7 @@ const ExpertPredictions = () => {
                   </span>
                 </button>
                 <button 
+                  onClick={() => handleDiscussion(prediction)}
                   className="flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-1.5 sm:py-2 bg-indigo-50 text-indigo-600 hover:bg-indigo-100 rounded-lg sm:rounded-xl transition-all duration-200"
                 >
                   <MessageCircle className="w-4 h-4 sm:w-5 sm:h-5" />
@@ -229,6 +264,16 @@ const ExpertPredictions = () => {
           </div>
         ))}
       </div>
+
+      {showCreateModal && (
+          <CreatePostModal
+            isOpen={showCreateModal}
+            onClose={() => setShowCreateModal(false)}
+            onSubmit={handleSubmitPost}
+            rt={"prediction"}
+            rc={`${discussAuthor} Prediction: ${discussTitle}`}
+          />
+        )}
 
       <AuthModal
         isOpen={showAuthModal}

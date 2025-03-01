@@ -18,7 +18,7 @@ const Navbar = () => {
 
   const handleSignOut = () => {
     logout();
-    navigate('/login');
+    navigate('/');
   };
 
   return (
@@ -74,7 +74,7 @@ const Navbar = () => {
             {/* Authentication-based Links */}
             {isAuthenticated ? (
               <>
-                  {!user?.isPro && (
+                  {/* {!user?.isPro && (
                     <div className="relative group">
                       <Link 
                         to="/upgrade" 
@@ -85,7 +85,7 @@ const Navbar = () => {
                       </Link>
                       <div className="absolute bottom-0 left-1/2 h-[2px] w-0 bg-yellow-600 group-hover:w-full transition-all duration-300 -translate-x-1/2"></div>
                     </div>
-                  )}
+                  )} */}
                 <div className="relative group">
                   <Link 
                     to="/profile" 
