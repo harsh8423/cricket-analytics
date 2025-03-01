@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
-import { ChevronRight, ChevronLeft, User, Menu } from 'lucide-react';
+import { ChevronRight, Calendar, MapPin, Clock } from 'lucide-react';
 import TopNews from '../components/TopNews';
 import axios from 'axios';
 import Navbar from '../components/Navbar';
 
 const bannerData = [
+  // Banner data remains unchanged
   {
     title: "AI Fantasy Team Prediction",
     description: "Get winning predictions powered by advanced AI algorithms",
@@ -27,8 +28,6 @@ const bannerData = [
     bgColor: "bg-violet-600"
   }
 ];
-
-
 
 const HomePage = () => {
   const [currentBanner, setCurrentBanner] = useState(0);
@@ -58,7 +57,6 @@ const HomePage = () => {
     fetchMatches();
   }, []);
 
-
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentBanner((prev) => (prev + 1) % bannerData.length);
@@ -66,17 +64,33 @@ const HomePage = () => {
     return () => clearInterval(timer);
   }, []);
 
-  const handleMatchAction = (action) => {
-    console.log(`Navigating to dashboard with action: ${action}`);
-    navigate(`/menubar/${action.id}/${action.team1_name}vs${action.team2_name}`);
+  const handleMatchClick = (match) => {
+    navigate(`/menubar/${match.id}/${match.team1_name}vs${match.team2_name}`);
+  };
+
+  // Format time function
+  const formatTime = (dateString) => {
+    return new Date(dateString).toLocaleTimeString(undefined, {
+      hour: '2-digit',
+      minute: '2-digit'
+    });
+  };
+
+  // Format date function
+  const formatDate = (dateString) => {
+    return new Date(dateString).toLocaleDateString(undefined, {
+      weekday: 'short',
+      day: 'numeric',
+      month: 'short'
+    });
   };
 
   return (
-    <div className="min-h-screen bg-white">
-      {/* Responsive Navbar */}
-      <Navbar/>
+    <div className="min-h-screen bg-gray-50">
+      {/* Navbar */}
+      <Navbar />
 
-      {/* Responsive Banner Slider */}
+      {/* Banner Slider */}
       <div className="relative overflow-hidden bg-white mx-4 sm:mx-8 lg:mx-40 my-4">
         <div className="max-w-7xl mx-auto">
           <div className="relative flex items-center">
@@ -104,29 +118,30 @@ const HomePage = () => {
         </div>
       </div>
 
-      {/* Responsive Upcoming Matches */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-40 py-4">
-        <div className="flex items-center justify-between mb-6 sm:mb-12">
-          <h2 className="text-xl sm:text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 to-purple-600">
+      {/* Upcoming Matches Section - Improved UI */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-40 py-8">
+        <div className="flex items-center justify-between mb-6">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-800">
             Upcoming Matches
           </h2>
-          <button className="px-2 sm:px-4 py-2 text-sm font-medium text-indigo-600 hover:text-indigo-800 flex items-center gap-1 sm:gap-2">
+          <button className="px-3 py-2 text-sm font-medium text-indigo-600 hover:text-indigo-800 flex items-center gap-1">
             View All 
             <ChevronRight className="w-4 h-4" />
           </button>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {upcomingMatches.map((match) => (
             <div 
               key={match.id} 
-              className="bg-white rounded-xl sm:rounded-2xl shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 overflow-hidden border border-gray-100"
+              onClick={() => handleMatchClick(match)}
+              className="bg-white rounded-lg shadow hover:shadow-md transition-all duration-300 overflow-hidden cursor-pointer hover:translate-y-px border border-gray-100"
             >
               {/* League Banner */}
-              <div className="bg-gradient-to-r from-indigo-600 to-purple-600 px-3 sm:px-6 py-2 sm:py-3 text-white">
+              <div className="bg-gradient-to-r from-indigo-600 to-purple-600 px-4 py-2 text-white">
                 <div className="flex justify-between items-center">
-                  <span className="text-sm sm:text-base font-medium">{match.league}</span>
-                  <div className="flex items-center gap-1 sm:gap-2">
+                  <span className="text-sm font-medium">{match.league}</span>
+                  <div className="flex items-center gap-1">
                     <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
                     <span className="text-xs font-medium">Upcoming</span>
                   </div>
@@ -134,94 +149,48 @@ const HomePage = () => {
               </div>
 
               {/* Match Content */}
-              <div className="p-4 sm:p-6">
-                <div className="flex items-center justify-between mb-4 sm:mb-8">
-                  <div className="flex items-center gap-3 sm:gap-6">
-                    {/* Team 1 */}
-                    <div className="text-center">
-                      <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-indigo-100 to-white rounded-full flex items-center justify-center font-bold text-base sm:text-lg shadow-md border-2 border-indigo-50 mb-2">
-                        {match.team1}
-                      </div>
-                      <span className="text-xs sm:text-sm font-medium text-gray-700">{match.team1}</span>
+              <div className="p-4">
+                {/* Teams */}
+                <div className="flex items-center justify-between py-4">
+                  <div className="flex flex-col items-center">
+                    <div className="w-14 h-14 bg-gray-50 rounded-full flex items-center justify-center font-bold text-lg shadow-sm border border-gray-100 mb-2">
+                      {match.team1}
                     </div>
+                    <span className="text-sm font-medium text-gray-800">{match.team1}</span>
+                  </div>
 
-                    {/* VS Badge */}
-                    <div className="w-8 h-8 sm:w-12 sm:h-12 rounded-full bg-gray-100 flex items-center justify-center">
-                      <span className="text-xs sm:text-sm font-bold bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 to-purple-600">VS</span>
+                  <div className="text-center">
+                    <div className="text-xs font-bold text-gray-400 mb-1">VS</div>
+                    <div className="font-bold text-xs text-indigo-600 px-2 py-1 bg-indigo-50 rounded-full">
+                      {formatTime(match.startTime)}
                     </div>
+                  </div>
 
-                    {/* Team 2 */}
-                    <div className="text-center">
-                      <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-purple-100 to-white rounded-full flex items-center justify-center font-bold text-base sm:text-lg shadow-md border-2 border-purple-50 mb-2">
-                        {match.team2}
-                      </div>
-                      <span className="text-xs sm:text-sm font-medium text-gray-700">{match.team2}</span>
+                  <div className="flex flex-col items-center">
+                    <div className="w-14 h-14 bg-gray-50 rounded-full flex items-center justify-center font-bold text-lg shadow-sm border border-gray-100 mb-2">
+                      {match.team2}
                     </div>
+                    <span className="text-sm font-medium text-gray-800">{match.team2}</span>
                   </div>
                 </div>
 
                 {/* Match Details */}
-                <div className="bg-gray-50 rounded-lg sm:rounded-xl p-3 sm:p-4 mb-4 sm:mb-6">
-                  <div className="flex items-center gap-2 sm:gap-4 mb-2">
-                    <svg className="w-4 h-4 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                    </svg>
-                    <span className="text-xs sm:text-sm font-medium text-gray-600">
-                      {new Date(match.startTime).toLocaleDateString(undefined, { 
-                        weekday: 'long',
-                        year: 'numeric',
-                        month: 'long',
-                        day: 'numeric'
-                      })}
-                    </span>
+                <div className="border-t border-gray-100 pt-4 mt-2">
+                  <div className="flex items-center gap-2 mb-2 text-gray-600">
+                    <Calendar className="w-4 h-4" />
+                    <span className="text-xs">{formatDate(match.startTime)}</span>
                   </div>
-                  <div className="flex items-center gap-2 sm:gap-4">
-                    <svg className="w-4 h-4 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                    </svg>
-                    <span className="text-xs sm:text-sm font-medium text-gray-600">{match.venue}</span>
+                  <div className="flex items-center gap-2 text-gray-600">
+                    <MapPin className="w-4 h-4" />
+                    <span className="text-xs truncate">{match.venue}</span>
                   </div>
                 </div>
 
-                {/* Action Buttons */}
-                <div className="grid grid-cols-2 gap-2 sm:gap-3">
-                  <button 
-                    onClick={() => handleMatchAction(match)}
-                    className="px-2 sm:px-4 py-2 sm:py-3 bg-gradient-to-r from-indigo-500 to-indigo-600 text-white rounded-lg sm:rounded-xl hover:from-indigo-600 hover:to-indigo-700 transform hover:-translate-y-0.5 transition-all duration-200 font-medium text-xs sm:text-sm flex items-center justify-center gap-1 sm:gap-2"
-                  >
-                    <svg className="w-3 h-3 sm:w-4 sm:h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-                    </svg>
-                    Analysis
-                  </button>
-                  <button 
-                    onClick={() => handleMatchAction(match)}
-                    className="px-2 sm:px-4 py-2 sm:py-3 bg-gradient-to-r from-purple-500 to-purple-600 text-white rounded-lg sm:rounded-xl hover:from-purple-600 hover:to-purple-700 transform hover:-translate-y-0.5 transition-all duration-200 font-medium text-xs sm:text-sm flex items-center justify-center gap-1 sm:gap-2"
-                  >
-                    <svg className="w-3 h-3 sm:w-4 sm:h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                    </svg>
-                    Fantasy
-                  </button>
-                  <button 
-                    onClick={() => handleMatchAction(match)}
-                    className="px-2 sm:px-4 py-2 sm:py-3 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-lg sm:rounded-xl hover:from-blue-600 hover:to-blue-700 transform hover:-translate-y-0.5 transition-all duration-200 font-medium text-xs sm:text-sm flex items-center justify-center gap-1 sm:gap-2"
-                  >
-                    <svg className="w-3 h-3 sm:w-4 sm:h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z" />
-                    </svg>
-                    Discussion
-                  </button>
-                  <button 
-                    onClick={() => handleMatchAction(match)}
-                    className="px-2 sm:px-4 py-2 sm:py-3 bg-gradient-to-r from-green-500 to-green-600 text-white rounded-lg sm:rounded-xl hover:from-green-600 hover:to-green-700 transform hover:-translate-y-0.5 transition-all duration-200 font-medium text-xs sm:text-sm flex items-center justify-center gap-1 sm:gap-2"
-                  >
-                    <svg className="w-3 h-3 sm:w-4 sm:h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
-                    Predictions
-                  </button>
+                {/* View Match CTA */}
+                <div className="mt-4 text-center">
+                  <div className="inline-block text-xs text-indigo-600 font-medium hover:text-indigo-800 transition-colors duration-200">
+                    View match details →
+                  </div>
                 </div>
               </div>
             </div>

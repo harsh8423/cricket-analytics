@@ -34,7 +34,7 @@ const verifyToken = (req, res, next) => {
 // Set up CORS middleware
 const allowedOrigins = [
   "http://localhost:3000",
-  "http://localhost:3001",
+  "https://cricgenius.vercel.app",
   // Add more origins as needed
 ];
 

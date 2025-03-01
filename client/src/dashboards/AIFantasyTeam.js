@@ -22,7 +22,7 @@ const SearchBar = ({ query, setQuery, onSearch, isEditMode }) => {
           type="text"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
-          placeholder={isEditMode ? "Ask AI to modify team (e.g., 'Add more spinners')..." : "Ask AI to generate team (e.g., 'Create balanced team for rainy conditions')..."}
+          placeholder={isEditMode ? "Ask AI to modify team..." : "Ask AI to generate team..."}
           className={`w-full py-3 px-6 pr-12 rounded-full border-2 focus:outline-none focus:ring-2 focus:border-transparent shadow-lg bg-white/90 backdrop-blur-sm text-gray-800 placeholder-gray-500 ${
             isEditMode 
               ? 'border-purple-500 focus:ring-purple-500' 
@@ -48,9 +48,9 @@ const StrategySection = ({ strategies }) => {
   if (!strategies) return null;
 
   return (
-    <div className="mt-8 bg-white/90 rounded-lg p-4">
+    <div className="mt-4 sm:mt-8 bg-white/90 rounded-lg p-4">
       <h2 className="text-lg font-bold text-green-900 mb-3">Match Strategy</h2>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
         <div className="bg-green-100 p-3 rounded-lg">
           <h3 className="font-bold text-sm">Pace/Spin Ratio</h3>
           <p className="text-sm">{strategies.pace_spin_ratio}</p>
@@ -324,32 +324,32 @@ const FantasyTeam = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-green-900 to-green-700 relative">
       <header className="p-4 bg-green-900 shadow-lg">
-        <h1 className="text-3xl font-bold text-center text-yellow-400 font-cricket">
-          🏏 AI Fantasy Premier League
+        <h1 className="text-2xl sm:text-3xl font-bold text-center text-yellow-400 font-cricket">
+          🏏 AI Team Generator
         </h1>
       </header>
 
-      <main className="container mx-auto px-4 py-8">
-        <div className="bg-gradient-to-b from-green-800 to-green-600 rounded-xl p-6 shadow-2xl relative">
+      <main className="container mx-auto px-2 sm:px-4 py-4 sm:py-8">
+        <div className="bg-gradient-to-b from-green-800 to-green-600 rounded-xl p-3 sm:p-6 shadow-2xl relative">
           {/* Add team navigation if multiple teams exist */}
           {teamData?.teams?.length > 1 && (
-            <div className="absolute top-4 left-1/2 transform -translate-x-1/2 flex items-center gap-4 bg-white/10 backdrop-blur-sm rounded-lg p-2">
+            <div className="absolute top-4 left-1/2 transform -translate-x-1/2 flex items-center gap-2 sm:gap-4 bg-white/10 backdrop-blur-sm rounded-lg p-2 text-xs sm:text-sm">
               <button
                 onClick={handlePrevTeam}
                 disabled={currentTeamIndex === 0}
-                className="p-2 rounded-lg bg-white/20 hover:bg-white/30 disabled:opacity-50"
+                className="p-1 sm:p-2 rounded-lg bg-white/20 hover:bg-white/30 disabled:opacity-50"
               >
-                Previous Team
+                Prev
               </button>
               <span className="text-white">
-                Team {currentTeamIndex + 1} of {teamData.teams.length}
+                Team {currentTeamIndex + 1}/{teamData.teams.length}
               </span>
               <button
                 onClick={handleNextTeam}
                 disabled={currentTeamIndex === teamData.teams.length - 1}
-                className="p-2 rounded-lg bg-white/20 hover:bg-white/30 disabled:opacity-50"
+                className="p-1 sm:p-2 rounded-lg bg-white/20 hover:bg-white/30 disabled:opacity-50"
               >
-                Next Team
+                Next
               </button>
             </div>
           )}
@@ -357,7 +357,7 @@ const FantasyTeam = () => {
           {/* Show loading state */}
           {loading && (
             <div className="absolute inset-0 bg-black/20 flex items-center justify-center rounded-xl">
-              <div className="animate-spin rounded-full h-16 w-16 border-t-2 border-b-2 border-white"></div>
+              <div className="animate-spin rounded-full h-12 w-12 sm:h-16 sm:w-16 border-t-2 border-b-2 border-white"></div>
             </div>
           )}
 
@@ -368,47 +368,53 @@ const FantasyTeam = () => {
             </div>
           )}
 
-          {/* Modified team actions */}
-          <div className="absolute top-4 left-4 right-4 flex justify-between">
-            <button 
-              onClick={handleEditMode}
-              className={`flex items-center gap-2 px-4 py-2 rounded-lg text-sm ${
-                isEditMode 
-                  ? 'bg-purple-600 hover:bg-purple-700 text-white' 
-                  : 'bg-blue-600 hover:bg-blue-700 text-white'
-              }`}
-            >
-              <FaEdit />
-              {isEditMode ? 'Exit Edit Mode' : 'Edit Team'}
-            </button>
-            <div className="flex gap-2">
+          {/* Modified team actions - Now floating on left */}
+          {teamData?.teams?.[0]?.team && (
+            <div className="fixed right-4 top-1/2 transform -translate-y-1/2 flex flex-col gap-3 z-30">
+              <button 
+                onClick={handleEditMode}
+                className={`flex items-center justify-center gap-2 px-3 py-2 rounded-lg text-sm shadow-lg hover:scale-105 transition-transform ${
+                  isEditMode 
+                    ? 'bg-purple-600 hover:bg-purple-700 text-white' 
+                    : 'bg-blue-600 hover:bg-blue-700 text-white'
+                }`}
+                title={isEditMode ? 'Exit Edit Mode' : 'Edit Team'}
+              >
+                <FaEdit className="w-4 h-4" />
+                <span className="hidden sm:inline">{isEditMode ? 'Exit Edit' : 'Edit'}</span>
+              </button>
+              
               {teamData?.teams?.length > 1 && (
                 <button 
-                  className="flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg text-sm"
+                  className="flex items-center justify-center gap-2 bg-green-600 hover:bg-green-700 
+                    text-white px-3 py-2 rounded-lg text-sm shadow-lg hover:scale-105 transition-transform"
                   onClick={handleSaveAllTeams}
+                  title="Save All Teams"
                 >
-                  <FaSave />
-                  Save All Teams
+                  <FaSave className="w-4 h-4" />
+                  <span className="hidden sm:inline">Save All</span>
                 </button>
               )}
+              
               <button 
-                className="flex items-center gap-2 bg-green-700 hover:bg-green-800 text-white px-4 py-2 rounded-lg text-sm"
+                className="flex items-center justify-center gap-2 bg-green-700 hover:bg-green-800 
+                  text-white px-3 py-2 rounded-lg text-sm shadow-lg hover:scale-105 transition-transform"
                 onClick={handleSaveTeam}
+                title="Save Current Team"
               >
-                <FaSave />
-                Save Current Team
+                <FaSave className="w-4 h-4" />
+                <span className="hidden sm:inline">Save</span>
               </button>
             </div>
-          </div>
+          )}
            {/* Floating buttons */}
         <div className="fixed bottom-24 right-4 space-y-4">
-          
           <button
             onClick={() => navigate(`/saved-teams/${match_id}/${team1_name}vs${team2_name}`)}
-            className="bg-blue-600 hover:bg-blue-700 text-white p-4 rounded-full shadow-lg"
+            className="bg-blue-600 hover:bg-blue-700 text-white p-3 sm:p-4 rounded-full shadow-lg"
             title="View Saved Teams"
           >
-            <FaList size={24} />
+            <FaList size={20} />
           </button>
         </div>
 
@@ -417,16 +423,18 @@ const FantasyTeam = () => {
             <>
               {teamData ? (
                 <>
-                  <TeamDisplay 
-                    teamData={teamData} 
-                    currentTeamIndex={currentTeamIndex}
-                    onPlayerClick={setSelectedPlayer} 
-                  />
+                  <div className="mt-14 sm:mt-16">
+                    <TeamDisplay 
+                      teamData={teamData} 
+                      currentTeamIndex={currentTeamIndex}
+                      onPlayerClick={setSelectedPlayer} 
+                    />
+                  </div>
                   <StrategySection strategies={teamData.strategies} />
                 </>
               ) : (
                 <div className="flex items-center justify-center h-64">
-                  <p className="text-white text-lg">Enter a query to generate or modify your fantasy team</p>
+                  <p className="text-white text-base sm:text-lg px-4 text-center">Enter a query to generate or modify your fantasy team</p>
                 </div>
               )}
             </>
@@ -443,10 +451,10 @@ const FantasyTeam = () => {
 
       {showSaved && (
         <button 
-          className="fixed bottom-20 right-4 bg-yellow-400 text-black p-4 rounded-full shadow-lg hover:bg-yellow-500 transition-colors"
+          className="fixed bottom-20 right-4 bg-yellow-400 text-black p-3 sm:p-4 rounded-full shadow-lg hover:bg-yellow-500 transition-colors"
           onClick={() => setShowSaved(!showSaved)}
         >
-          📋 Saved Teams
+          📋
         </button>
       )}
 
@@ -457,10 +465,10 @@ const FantasyTeam = () => {
       />
 
       {selectedPlayer && (
-        <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50">
-          <div className="bg-white p-6 rounded-lg max-w-md mx-4">
-            <h3 className="text-xl font-bold mb-2">{selectedPlayer.name}</h3>
-            <p className="text-gray-600">{selectedPlayer.reason}</p>
+        <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">
+          <div className="bg-white p-4 sm:p-6 rounded-lg max-w-md w-full mx-auto">
+            <h3 className="text-lg sm:text-xl font-bold mb-2">{selectedPlayer.name}</h3>
+            <p className="text-gray-600 text-sm sm:text-base">{selectedPlayer.reason}</p>
             <button
               onClick={() => setSelectedPlayer(null)}
               className="mt-4 w-full bg-green-700 text-white py-2 rounded-md hover:bg-green-800"
